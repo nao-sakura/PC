@@ -1146,9 +1146,9 @@ margin: 0 20px 0 0;
 .receiptArea .receiptCont .receiptTable.confirm .col3 { width: 14%; }
 .receiptArea .receiptCont .receiptTable.confirm .col4 { width: 16%; }
 
-.receiptArea .receiptInfo{
+/* .receiptArea .receiptInfo{
 
-}
+} */
 .receiptArea .receiptInfo .formgroup {
 	background: url(../images/bg_15-a.png) repeat-y left top;
     font-size:14px;
