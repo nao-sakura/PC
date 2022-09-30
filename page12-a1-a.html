@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="申込内容確認｜格安航空券の検索、飛行機チケット最安値比較サイト【さくらトラベル】24時間365日いつでもどこにいてもスマートフォンやアプリ、パソコンで航空券をカンタン予約お申込みOK！">
+		<meta name="keywords" content="申込内容確認,格安航空券,国内航空券,飛行機,予約,激安">
+		<title>申込内容確認｜格安航空券さくらトラベル</title>
+		<link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/sys/css/reset.css" />
+		<link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/sys/css/common.css" />	
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/addition.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="http://www.sakuratravel.jp/sys/js/modernizr-2.0.6-development-only.js"></script>
+		<!-- IE向けの設定 -->
+		<!--[if IE]>
+<script src="http://www.sakuratravel.jp/js/html5.js"></script>
+<script src="http://www.sakuratravel.jp/js/css3-mediaqueries.js"></script>
+<![endif]-->
+		<script type="text/javascript" src="http://www.sakuratravel.jp/js/smoothScroll.js"></script>
+		<script type="text/javascript" src="http://www.sakuratravel.jp/js/smartRollover.js"></script>
+		<script type="text/javascript" src="js/dropdown_menu.js"></script>
+		<!-- 流入サイト用スクリプト -->
+		<script language="JavaScript">
+			<!--
+var utm_source = get_para('utm_source') + "";
+var medium = get_para('utm_medium');
+var campaign = get_para('utm_campaign');
+if (utm_source == "line") {
+    $.ajax({
+        type: "POST",
+        async: false,
+        data: "utm_source=" + utm_source + "&utm_medium=" + medium + "&utm_campaign=" + campaign,
+        url: "https://www.sakuratravel.jp/search/ses_on.php",
+        success: function(data){
+			var ar_data = data.split("__");
+			if (ar_data[1] == 1) {
+				document.cookie = "fromsite=" + ar_data[0] + "; max-age=" + ar_data[5] + ";path=/;";
+				document.cookie = "fromsite2=" + ar_data[3] + "; max-age=" + ar_data[5] + ";path=/;";
+				document.cookie = ar_data[2] + "=" + ar_data[4] + "; max-age=" + ar_data[5] + ";path=/;";
+			}
+        },
+        error: function(data) {
+        }
+    });
+}
+
+function get_para(name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return '';
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+			// -->
+		</script>
+		<!-- //流入サイト用スクリプト -->
+		<!--　アラート　-->
+		<style type="text/css">
+			<!--
+			.errormsg {
+				border: 1px dotted #F00;
+				margin: 1em 0 1em;
+				padding: 1em;
+			}
+			.errormsg p {
+				color: #F00;
+				font-size: 90%;
+				font-weight: bold;
+			}			
+			-->
+		</style>
+		<!--//　アラート　-->
+		<!-- 入力用スクリプト -->
+		<script language="JavaScript">
+			<!--
+$(function(){
+//	$("body").keypress( function( event ) {
+	$("#mailaddress").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("mypage");
+		}
+	});
+	$("#password").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("mypage");
+		}
+	});
+
+	$("#contactnumber").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("kakunin");
+		}
+	});
+	$("#tel").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("kakunin");
+		}
+	});
+});
+
+function checkInput(div, this_form) {
+	if (div == "mypage") {
+		if (this_form.m_email.value == '') {
+			alert('メールアドレス(ID)を入力して下さい。');
+			this_form.m_email.focus();
+			return false;
+		}
+		if (this_form.m_passwd.value == '') {
+			alert('パスワードを入力して下さい。');
+			this_form.m_passwd.focus();
+			return false;
+		}
+	} else if (div == "kakunin") {
+		if (this_form.kkakunin_toiawase.value == '') {
+			alert('お問合番号を入力して下さい。');
+			this_form.kkakunin_toiawase.focus();
+			return false;
+		}
+		if (this_form.kkakunin_tel.value == '') {
+			alert('電話番号を入力して下さい。');
+			this_form.kkakunin_tel.focus();
+			return false;
+		}
+	} else {
+		alert('不正な操作です。');
+		return false;
+	}
+	return true;
+}
+
+function goNext(div) {
+	var this_form = document.forms[0];
+	if (checkInput(div, this_form) == false) {
+		return false;
+	}
+	if (div == "mypage") {
+		this_form.m_login.value = 1;
+	} else {
+		this_form.k_login.value = 1;
+	}
+	this_form.submit();
+}			
+			// -->
+		</script>		
+		<!-- //入力用スクリプト -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-559JDV');</script>
+		<!-- End Google Tag Manager -->
+		<!-- A8 -->
+		<script src="//statics.a8.net/a8sales/a8sales.js"></script>
+		<!-- End A8 -->
+	</head>
+	
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-559JDV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+		<!--// ヘッダー //-->
+		<header id="pagetop" class="headerArea systemHeader">
+			<div class="slogan">
+				<p>全国どこでも24時間365日受付対応！航空会社を一括比較！</p>
+			</div>	
+			<div class="headerBlock clearfix">
+				<div class="logo clearfix">
+					<a href="/"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/logo.png" alt="さくらトラベル "></a>
+					<h1>国内すべての航空会社の格安航空券を比較・予約</h1>
+				</div>
+				<div class="rightArea clearfix">
+					<div class="link clearfix">
+						<ul>
+							<li><a href="https://www.sakuratravel.jp/contact.html" target="_blank">お問い合わせ</a></li>
+							<li><a href="https://www.sakuratravel.jp/attention/" target="_blank">サポートセンター利用規定</a></li>
+						</ul>
+					</div>
+					<!--link-->
+				</div>
+				<!--rightArea-->
+			</div>
+			<!--headerBlock-->
+		</header>
+		<!--//　ヘッダー -->
+<!--// コンテンツ //-->
+<div class="wrapper ft_system">
+  <div class="contents greenColor">
+  <div class="myPage paymentArea">
+    <div class="headline clearfix">
+        <h3>申込内容確認</h3>
+        <div class="menuBox">
+                <img src="./images/menuBox_green.png" alt="">
+                  <div class="dropMenu">
+                      <div class="dropMenuList clearfix">
+                          <div class="appList">
+                            <p>お申込</p>
+                            <ul>
+                              <li><a href="page11-a.html">申込詳細</a></li>
+                              <li><a href="page11-a.html#eMail">メール一覧</a></li>
+                            </ul>
+                            </div>
+                          <div class="userful">
+                            <p>領収書</p>
+                            <ul>
+                              <li><a href="page15-a1.html">領収書の発行</a></li>
+                            </ul>
+                            </div>
+                          <div class="userful">
+                            <p>さくらトラベル会員</p>
+                            <ul>
+                              <li><a href="page06.html" target="_blank">会員登録</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>        
+    </div>
+    <div class="userName">
+        <p>こんにちは、<span>〇〇様</span></p>
+    </div>
+		<div class="flowArea">
+			<nav>
+				<ul id="flowList" class="clearfix">
+					<li class="active">申込受付<br><span class="flow_number">1</span></li>
+					<li class="active step2 flowDone">決済案内中<br><span class="flow_number">2</span></li>
+					<li class="passive">決済確認中<br><span class="flow_number">3</span></li>
+					<li class="passive">発券手続中<br><span class="flow_number">4</span></li>
+					<li class="passive">手配完了<br><span class="flow_number">5</span></li>
+				</ul>
+			</nav>
+		</div><!-- /.flowArea -->
+    <div class="contentInner mypage_table">
+        <div class="paymentGuide entryDetail">
+            <div class="h4wrap clearfix">
+                <div class="h4_ttl">
+                    <h4>お支払い</h4>
+                </div>
+            </div>
+            <h5 class="h5ttl b-m20"><span>お支払い方法のご案内</span></h5>
+            <!---->
+            <div class="tableBox feeBox">
+            <div class="paymentType"><span>お支払い方法</span>クレジットカード/Visa・Master</div>
+            <table class="table01 entrytable">
+              <tbody>
+                <tr>
+                  <td class="tCenter boderT boderL cellBG">ご請求額</td>
+                  <td class="boderR boderT">999,999円</td>
+                  <td class="limit tCenter" style="width: 8em;">ご購入期限</td>
+                  <td class="boderR boderT"><span class="colRed">2020/07/20 15:00</span></td>
+                  <td>
+					  <p class="f-s12">▼お支払いはこちらをクリック</p>
+                    <div class="paymentBtn"><a href="econ-credit.png" target="_blank">お支払いへ進む</a></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+				<!--<p class="comments colRed mt15"><span class="fBold">※クレジットカード決済をご利用のお客様へ※</span><br>
+					01月22日(水)AM02:00～AM05:30は、決済代行会社のシステムメンテナンスが行われるため、VISA/MASTERのみのお取扱いとなります。<br>
+					JCB/AMEX/ダイナースをご利用希望される場合は、お申込の日時によってご案内が異なりますので下記をご確認ください。<br><br>
+					<span class="fBold">【01/19(日)AM0:00～01/20(月)PM23:59の期間中にお申込の場合】</span><br>
+					システムメンテナンス期間を避けてご決済いただきますようお願いいたします。<br><br>
+					<span class="fBold">【01/21(火)AM0:00～01/22(水)AM07:00の期間中にお申込みの場合】</span><br>
+					ご決済案内メールに記載のURLはVISA/MASTERのみの対応となっております。<br>
+					決済期限が01/22(水)AM 07:00以降のお客様は、その決済期限までに弊社へご連絡いただきましたらご案内可能ですのでお早めにお申し出ください。<br>
+					その際は01/22(水)AM 07:00以降に決済用URLをメールにて送信させていただきます。
+				</p>-->
+        </div>
+            <h5 class="h5ttl"><span>お支払い方法の変更</span></h5>
+			<p>※決済方法にかかわらず別途1.0％の事務手数料が加算されます。</p>
+			<div class="errormsg">
+				<p>※05月17日(月)に、決済代行会社のシステムメンテナンスが行われます※<br>
+					<br>
+					▼クレジットカード決済をご選択、又はご変更希望のお客様へ<br>
+					メンテナンス期間：05月17日(月)AM03:00〜AM04:30<br>
+					上記メンテナンス期間中は、クレジット決済がご利用いただけません。<br>
+					メンテナンス期間を避けてご決済いただくか別の決済方法にてお手続きお願い致します。<br>
+					※メンテナンス期間中に他の決済方法からクジレット決済へご決済方法変更のご申請をされた場合はご決済用URLのご案内が出来ないため、メンテナンス終了後にご決済用URLをメールにて送信させていただきます。<br>
+					<br>
+					▼Pay-easy(ネットバンキング)決済をご選択、又はご変更希望のお客様へ<br>
+					メンテナンス期間：05月17日(月)AM02:00〜AM03:30<br>
+					上記メンテナンスに伴い、メンテナンス期間中はPay-easy決済の反映がメンテナンス後になります。<br>
+					メンテナンス期間を避けてご決済いただくか別の決済方法にてお手続きお願い致します。</p>
+			</div>			
+                <div class="paymentBox clearfix">
+                <div class="inputGroup">
+                            <input type="radio" id="credit3" name="shiharaiselect" value="13"><label for="credit3">クレジット/JCB・AMEX・Diners</label>
+                </div>
+                        </div>
+			<!--銀行振込（バーチャル口座） //-->
+                        <div class="paymentBox clearfix">
+                <div class="inputGroup">
+                            <input type="radio" id="vir" name="shiharaiselect" value="61">
+                            <label for="vir">銀行振込　<span class="f-s12">※送金手数料はお客様負担です。</span></label>
+              </div>							
+                        <div class="inputGroup l-m30 t-m15">
+                           <p>▼振込名義を選択してください。</p>
+                                                       <div class="clearfix">
+                            <select name="new_furikomi_v2" id="new_furikomi_v2" class="nameSelect">
+								<option value="" selected>〇〇〇〇/申込者</option>
+								<option value="">〇〇〇〇/申込者(搭乗者1)</option>
+								<option value="" >◯◯◯◯/搭乗者1</option>
+								<option value="" >◯◯◯◯/搭乗者2</option>
+								<option value="" >◯◯◯◯/搭乗者3</option>
+								<option value="" >◯◯◯◯/搭乗者4</option>
+								<option value="" >◯◯◯◯/搭乗者5</option>
+								<option value="" >◯◯◯◯/搭乗者6</option>
+								<option value="" >その他の名前で振込予定</option>
+                            </select>
+                            <input type="text" name="new_furikomimeigi_v" value=""  class="nameEtc" style="display:none;"><!--<span class="colRed">振込名義人を入力してください。</span>-->
+                           </div>
+                        </div>
+                        <div class="inputGroup l-m30 t-m15">
+                           <p class="comments" style="margin-left: 1em; text-indent: -1em;"><span class="colRed">※毎週日曜日PM19:00～翌AM07:00の期間中は金融機関のシステムメンテナンスが実施されるためご決済いただくことが出来ません。</span><br>
+							   日曜日PM19:00～翌AM07:00の期間中を避けてご決済いただきますようお願い致します。<br>
+							   メンテナンス期間中に決済期限を迎えるお申込みの場合は、別のお支払方法に変更の上で期限内のご決済をお願いいたします。</p>
+                        </div>							
+            </div>
+			<!--// 銀行振込（バーチャル口座）-->			
+			<!--ゆうちょ振替（旧来の銀行振込・ゆうちょ振替） //-->
+                        <div class="paymentBox clearfix">
+                <div class="inputGroup">
+                            <input type="radio" id="yucho" name="shiharaiselect" value="2">
+                            <label for="yucho">ゆうちょ振替　<span class="f-s12">※送金手数料はお客様負担です。</span></label>
+              </div>
+                        <div class="inputGroup l-m30 t-m15">
+                           <p>▼振込名義を選択してください。</p>
+                                                       <div class="clearfix">
+                            <select name="new_furikomi2" id="new_furikomi2" class="nameSelect">
+								<option value="" selected>〇〇〇〇/申込者</option>
+								<option value="">〇〇〇〇/申込者(搭乗者1)</option>
+								<option value="" >◯◯◯◯/搭乗者1</option>
+								<option value="" >◯◯◯◯/搭乗者2</option>
+								<option value="" >◯◯◯◯/搭乗者3</option>
+								<option value="" >◯◯◯◯/搭乗者4</option>
+								<option value="" >◯◯◯◯/搭乗者5</option>
+								<option value="" >◯◯◯◯/搭乗者6</option>
+								<option value="" >その他の名前で振込予定</option>
+                            </select>
+                            <input type="text" name="new_furikomimeigi" value=""  class="nameEtc" style="display:none;"><!--<span class="colRed">振込名義人を入力してください。</span>-->
+                           </div>
+                        </div>
+            </div>
+			<!--// ゆうちょ振替（旧来の銀行振込・ゆうちょ振替）-->
+	                <div class="paymentBox clearfix">
+                <div class="inputGroup">
+                            <input type="radio" id="payeasy" name="shiharaiselect" value="60"><label for="payeasy">Pay-easy(ネットバンキング)　<span class="f-s12">★振込先の入力が不要です。</span></label>
+                </div>
+                        </div>
+            <div class="paymentBox clearfix">
+                <div class="inputGroup">
+                            <input type="radio" id="cvs" name="shiharaiselect" value="44"><label for="cvs">コンビニ</label>
+                        </div>
+                        </div>			
+	                <div class="paymentBox clearfix">
+                <div class="inputGroup">
+                            <input type="radio" id="paypay" name="shiharaiselect" value="71"><label for="paypay">PayPay</label>
+                </div>
+                        </div>
+	                <div class="paymentBox clearfix">
+                <div class="inputGroup">
+                            <input type="radio" id="paidy" name="shiharaiselect" value="72"><label for="paidy">あと払い（さくらトラベル ×ペイディ）</label>
+                </div>
+                        </div>		
+	                <div class="paymentBox clearfix">
+                <div class="inputGroup">
+                            <input type="radio" id="linepay" name="shiharaiselect" value="70"><label for="linepay">LINE Pay</label>
+                </div>
+                        </div>
+            <p>
+				※決済方法にかかわらず別途1.0％の事務手数料が加算されます。
+			</p>
+        </div>
+    </div>
+    <div class="entry_confirmBtn"><a href="page12-b2.html">お支払い方法を変更する</a></div>
+</div>
+</div>
+</div><!-- wrapper end -->
+		
+		<!--　フッター //-->
+		<footer class="systemFooter">
+			<div class="footerWrap">
+				<a href="#pagetop" class="pagetop"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/btn_pagetop.png" alt="ページトップへ"></a>
+				<p class="copyright">Copyright&copy; <script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script> Sakura Travel. All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!--//　フッター --> 
+		
+		<!-- Yahoo Tag Manager -->
+		<noscript>
+			<iframe src="http://www.sakuratravel.jp//b.yjtag.jp/iframe?c=JnPsjbM" width="1" height="1" style="border:0;margin:0;padding:0;"></iframe>
+		</noscript>
+		<!-- End Yahoo Tag Manager -->
+	
+</body>
+</html>

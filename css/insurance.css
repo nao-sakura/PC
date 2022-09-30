@@ -1,0 +1,1045 @@
+/*-------------------------------
+保険ページで使う追記スタイル
+myPageが廃止されるかもしれないため、さくらトラベル国内旅行傷害保険（航空機欠航・遅延時の宿泊費補償付き）プランのご案内から指定するの廃止している
+-------------------------------*/
+/* 追記 */
+
+#campleteWrap{
+	width: 1000px;
+	margin: 0 auto 100px;
+}
+
+#campleteWrap .contact {
+	width: 620px;
+	margin: 0 auto 30px;
+}
+
+#campleteWrap .contactNum{
+  font-weight: bold;
+}
+
+/* style.cssの修正 */
+#campleteWrap .reserve_btn {
+    background: #fe8331;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #ae701f;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#campleteWrap .reserve_btn a {
+
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 18px 30px 16px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+
+}
+/* ここまで */
+
+/* ライブラリスタイルの修正 */
+.featherlight:last-of-type {
+
+    background: rgba(0,0,0,.4);
+
+}
+
+.registerBtn {
+    background: #fd68a0;
+    text-align: center;
+    width: 420px;
+    margin: 30px auto 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #673a4b;
+}
+.attention_bk{
+  margin-bottom: 110px;
+  background-color: #f9f7f7;
+  background-repeat: no-repeat;
+  background-image: url(../images/icon/attention.svg);
+  background-size: 52px 52px;
+  background-position: 25px 25px;
+  padding:25px 0  25px 50px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 中央よせ */
+}
+
+.attention_bk p.notice {
+	margin: 1em 50px 0;
+	color: #F00;
+}
+
+/* 電話でのご連絡/メールでのご連絡 */
+.attention_bk .attention_tel,
+.attention_bk .attention_mail{
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align:center;
+  background-color: #fff;
+  width: 400px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #faadc5;
+}
+
+.attention_bk .attention_tel h3,
+.attention_bk .attention_mail h3{
+  background-color: #faadc5;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.attention_bk .attention_tel ul{
+  padding: 10px;
+}
+
+.attention_tel span.bold{
+  font-weight: bold;
+}
+
+.attention_bk .attention_mail p{
+  padding: 20px;
+}
+
+/* オプション項目 */
+.option{
+	margin-bottom: 130px;
+  padding: 20px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #328ecf;
+}
+
+.option h2{
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom-style: solid;
+  border-width: 1px;
+  color: #328ecf;
+}
+
+.option_wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.option_insurance h3{
+  background-image:url(../images/icon/icon_option.png);
+  background-repeat: no-repeat;
+  text-indent: 1.5em;
+  line-height: 1.5em;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.option_insurance p.guide{
+  margin: 0 20px;
+}
+
+.accident_insurance{
+  margin: 0 auto 30px;
+}
+
+.accident_insurance p{
+  background-image:url(../images/icon/icon_option.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  text-indent: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  background-position: 38% center;
+}
+
+.option_insurance span.red{
+  color: red;
+}
+
+.option_wrapper .read_guide,
+.option_wrapper .option_join{
+  width: 400px;
+  padding: 10px 0;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+/* それぞれのボタンの背景色 */
+.option_wrapper .read_guide{
+  background-color: #68acdc;
+}
+
+.option_wrapper .option_join{
+  background-color: #faad34;
+}
+
+.option_wrapper .read_guide:hover,
+.option_wrapper .option_join:hover{
+  opacity: 0.85;
+}
+
+.option_wrapper .read_guide a,
+.option_wrapper .option_join a{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12pt;
+  display: block;
+  position: relative;
+}
+.option_wrapper .read_guide a:hover,
+.option_wrapper .option_join a:hover{
+  text-decoration: none;
+}
+.option_wrapper .read_guide a::after,
+.option_wrapper .option_join a::after {
+    background: url(../images/icon/icon_arrow_left.png) 0 0 no-repeat;
+    background-size: auto;
+    background-size: auto;
+    background-size: 8px 14px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 19px;
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    margin-top: -10px;
+
+}
+
+/* 新規申込み */
+.registerBtn{
+  margin: 20px auto 100px auto;
+  box-shadow: 0px 2px 0 #fb1667;
+}
+
+/* ホップアップ */
+.popup2{
+  display: none;
+  width: 800px;
+}
+.popup2 .head_red{
+  font-size: 16px;
+  color: #f41313;
+}
+
+.popup2 .read{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+/*-------------------------------
+旅行保険のお申し込みスタイル
+-------------------------------*/
+
+
+.myPage h2.title_gray{
+  background-color: #b4b4b4;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+}
+/*
+.important .head{
+  border-left-style: solid;
+  border-width: 4px;
+  border-color: #969696;
+  font-size: 24px;
+  font-weight: bold;
+  text-indent: 10px;
+}
+*/
+
+.myPage h3.head,
+.compensation h3.head{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.read_text{
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.myPage table.travel_insurance{
+  border-collapse: collapse;
+  /*border-style: solid;
+  border-width: 1px;*/
+  width: 1000px;
+  margin-bottom: 23px;
+}
+
+.myPage table.travel_insurance th,
+.myPage table.travel_insurance td{
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  padding-left: 2em;
+}
+
+.myPage table.travel_insurance th{
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  font-size: 14px;
+}
+
+.passenger,
+.applicant{
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.myPage table.travel_insurance td{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 最後の行だけボーダーを削除 */
+.myPage table.travel_insurance tr:last-child th,
+.myPage table.travel_insurance tr:last-child td,
+.application table.money tr:last-child th span,
+.application table.money tr:last-child td span{
+  border-style: none;
+}
+
+.inner{
+  background-color: #f5f5f5;
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  vertical-align: middle;
+  padding-top: 14px;
+}
+
+.insurance_fee{
+  margin-bottom: 60px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.insurance_fee .item01{
+  flex-basis: 500px;
+  font-size: 12px;
+}
+.insurance_fee .item02{
+  flex-basis: 210px;
+}
+/* アンカーリンク */
+.insurance_fee .item02 a{
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  background-color: #faad34;
+  /*height: 50px;*/
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}
+
+.insurance_fee .item02 a::after {
+    background: url(../images/icon/icon_arrow_left.png) 0 0 no-repeat;
+    background-size: auto;
+    background-size: 8px 14px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 19px;
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    margin-top: -10px;
+
+}
+
+/* ホップアップのテキスト非表示 */
+.popup {
+    display: none;
+    padding: 2px;
+    width: 540px;
+    margin: 0 auto;
+}
+
+/* 出発日・帰宅日のスタイル */
+.head_blue{
+  color: #416fc4;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.featherlight .featherlight-close-icon{
+  position: absolute;
+  z-index: 9999;
+  top: -20px;
+  right: -20px;
+  line-height: 46px;
+  width: 46px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial,sans-serif;
+  /*background: #fff;
+  background: rgba(255,255,255,.3);
+  */
+  background-image: url(../images/icon/icon_close.png);
+  background-repeat: no-repeat;
+  background-color:transparent;
+  text-indent: -10000em;
+  color: #000;
+  border: 0;
+  padding: 0;
+}
+
+.featherlight .featherlight-content{
+  overflow:inherit;
+  border-radius:10px;
+}
+
+.popup_txt,
+.form_type,
+.btn_next{
+  width: 290px;
+  margin: 0 auto;
+}
+.popup #item-num,
+.popup #item-num2 {
+    display: flex;
+    /*justify-content: space-between;
+    align-items: center;*/
+    width: 290px;
+    margin: 0 auto;
+}
+
+.popup #item-num .form_box,
+.popup #item-num2 .form_box {
+    margin-right:10px;
+}
+
+/* セレクトボックスのデフォルトを無効 */
+.form_box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none; /* 矢印を削除 */
+  padding: 0;
+}
+select::-ms-expand {
+  display: none;
+}
+
+/* セレクトボックスの色つけ */
+.form_box select{
+  background-color: #efefef;
+  box-shadow: 0 1px 0 #dddddd;
+  color:#000000;
+  /*width: 9px;
+  height: 16px;*/
+  background-image: url(../images/icon/img_select.png);
+  background-repeat: no-repeat;
+  background-size:9px 16px;
+  background-position:right 5px center;
+  cursor:pointer;
+  border-radius: 5px;
+}
+
+.form_box select.year{
+  width: 88px;
+  padding: 10px 0 10px 10px;
+  /*text-align: center;*/
+}
+
+.form_box select.month,
+.form_box select.day{
+  width: 60px;
+  padding: 10px 0 10px 10px;
+  /*text-align: center;*/
+}
+
+/* アンカーリンク */
+.popup .btn_next a {
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 3px 0px #e9991c;
+    text-align: center;
+    width: 290px;
+    margin: 20px auto;
+    background: #faad34 url(../images/arrow_white_right.png) 330px 50% no-repeat;
+    background-size: 10px auto;
+    transition: background 0.4s ease-out;
+}
+
+/*-------------------------------
+お申込み金額
+-------------------------------*/
+.application{
+  margin-bottom: 52px;
+}
+
+
+.application table.money{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b4b4b4;
+/*
+  border-collapse:separate;
+  border-spacing:20px 0;
+*/
+  width: 100%;
+}
+
+.application table.money th {
+  padding-left: 20px;
+}
+
+.application table.money td{
+  padding-right: 20px;
+}
+
+.application table.money th{
+  text-align: left;
+}
+
+.application table.money td{
+  text-align: right;
+}
+
+.application table.money th span,
+.application table.money td span{
+  display: block;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #f0f0f0;
+  padding: 18px 0;
+}
+
+/* 合計金額のところ太字の赤字にする */
+.application table.money tr:last-child th span,
+.application table.money tr:last-child td span{
+  font-weight: bold;
+  color: red;
+}
+
+.application table.money tr:last-child td span{
+  font-size: 18px;
+}
+
+
+/*-------------------------------
+補償項目
+-------------------------------*/
+.compensation .compensation_img{
+  text-align: center;
+}
+.compensation table.compensation_contents{
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+}
+
+.compensation table.compensation_contents tr:first-child th,
+.compensation table.compensation_contents tr:nth-child(2) th,
+.compensation table.compensation_contents tr:last-child th{
+  background-color: #e6e6e6;
+}
+
+.compensation table.compensation_contents th{
+  background-color: #f5f5f5;
+  width: 163px;
+  font-size: 9pt;
+}
+
+.compensation table.compensation_contents th,
+.compensation table.compensation_contents td{
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  /*padding: 5px 0;*/
+  line-height: 14px;
+  height: 40px;
+}
+
+.text_right{
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.note{
+  margin-top: 5px;
+  width: 740px;
+  font-size: 12px;
+}
+
+/*-------------------------------
+重要事項説明書
+-------------------------------*/
+.important{
+  margin-bottom: 36px;
+}
+.important h2.head{
+  border-left-style: solid;
+  border-width: 4px;
+  border-color: #969696;
+  text-indent: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.important_text{
+  font-size: 12px;
+  padding-left: 2em;
+  text-indent: -0.5em;
+}
+
+.important_text a::after{
+  content: url(../images/icon/icon_pdf.png);
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+/* page03-a3.htmlの旅行保険のご契約者・被保険者の個所で使用 */
+.subscriber h3,
+.insured h3{
+  font-size: 16px;
+}
+
+
+
+.subscriber table,
+.insured table{
+  border-collapse: separate;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  margin-bottom: 30px;
+}
+
+.subscriber table th,
+.insured table th{
+  text-align: left;
+}
+
+/* ここまで */
+.check{
+  margin-bottom: 36px;
+}
+
+.confirmation .check{
+  background-color: #feeaf4;
+}
+
+.confirmation .check input[type=checkbox]{
+  display: none;
+}
+
+.checkbox {
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 0px 0;
+  padding: 12px 12px 12px 42px;
+  border-radius: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.checkbox span{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.radio:hover:after, .checkbox:hover:after {
+  border-color: #53b300;
+}
+.radio:after, .checkbox:after {
+  transition: border-color 0.2s linear;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  display: block;
+  margin-top: -10px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  content: '';
+  background-color: #ffffff;
+}
+
+input[type=radio]:checked + .radio:before {
+  opacity: 1;
+}
+
+.checkbox:before {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  display: block;
+  margin-top: -7px;
+  width: 5px;
+  height: 9px;
+  border-right: 3px solid #53b300;
+  border-bottom: 3px solid #53b300;
+  content: '';
+  opacity: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 100;
+}
+input[type=checkbox]:checked + .checkbox:before {
+  opacity: 1;
+}
+
+.subscription{
+  display: flex;
+  justify-content: center;
+}
+
+.subscription a.back{
+  background-color: #dcdcdc;
+  box-shadow: 0 2px  #969696;
+  display: block;
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  margin-right: 10px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+
+.subscription a.next{
+  background-color: #fe8331;
+  box-shadow: 0 2px  #fe4e31;
+  display: block;
+  width: 500px;
+  height: 60px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+  position: relative;
+}
+.subscription a.next.disable{
+  background-color: #dcdcdc;
+  box-shadow: 0 2px  #969696;
+  color: #9a9a9a;
+  pointer-events: none;
+}
+.subscription a:after{
+background: url(../images/arrow.png) 0 0 no-repeat;
+background-size: 12px 19px;
+content: "";
+display: inline-block;
+width: 12px;
+height: 19px;
+position: absolute;
+right: 18px;
+top: 50%;
+margin-top: -10px;
+}
+/*-------------------------------
+確認画面
+-------------------------------*/
+.claim{
+  margin: 30px 0;
+}
+
+table.common{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b4b4b4;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+table.common th{
+  background-color: #f0f0f0;
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  font-weight:bold;
+}
+
+table.common td{
+  text-align: right;
+  padding-right: 20px;
+}
+
+table.common td span{
+  color: #e81122;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.boarding{
+  margin-bottom: 50px;
+}
+
+
+.boarding table.reservation_confirm{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b4b4b4;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.boarding table.reservation_confirm th{
+  width: 160px;
+}
+
+.boarding table.reservation_confirm td{
+  padding: 20px 0;
+}
+
+
+.boarding table.reservation_confirm td:last-child{
+  text-align: right;
+  padding-right: 20px;
+}
+
+.boarding table.reservation_confirm td span{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Reservation */
+
+table.reservation{
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b4b4b4;
+}
+
+table.reservation th{
+  background-color: #f0f0f0;
+  font-weight: bold;
+  padding:10px 0;
+}
+
+table.reservation td{
+  font-size: 14px;
+  text-align: center;
+  padding:10px 0;
+}
+
+table.reservation td:first-child{
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: #b4b4b4;
+}
+
+table.reservation td.time{
+  width: 300px;
+}
+
+.boarding table.reservation td img {
+  width: 60px;
+}
+
+.reservation .time_wrap{
+  display: flex;
+  justify-content: center;
+}
+
+.reservation .time_wrap p.airport{
+  color: #299127;
+}
+
+
+table.reservation td span{
+  display: block;
+}
+
+/* 旅行保険 */
+
+table.travel_insurance_confirm {
+  margin: 20px 0 10px;
+}
+
+table.travel_insurance_confirm th{
+  width: 200px;
+}
+
+table.travel_insurance_confirm td{
+  width: 300px;
+}
+
+table.travel_insurance_confirm td.price{
+  text-align: center;
+}
+
+
+table.travel_insurance_confirm td:first-child{
+  text-align: center;
+  padding: 0;
+}
+
+table.travel_insurance_confirm td:last-child{
+  text-align: left;
+  text-indent: 20px;
+}
+
+
+/*-------------------------------
+さくらトラベル国内旅行傷害保険（航空機欠航・遅延時の宿泊費補償付き）プランのご案内
+-------------------------------*/
+.ft_system .headline h3{
+  font-size: 20px;
+}
+
+.ft_system .headline_4 h4{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+
+/* 航空機欠航・遅延補償のスタイル */
+.aviationList span{
+  color: #bf5f6a;
+}
+
+.accident_insurance_fee{
+  background-color: #fdfde5;
+  clear:both;
+  padding: 30px 80px;
+  text-align: center;
+}
+
+.accident_insurance_fee p.accident_insurance_fee_text{
+  font-size: 28px;
+  color: #e03636;
+  font-weight:bold;
+}
+
+.accident_insurance_fee p.accident_insurance_fee_text span{
+  font-size: 18px;
+}
+
+p.insurance_start{
+  font-size: 18px;
+  font-weight:bold;
+}
+
+.accident_insurance_fee p.left{
+  text-align: left;
+}
+
+.insuAreaContainer table td{
+  padding: 5px 0;
+}
+
+/* 保険の表の見出し */
+.h5ttl{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.h5ttl span.terms{
+  font-size: 14px;
+}
+
+.h5ttl span:before {
+    background: #b4b4b4;
+    border-radius: 6px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 基本保証 */
+.basis_guarantee{
+  background: #bf5f6a;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+/*
+加入するボタン
+※スタイルを使いますため、新規で作ったのとは同じ見た目でもクラスなどは変わる
+*/
+.insuAreaContainer .btnArea .entry_confirmBtn02 {
+    background: #fe8331;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 2px #fe4e31;
+    margin-top: 40px;
+}
+
+.insuAreaContainer .entry_confirmBtn02 a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+}
+
+.insuAreaContainer .entry_confirmBtn02 a::after{
+background: url(../images/arrow.png) 0 0 no-repeat;
+background-size: 12px 19px;
+content: "";
+display: inline-block;
+width: 12px;
+height: 19px;
+position: absolute;
+right: 18px;
+top: 50%;
+margin-top: -10px;
+}
+
+.compensation{
+  margin-bottom: 40px;
+}

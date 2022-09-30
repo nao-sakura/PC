@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="国内旅行傷害保険｜格安航空券の検索、飛行機チケット最安値比較サイト【さくらトラベル】24時間365日いつでもどこにいてもスマートフォンやアプリ、パソコンで航空券をカンタン予約お申込みOK！">
+    <meta name="keywords" content="国内旅行傷害保険,格安航空券,国内航空券,飛行機,予約,激安">
+    <title>国内旅行傷害保険｜格安航空券さくらトラベル</title>
+    <link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/reset.css" />
+    <link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/common.css" />
+    <link rel="stylesheet" href="css/featherlight.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/addition.css" />
+    <link rel="stylesheet" href="css/insurance.css" />
+    <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://www.sakuratravel.jp/js/modernizr-2.0.6-development-only.js"></script>
+    <!-- IE向けの設定 -->
+    <!--[if IE]>
+<script src="http://www.sakuratravel.jp/js/html5.js"></script>
+<script src="http://www.sakuratravel.jp/js/css3-mediaqueries.js"></script>
+<![endif]-->
+    <script type="text/javascript" src="http://www.sakuratravel.jp/js/smoothScroll.js"></script>
+    <script type="text/javascript" src="http://www.sakuratravel.jp/js/smartRollover.js"></script>
+    <script type="text/javascript" src="js/dropdown_menu.js"></script>
+    <!-- 流入サイト用スクリプト -->
+    <script language="JavaScript">
+var utm_source = get_para('utm_source') + "";
+var medium = get_para('utm_medium');
+var campaign = get_para('utm_campaign');
+if (utm_source == "line") {
+    $.ajax({
+        type: "POST",
+        async: false,
+        data: "utm_source=" + utm_source + "&utm_medium=" + medium + "&utm_campaign=" + campaign,
+        url: "https://www.sakuratravel.jp/search/ses_on.php",
+        success: function(data){
+      var ar_data = data.split("__");
+      if (ar_data[1] == 1) {
+        document.cookie = "fromsite=" + ar_data[0] + "; max-age=" + ar_data[5] + ";path=/;";
+        document.cookie = "fromsite2=" + ar_data[3] + "; max-age=" + ar_data[5] + ";path=/;";
+        document.cookie = ar_data[2] + "=" + ar_data[4] + "; max-age=" + ar_data[5] + ";path=/;";
+      }
+        },
+        error: function(data) {
+        }
+    });
+}
+
+function get_para(name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return '';
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+      // -->
+    </script>
+    <!-- //流入サイト用スクリプト -->
+    <!--　アラート　-->
+    <style type="text/css">
+      .errormsg {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+    <!--//　アラート　-->
+    <!-- 入力用スクリプト -->
+    <script language="JavaScript">
+$(function(){
+//  $("body").keypress( function( event ) {
+  $("#mailaddress").keypress( function( event ) {
+    if( event.which === 13 ){
+      goNext("mypage");
+    }
+  });
+  $("#password").keypress( function( event ) {
+    if( event.which === 13 ){
+      goNext("mypage");
+    }
+  });
+
+  $("#contactnumber").keypress( function( event ) {
+    if( event.which === 13 ){
+      goNext("kakunin");
+    }
+  });
+  $("#tel").keypress( function( event ) {
+    if( event.which === 13 ){
+      goNext("kakunin");
+    }
+  });
+});
+
+function checkInput(div, this_form) {
+  if (div == "mypage") {
+    if (this_form.m_email.value == '') {
+      alert('メールアドレス(ID)を入力して下さい。');
+      this_form.m_email.focus();
+      return false;
+    }
+    if (this_form.m_passwd.value == '') {
+      alert('パスワードを入力して下さい。');
+      this_form.m_passwd.focus();
+      return false;
+    }
+  } else if (div == "kakunin") {
+    if (this_form.kkakunin_toiawase.value == '') {
+      alert('お問合番号を入力して下さい。');
+      this_form.kkakunin_toiawase.focus();
+      return false;
+    }
+    if (this_form.kkakunin_tel.value == '') {
+      alert('電話番号を入力して下さい。');
+      this_form.kkakunin_tel.focus();
+      return false;
+    }
+  } else {
+    alert('不正な操作です。');
+    return false;
+  }
+  return true;
+}
+
+function goNext(div) {
+  var this_form = document.forms[0];
+  if (checkInput(div, this_form) == false) {
+    return false;
+  }
+  if (div == "mypage") {
+    this_form.m_login.value = 1;
+  } else {
+    this_form.k_login.value = 1;
+  }
+  this_form.submit();
+}
+      // -->
+    </script>
+    <!-- //入力用スクリプト -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-559JDV');</script>
+    <!-- End Google Tag Manager -->
+    <!-- A8 -->
+    <script src="//statics.a8.net/a8sales/a8sales.js"></script>
+    <!-- End A8 -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-559JDV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--// ヘッダー //-->
+    <header id="pagetop" class="headerArea systemHeader">
+      <div class="slogan">
+        <p>全国どこでも24時間365日受付対応！航空会社を一括比較！</p>
+      </div>
+      <div class="headerBlock clearfix">
+        <div class="logo clearfix">
+          <a href="/"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/logo.png" alt="さくらトラベル "></a>
+          <h1>国内すべての航空会社の格安航空券を比較・予約</h1>
+        </div>
+        <div class="rightArea clearfix">
+          <div class="link clearfix">
+            <ul>
+              <li><a href="https://www.sakuratravel.jp/contact.html" target="_blank">お問い合わせ</a></li>
+              <li><a href="https://www.sakuratravel.jp/attention/" target="_blank">サポートセンター利用規定</a></li>
+            </ul>
+          </div>
+          <!--link-->
+        </div>
+        <!--rightArea-->
+      </div>
+      <!--headerBlock-->
+    </header>
+    <!--//　ヘッダー -->
+
+<div class="wrapper ft_system">
+  <div class="contents">
+    <div class="myPage"><!-- myPage_start -->
+    <div class="reset_inner"><!-- reset_inner_start -->
+    <h2 class="title_gray">旅行保険のお申し込み</h2>
+    <p class="read_text">旅行保険ご契約者様の情報をご確認ください</p>
+    <table class="travel_insurance">
+      <tr>
+        <th><span class="inner">指名</span></th>
+        <td>サクラ　ハナコ</td>
+
+        <th><span class="inner">生年月日</span></th>
+        <td>1985年12月22日</td>
+      </tr>
+
+      <tr>
+        <th><span class="inner">性別</span></th>
+        <td>女性</td>
+        <th><span class="inner">メールアドレス</span></th>
+        <td>sakurahanako@gmail.com</td>
+      </tr>
+
+      <tr>
+        <th><span class="inner">電話番号</span></th>
+        <td>09012345678</td>
+      </tr>
+    </table>
+
+    <h3 class="head">2019年02月13日～2019年02月14日</h3>
+    <div class="insurance_fee"><!-- insurance_fee_start -->
+    <p class="item01"><i class="fas fa-exclamation-circle"></i>前泊・後泊・深夜発着便や片道航空券をご購入の場合は、保険期間を 「住居（または宿泊先）を出発してから住居（または宿泊先）へ帰着するまで」 に変更してください。</p>
+    <p class="item02"><a href="#" data-featherlight=".popup1">保険期間を変更する</a></p>
+    <p class="item03">(一人当たりの  保険料：&yen;1,000)
+    </div><!-- insurance_fee_end -->
+
+    <div class="application"><!-- application_start -->
+      <table class="money">
+        <tr>
+          <th><span>お申込み金額</span></th>
+          <td><span>&yen;13,430</span></td>
+        </tr>
+
+        <tr>
+          <th><span>保険料</span></th>
+          <td><span>&yen;0</span></td>
+        </tr>
+
+        <tr>
+          <th><span>合計</span></th>
+          <td><span>&yen;13,430</span></td>
+        </tr>
+      </table>
+    </div><!-- application_end -->
+
+    <div class="compensation"><!-- compensation_start -->
+    <h3 class="head">下記の内容をご確認ください</h3>
+    <p>国内旅行傷害保険の補償および保険金額について（詳細は<a href="https://chubb.meclib.jp/TAE5357/book/data/TAE5357.pdf">約款</a>をご覧ください）</p>
+
+    <p class="compensation_img"><img src="https://www.chubbtravelinsurance.jp/aceStatic/ACETravel/ATIJP/files/DTA_Plan_1000d.png" alt="国内旅行傷害保険の補償および保険金額について"></p>
+    <!--
+    <table class="compensation_contents">
+      <tr>
+        <th rowspan="2">補償項目</th>
+        <th colspan="5">保険金額</th>
+      </tr>
+
+      <tr>
+        <th>1泊2日まで</th>
+        <th>3泊4日まで</th>
+        <th>6泊7日まで</th>
+        <th>13泊14日まで</th>
+        <th>1ヶ月まで</th>
+      </tr>
+
+      <tr>
+        <th>死亡・後遺障害</th>
+        <td>499万円</td>
+        <td>634万円</td>
+        <td>349万円</td>
+        <td>334万円</td>
+        <td>233万円</td>
+      </tr>
+
+      <tr>
+        <th>入院（日額）</th>
+        <td>7,000円</td>
+        <td>5,000円</td>
+        <td>5,000円</td>
+        <td>4,000円</td>
+        <td>3,000円</td>
+      </tr>
+
+      <tr>
+        <th>通院（日額）</th>
+        <td>3,500円</td>
+        <td>3,000円</td>
+        <td>2,500円</td>
+        <td>2,000円</td>
+        <td>1,500円</td>
+      </tr>
+
+      <tr>
+        <th>賠償責任</th>
+        <td>5,000円</td>
+        <td>5,000円</td>
+        <td>2,000円</td>
+        <td>2,000円</td>
+        <td>2,000円</td>
+      </tr>
+
+      <tr>
+        <th>救援者費用</th>
+        <td>30万円</td>
+        <td>30万円</td>
+        <td>30万円</td>
+        <td>30万円</td>
+        <td>30万円</td>
+      </tr>
+
+      <tr>
+        <th>携行品損害<br>（免責金額3千円）</th>
+        <td>20万円</td>
+        <td>10万円</td>
+        <td>10万円</td>
+        <td>5万円</td>
+        <td>補償なし</td>
+      </tr>
+
+      <tr>
+        <th>航空機欠航・遅延時の宿泊費補償</th>
+        <td>1万円</td>
+        <td>1万円</td>
+        <td>1万円</td>
+        <td>1万円</td>
+        <td>1万円</td>
+      </tr>
+
+      <tr>
+        <th>保険料</th>
+        <td colspan="5">1,000円（お一人様）</td>
+      </tr>
+    </table>
+    <p class="note">死亡保険金受取人は法定相続人とします。<br>
+      90歳以上の方はご加入いただけません。 <br>
+      被保険者またはその家族が同種の補償・特約等をご契約されている場合は、補償の重複が生じることがあります。補償内容の差異や保険金額を改めてご確認ください。<br>
+      保険申込できる方は当旅行の申込者または参加者に限ります。保険金請求時には、保険会社より確認をさせていただくことがあります。<br>
+      旅行日数が変更になった場合は、変更後の期間に該当する保険金額にて補償させていただきます。ただし表に記載された日数が補償の上限となります。<br>
+      代表者（保険申込人）は補償内容を同行者にご通知ください。</p>
+      <p class="text_right">引受保険会社：Chubb損害保険株式会社<br>
+        L1611146</p>
+      -->
+    </div><!-- compensation_end -->
+
+    <div class="important"><!-- important_start -->
+      <h2 class="head">重要事項説明書</h2>
+      <p>※重要事項説明書には特に確認頂きたい事項、お客様に不利になる事項の記載があるため、保険加入条件、重要事項説明書を最後まで必ずご確認ください。</p>
+
+      <iframe src="https://www.sakuratravel.jp/insurance/DTA_Importantinformation_Blanket.pdf" width="1000" height="540"></iframe>
+      <p class="important_text"><i class="fas fa-exclamation-circle"></i>PDFデータをご用意しておりますので、印刷または端末にダウンロードをお願いいたします。<a href="https://www.sakuratravel.jp/insurance/DTA_Importantinformation_Blanket.pdf" class="icon_pdf">ダウンロードはこちら</a></p>
+      <p class="important_text"><i class="fas fa-exclamation-circle"></i>内容に関してお問い合わせがございましたら下記メールアドレスにてお問い合わせください。<br>チャブ保険変更受付センター（メール）：TIMCC-Support@chubb.com</p>
+    </div><!-- important_end -->
+
+    <div class="confirmation"><!-- confirmation_start -->
+      <div class="check"><!-- check_start -->
+          <input id="check01" type="checkbox" name="important" onchange="checkconf($(this),$('#nextBtn'));" value="旅行保険に加入します。重要事項説明書を確認した上で、承諾、同意します。">
+          <label for="check01" class="checkbox"><span>旅行保険に加入します。</span><br>重要事項説明書を確認した上で、承諾、同意します。</label>
+      </div><!-- check_end -->
+
+      <div class="subscription"><!-- subscription_start -->
+      <a href="#" class="back">&#139;&nbsp;戻る</a>
+      <a href="#" id="nextBtn" class="next disable">申込内容確認へ進む</a>
+    </div><!-- subscription_end -->
+    </div><!-- confirmation_end -->
+    <div><!-- reset_inner_end-->
+  </div><!-- myPage_end -->
+ </div>
+</div><!-- wrapper end -->
+
+    <!--　フッター //-->
+    <footer class="systemFooter">
+      <div class="footerWrap">
+        <a href="#pagetop" class="pagetop"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/btn_pagetop.png" alt="ページトップへ"></a>
+        <p class="copyright">Copyright&copy; <script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script> Sakura Travel. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!--//　フッター -->
+
+    <!-- Yahoo Tag Manager -->
+    <noscript>
+      <iframe src="http://www.sakuratravel.jp//b.yjtag.jp/iframe?c=JnPsjbM" width="1" height="1" style="border:0;margin:0;padding:0;"></iframe>
+    </noscript>
+    <!-- End Yahoo Tag Manager -->
+
+    <div class="popup popup1">
+      <p class="popup_txt head_blue">
+        以下の日程でよろしいですか？
+      </p>
+      <div class="popup_txt">
+        <p class="form_type">出発日</p>
+        <div id="item-num" class="section">
+          <div class="form_box">
+            <!--<p class="form_type">出発日</p>-->
+            <select name="d_year" size="1" class="year">
+              <option value='2019'>2019</option>
+              <option value='2020'>2020</option>
+              <option value='2021'>2021</option>
+            </select>年
+          </div>
+          <div class="form_box">
+            <select name="d_month" size="1" class="month">
+              <option value='1月'>1</option>
+              <option value='2月'>2</option>
+              <option value='3月' selected="selected">3</option>
+              <option value='4月'>4</option>
+              <option value='5月'>5</option>
+              <option value='6月'>6</option>
+              <option value='7月'>7</option>
+              <option value='8月'>8</option>
+              <option value='9月'>9</option>
+              <option value='10月'>10</option>
+              <option value='11月'>11</option>
+              <option value='12月'>12</option>
+            </select>月
+          </div>
+          <div class="form_box">
+            <select name="d_day" size="1" class="day">
+              <option value='1日' selected="selected">1</option>
+              <option value='2日'>2</option>
+              <option value='3日'>3</option>
+              <option value='4日'>4</option>
+              <option value='5日'>5</option>
+              <option value='6日'>6</option>
+              <option value='7日'>7</option>
+              <option value='8日'>8</option>
+              <option value='9日'>9</option>
+              <option value='10日'>10</option>
+              <option value='11日'>11</option>
+              <option value='12日'>12</option>
+              <option value='13日'>13</option>
+              <option value='14日'>14</option>
+              <option value='15日'>15</option>
+              <option value='16日'>16</option>
+              <option value='17日'>17</option>
+              <option value='18日'>18</option>
+              <option value='19日'>19</option>
+              <option value='20日'>20</option>
+              <option value='21日'>21</option>
+              <option value='22日'>22</option>
+              <option value='23日'>23</option>
+              <option value='24日'>24</option>
+              <option value='25日'>25</option>
+              <option value='26日'>26</option>
+              <option value='27日'>27</option>
+              <option value='28日'>28</option>
+              <option value='29日'>29</option>
+              <option value='30日'>30</option>
+              <option value='31日'>31</option>
+            </select>日
+          </div>
+        </div>
+
+        <p class="form_type">帰宅日</p>
+        <div id="item-num2" class="section">
+          <div class="form_box">
+            <!--<p class="form_type">帰宅日</p>-->
+            <select name="r_year" size="1" class="year">
+              <option value='2019'>2019</option>
+              <option value='2020'>2020</option>
+              <option value='2021'>2021</option>
+            </select>年
+          </div>
+          <div class="form_box">
+            <select name="r_month" size="1" class="month">
+              <option value='1月'>1</option>
+              <option value='2月'>2</option>
+              <option value='3月' selected="selected">3</option>
+              <option value='4月'>4</option>
+              <option value='5月'>5</option>
+              <option value='6月'>6</option>
+              <option value='7月'>7</option>
+              <option value='8月'>8</option>
+              <option value='9月'>9</option>
+              <option value='10月'>10</option>
+              <option value='11月'>11</option>
+              <option value='12月'>12</option>
+            </select>月
+          </div>
+          <div class="form_box">
+            <select name="r_day" size="1" class="day">
+              <option value='1日' selected="selected">1</option>
+              <option value='2日'>2</option>
+              <option value='3日'>3</option>
+              <option value='4日'>4</option>
+              <option value='5日'>5</option>
+              <option value='6日'>6</option>
+              <option value='7日'>7</option>
+              <option value='8日'>8</option>
+              <option value='9日'>9</option>
+              <option value='10日'>10</option>
+              <option value='11日'>11</option>
+              <option value='12日'>12</option>
+              <option value='13日'>13</option>
+              <option value='14日'>14</option>
+              <option value='15日'>15</option>
+              <option value='16日'>16</option>
+              <option value='17日'>17</option>
+              <option value='18日'>18</option>
+              <option value='19日'>19</option>
+              <option value='20日'>20</option>
+              <option value='21日'>21</option>
+              <option value='22日'>22</option>
+              <option value='23日'>23</option>
+              <option value='24日'>24</option>
+              <option value='25日'>25</option>
+              <option value='26日'>26</option>
+              <option value='27日'>27</option>
+              <option value='28日'>28</option>
+              <option value='29日'>29</option>
+              <option value='30日'>30</option>
+              <option value='31日'>31</option>
+            </select>日
+          </div>
+        </div>
+
+      </div>
+      <p class="btn_next"><a href="#">保険期間を変更</a></p>
+    </div>
+  <script src="../js_ver2/featherlight.min.js"></script>
+  <script src="./js/checkbox.js"></script>
+  <script>
+    $(window).on('load', function() {
+      checkconf($('#check01'),$('#nextBtn'));
+    });
+  </script>
+</body>
+</html>

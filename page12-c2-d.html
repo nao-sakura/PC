@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="申込内容確認｜格安航空券の検索、飛行機チケット最安値比較サイト【さくらトラベル】24時間365日いつでもどこにいてもスマートフォンやアプリ、パソコンで航空券をカンタン予約お申込みOK！">
+		<meta name="keywords" content="申込内容確認,格安航空券,国内航空券,飛行機,予約,激安">
+		<title>申込内容確認｜格安航空券さくらトラベル</title>
+		<link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/reset.css" />
+		<link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/common.css" />	
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/addition.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="http://www.sakuratravel.jp/js/modernizr-2.0.6-development-only.js"></script>
+		<!-- IE向けの設定 -->
+		<!--[if IE]>
+<script src="http://www.sakuratravel.jp/js/html5.js"></script>
+<script src="http://www.sakuratravel.jp/js/css3-mediaqueries.js"></script>
+<![endif]-->
+		<script type="text/javascript" src="http://www.sakuratravel.jp/js/smoothScroll.js"></script>
+		<script type="text/javascript" src="http://www.sakuratravel.jp/js/smartRollover.js"></script>
+		<script type="text/javascript" src="js/dropdown_menu.js"></script>
+		<!-- 流入サイト用スクリプト -->
+		<script language="JavaScript">
+			<!--
+var utm_source = get_para('utm_source') + "";
+var medium = get_para('utm_medium');
+var campaign = get_para('utm_campaign');
+if (utm_source == "line") {
+    $.ajax({
+        type: "POST",
+        async: false,
+        data: "utm_source=" + utm_source + "&utm_medium=" + medium + "&utm_campaign=" + campaign,
+        url: "https://www.sakuratravel.jp/search/ses_on.php",
+        success: function(data){
+			var ar_data = data.split("__");
+			if (ar_data[1] == 1) {
+				document.cookie = "fromsite=" + ar_data[0] + "; max-age=" + ar_data[5] + ";path=/;";
+				document.cookie = "fromsite2=" + ar_data[3] + "; max-age=" + ar_data[5] + ";path=/;";
+				document.cookie = ar_data[2] + "=" + ar_data[4] + "; max-age=" + ar_data[5] + ";path=/;";
+			}
+        },
+        error: function(data) {
+        }
+    });
+}
+
+function get_para(name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return '';
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+			// -->
+		</script>
+		<!-- //流入サイト用スクリプト -->
+		<!--　アラート　-->
+		<style type="text/css">
+			<!--
+			.errormsg {
+				color: red;
+				font-weight: bold;
+			}
+			-->
+		</style>
+		<!--//　アラート　-->
+		<!-- 入力用スクリプト -->
+		<script language="JavaScript">
+			<!--
+$(function(){
+//	$("body").keypress( function( event ) {
+	$("#mailaddress").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("mypage");
+		}
+	});
+	$("#password").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("mypage");
+		}
+	});
+
+	$("#contactnumber").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("kakunin");
+		}
+	});
+	$("#tel").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("kakunin");
+		}
+	});
+});
+
+function checkInput(div, this_form) {
+	if (div == "mypage") {
+		if (this_form.m_email.value == '') {
+			alert('メールアドレス(ID)を入力して下さい。');
+			this_form.m_email.focus();
+			return false;
+		}
+		if (this_form.m_passwd.value == '') {
+			alert('パスワードを入力して下さい。');
+			this_form.m_passwd.focus();
+			return false;
+		}
+	} else if (div == "kakunin") {
+		if (this_form.kkakunin_toiawase.value == '') {
+			alert('お問合番号を入力して下さい。');
+			this_form.kkakunin_toiawase.focus();
+			return false;
+		}
+		if (this_form.kkakunin_tel.value == '') {
+			alert('電話番号を入力して下さい。');
+			this_form.kkakunin_tel.focus();
+			return false;
+		}
+	} else {
+		alert('不正な操作です。');
+		return false;
+	}
+	return true;
+}
+
+function goNext(div) {
+	var this_form = document.forms[0];
+	if (checkInput(div, this_form) == false) {
+		return false;
+	}
+	if (div == "mypage") {
+		this_form.m_login.value = 1;
+	} else {
+		this_form.k_login.value = 1;
+	}
+	this_form.submit();
+}			
+			// -->
+		</script>		
+		<!-- //入力用スクリプト -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-559JDV');</script>
+		<!-- End Google Tag Manager -->
+		<!-- A8 -->
+		<script src="//statics.a8.net/a8sales/a8sales.js"></script>
+		<!-- End A8 -->
+	</head>
+	
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-559JDV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+		<!--// ヘッダー //-->
+		<header id="pagetop" class="headerArea systemHeader">
+			<div class="slogan">
+				<p>全国どこでも24時間365日受付対応！航空会社を一括比較！</p>
+			</div>	
+			<div class="headerBlock clearfix">
+				<div class="logo clearfix">
+					<a href="/"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/logo.png" alt="さくらトラベル "></a>
+					<h1>国内すべての航空会社の格安航空券を比較・予約</h1>
+				</div>
+				<div class="rightArea clearfix">
+					<div class="link clearfix">
+						<ul>
+							<li><a href="https://www.sakuratravel.jp/contact.html" target="_blank">お問い合わせ</a></li>
+							<li><a href="https://www.sakuratravel.jp/attention/" target="_blank">サポートセンター利用規定</a></li>
+						</ul>
+					</div>
+					<!--link-->
+				</div>
+				<!--rightArea-->
+			</div>
+			<!--headerBlock-->
+		</header>
+		<!--//　ヘッダー -->
+<!--// コンテンツ //-->
+<div class="wrapper ft_system">
+  <div class="contents greenColor">
+  <div class="myPage paymentArea">
+    <div class="headline clearfix">
+        <h3>申込内容確認</h3>
+        <div class="menuBox">
+                <img src="./images/menuBox_green.png" alt="">
+                  <div class="dropMenu">
+                      <div class="dropMenuList clearfix">
+                          <div class="appList">
+                            <p>お申込</p>
+                            <ul>
+                              <li><a href="page11-a.html">申込詳細</a></li>
+                              <li><a href="page11-a.html#eMail">メール一覧</a></li>
+                            </ul>
+                            </div>
+                          <div class="userful">
+                            <p>領収書</p>
+                            <ul>
+                              <li><a href="page15-a1.html">領収書の発行</a></li>
+                            </ul>
+                            </div>
+                          <div class="userful">
+                            <p>さくらトラベル会員</p>
+                            <ul>
+                              <li><a href="page06.html" target="_blank">会員登録</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>        
+    </div>
+    <div class="userName">
+        <p>こんにちは、<span>〇〇様</span></p>
+    </div>
+		<div class="flowArea">
+			<nav>
+				<ul id="flowList" class="clearfix">
+					<li class="active">申込受付<br><span class="flow_number">1</span></li>
+					<li class="active step2 flowDone">決済案内中<br><span class="flow_number">2</span></li>
+					<li class="passive">決済確認中<br><span class="flow_number">3</span></li>
+					<li class="passive">発券手続中<br><span class="flow_number">4</span></li>
+					<li class="passive">手配完了<br><span class="flow_number">5</span></li>
+				</ul>
+			</nav>
+		</div><!-- /.flowArea -->
+    <div class="contentInner mypage_table">
+        <div class="paymentGuide entryDetail">
+            <div class="h4wrap clearfix">
+                <div class="h4_ttl">
+                    <h4>お支払い</h4>
+                </div>
+            </div>
+            <p class="changePayment">お支払い方法が変更されました。<br />
+            下記の口座からお支払いください。</p>
+            <h5 class="h5ttl b-m20"><span>お支払いのご案内</span></h5>
+<div class="tableBox feeBox">
+            <div class="paymentType"><span>お支払い方法</span>銀行振込：琉球銀行</div>
+            <table class="table01 entrytable b-m30">
+              <tbody>
+                <tr>
+                  <td class="tCenter boderT boderL cellBG">ご請求額</td>
+                  <td class="boderR boderT" style="width: 10em;">999,999円</td>
+                  <td class="limit tCenter">ご購入期限</td>
+                  <td class="boderR boderT"><span class="colRed">2017/03/23 15:00</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>お客様の琉球銀行口座より、弊社琉球銀行口座へ</p>
+            <div class="paymentBox clearfix">
+                <div class="logoArea">
+                    <a href="http://www.ryugin.co.jp/banking.html" target="_blank"><img src="./images/bank_logo_ryukyu.png" alt="琉球銀行のネットバンキングへ"></a>
+                    <p>↑ネットバンキングで<br>お支払いの場合クリック</p>
+                </div>
+                <div class="bankInfo">
+                    <dl class="clearfix">
+                        <dt>銀行名</dt>
+                        <dd>：琉球銀行</dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>支店</dt>
+                        <dd>：本店</dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>口座番号</dt>
+                        <dd>：(普通) 0421638</dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>名義</dt>
+                        <dd>：カ）サクラトラベル</dd>
+                    </dl>
+                </div>
+            </div>
+            <p class="comments">＜平日20:00までにお振込みいただいた場合＞<br>
+            ※ご利用いただくATMによっては（提携ATMの場合）、振込の完了が翌営業日扱いとなる場合がございます。<br>
+            ※お振込明細書に記載された振込指定日（予約日）が決済期限を過ぎる場合は、決済期限内に振込明細書をFAX又は写メール等にて送付をお願いいたします。<br>
+            <br>
+            ＜平日20:00以降・土曜日・日曜日・祝日にお振込みいただいた場合＞<br>
+            ※当日の入金確認が取れませんので、お手数ですがATMにてお振込後、決済期限内に振込明細書をFAX又は写メール等にて送付をお願いいたします。<br>
+            ※決済期限内にFAXやメールでのご連絡がなかった場合は確認が取れませんので入金遅れの扱いとなります。あらかじめご了承下さい。<br>
+            ※ネットバンキングでのご送金明細の送付では対応いたしかねますのでご注意ください。<br>
+            (FAX:03-3289-8821/メールアドレス:<a href="mailto:web@sakuratravel.jp">web@sakuratravel.jp</a>)
+           </p>  
+        </div>            
+        </div>
+    </div>
+      <div class="totop"><a href="top1.html">トップに戻る</a></div>            
+</div>
+</div>
+</div><!-- wrapper end -->
+		
+		<!--　フッター //-->
+		<footer class="systemFooter">
+			<div class="footerWrap">
+				<a href="#pagetop" class="pagetop"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/btn_pagetop.png" alt="ページトップへ"></a>
+				<p class="copyright">Copyright&copy; <script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script> Sakura Travel. All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!--//　フッター --> 
+		
+		<!-- Yahoo Tag Manager -->
+		<noscript>
+			<iframe src="http://www.sakuratravel.jp//b.yjtag.jp/iframe?c=JnPsjbM" width="1" height="1" style="border:0;margin:0;padding:0;"></iframe>
+		</noscript>
+		<!-- End Yahoo Tag Manager -->
+	
+</body>
+</html>

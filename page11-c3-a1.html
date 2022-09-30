@@ -1,0 +1,621 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="申込内容確認｜格安航空券の検索、飛行機チケット最安値比較サイト【さくらトラベル】24時間365日いつでもどこにいてもスマートフォンやアプリ、パソコンで航空券をカンタン予約お申込みOK！">
+		<meta name="keywords" content="申込内容確認,格安航空券,国内航空券,飛行機,予約,激安">
+		<title>申込内容確認｜格安航空券さくらトラベル</title>
+		<link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/reset.css" />
+		<link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/common.css" />	
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/addition.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="http://www.sakuratravel.jp/js/modernizr-2.0.6-development-only.js"></script>
+		<!-- IE向けの設定 -->
+		<!--[if IE]>
+<script src="http://www.sakuratravel.jp/js/html5.js"></script>
+<script src="http://www.sakuratravel.jp/js/css3-mediaqueries.js"></script>
+<![endif]-->
+		<script type="text/javascript" src="http://www.sakuratravel.jp/js/smoothScroll.js"></script>
+		<script type="text/javascript" src="http://www.sakuratravel.jp/js/smartRollover.js"></script>
+		<script type="text/javascript" src="js/dropdown_menu.js"></script>
+		<!-- 流入サイト用スクリプト -->
+		<script language="JavaScript">
+			<!--
+var utm_source = get_para('utm_source') + "";
+var medium = get_para('utm_medium');
+var campaign = get_para('utm_campaign');
+if (utm_source == "line") {
+    $.ajax({
+        type: "POST",
+        async: false,
+        data: "utm_source=" + utm_source + "&utm_medium=" + medium + "&utm_campaign=" + campaign,
+        url: "https://www.sakuratravel.jp/search/ses_on.php",
+        success: function(data){
+			var ar_data = data.split("__");
+			if (ar_data[1] == 1) {
+				document.cookie = "fromsite=" + ar_data[0] + "; max-age=" + ar_data[5] + ";path=/;";
+				document.cookie = "fromsite2=" + ar_data[3] + "; max-age=" + ar_data[5] + ";path=/;";
+				document.cookie = ar_data[2] + "=" + ar_data[4] + "; max-age=" + ar_data[5] + ";path=/;";
+			}
+        },
+        error: function(data) {
+        }
+    });
+}
+
+function get_para(name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return '';
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+			// -->
+		</script>
+		<!-- //流入サイト用スクリプト -->
+		<!--　アラート　-->
+		<style type="text/css">
+			<!--
+			.errormsg {
+				color: red;
+				font-weight: bold;
+			}
+			-->
+		</style>
+		<!--//　アラート　-->
+		<!-- 入力用スクリプト -->
+		<script language="JavaScript">
+			<!--
+$(function(){
+//	$("body").keypress( function( event ) {
+	$("#mailaddress").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("mypage");
+		}
+	});
+	$("#password").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("mypage");
+		}
+	});
+
+	$("#contactnumber").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("kakunin");
+		}
+	});
+	$("#tel").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("kakunin");
+		}
+	});
+});
+
+function checkInput(div, this_form) {
+	if (div == "mypage") {
+		if (this_form.m_email.value == '') {
+			alert('メールアドレス(ID)を入力して下さい。');
+			this_form.m_email.focus();
+			return false;
+		}
+		if (this_form.m_passwd.value == '') {
+			alert('パスワードを入力して下さい。');
+			this_form.m_passwd.focus();
+			return false;
+		}
+	} else if (div == "kakunin") {
+		if (this_form.kkakunin_toiawase.value == '') {
+			alert('お問合番号を入力して下さい。');
+			this_form.kkakunin_toiawase.focus();
+			return false;
+		}
+		if (this_form.kkakunin_tel.value == '') {
+			alert('電話番号を入力して下さい。');
+			this_form.kkakunin_tel.focus();
+			return false;
+		}
+	} else {
+		alert('不正な操作です。');
+		return false;
+	}
+	return true;
+}
+
+function goNext(div) {
+	var this_form = document.forms[0];
+	if (checkInput(div, this_form) == false) {
+		return false;
+	}
+	if (div == "mypage") {
+		this_form.m_login.value = 1;
+	} else {
+		this_form.k_login.value = 1;
+	}
+	this_form.submit();
+}			
+			// -->
+		</script>		
+		<!-- //入力用スクリプト -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-559JDV');</script>
+		<!-- End Google Tag Manager -->
+		<!-- A8 -->
+		<script src="//statics.a8.net/a8sales/a8sales.js"></script>
+		<!-- End A8 -->
+	</head>
+	
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-559JDV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+		<!--// ヘッダー //-->
+		<header id="pagetop" class="headerArea systemHeader">
+			<div class="slogan">
+				<p>全国どこでも24時間365日受付対応！航空会社を一括比較！</p>
+			</div>	
+			<div class="headerBlock clearfix">
+				<div class="logo clearfix">
+					<a href="/"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/logo.png" alt="さくらトラベル "></a>
+					<h1>国内すべての航空会社の格安航空券を比較・予約</h1>
+				</div>
+				<div class="rightArea clearfix">
+					<div class="link clearfix">
+						<ul>
+							<li><a href="https://www.sakuratravel.jp/contact.html" target="_blank">お問い合わせ</a></li>
+							<li><a href="https://www.sakuratravel.jp/attention/" target="_blank">サポートセンター利用規定</a></li>
+						</ul>
+					</div>
+					<!--link-->
+				</div>
+				<!--rightArea-->
+			</div>
+			<!--headerBlock-->
+		</header>
+		<!--//　ヘッダー -->
+<!--// コンテンツ //-->
+<div class="wrapper ft_system">
+  <div class="contents greenColor">
+    <div class="myPage">
+    <div class="headline clearfix">
+        <h3>申込内容確認</h3>
+        <div class="menuBox">
+                <img src="./images/menuBox_green.png" alt="">
+                  <div class="dropMenu">
+                      <div class="dropMenuList clearfix">
+                          <div class="appList">
+                            <p>お申込</p>
+                            <ul>
+                              <li><a href="page11-a.html">申込詳細</a></li>
+                              <li><a href="page11-a.html#eMail">メール一覧</a></li>
+                            </ul>
+                            </div>
+                          <div class="userful">
+                            <p>領収書</p>
+                            <ul>
+                              <li><a href="page15-a1.html">領収書の発行</a></li>
+                            </ul>
+                            </div>
+                          <div class="userful">
+                            <p>さくらトラベル会員</p>
+                            <ul>
+                              <li><a href="page06.html" target="_blank">会員登録</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>        
+    </div>
+    <div class="userName">
+        <p>こんにちは、<span>〇〇様</span></p>
+    </div>
+    <div class="contentInner mypage_table">
+      <div class="entryDetail">
+        <h3 class="title ico_tit">申込詳細（お問合番号：さくら001-0001）</h3>
+        <div class="tableBox cancelBox">
+            <p class="f16">取消済（入金後取消）<br>
+            取消確定日：2017/03/12 09:50</p>
+        </div>
+        <div class="tableBox feeBox cancelstyle">
+            <div class="entrydate"><span>お申込日</span>2017/03/23 15:00</div>
+            <table class="table01 afterPay2">
+              <tbody>
+                <tr>
+                  <td class="tCenter boderT cellBG">ご決済額</td>
+                  <td class="boderT">999,999円</td>
+                  <td class="tCenter boderT boderL cellBG">お支払い方法</td>
+                  <td class="boderR boderT">銀行振込：三菱東京UFJ銀行(EDI)</td>
+                  <td rowspan="2">
+					  <div class="public_btn bgblueBtn"><a href="page15-a2.html" class="close">領収書発行</a></div>
+					</td>
+                </tr>
+               <tr>
+                  <td class="tCenter boderT cellBG">キャンセル料</td>
+                  <td class="boderT">99,999円</td>
+                  <td class="tCenter boderT boderL cellBG">払戻金額</td>
+                  <td class="boderT">900,000円<span class="refundDone">※払戻完了</span></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="flightInfo cancelColor">
+            <h5 class="h5ttl"><span>フライト情報</span></h5>
+            <div class="flightInfoArea">
+                <div class="flightInfoBox">
+                    <div class="dateAera clearfix">
+                        <div class="dateCont"><span class="routeNum">路線1</span></div>
+                        <div class="num">搭乗者人数：3人</div>
+                    </div>
+                    <div class="route clearfix">
+                        <dl class="boad">
+                            <dt>ご搭乗日</dt>
+                            <dd>2017/10/21 <span class="day_sat">(土)</span></dd>
+                        </dl>
+                        <dl class="fligtName">
+                            <dt>便名</dt>
+                            <dd>JAL9210</dd>
+                        </dl>
+                        <dl class="section">
+                            <dt>出発→到着</dt>
+                            <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="option clearfix">
+                    <dl class="clearfix">
+                        <dt>座席クラス</dt>
+                        <dd>プレミアム</dd>
+                    </dl>
+                    <dl>
+                        <dt>運賃種別</dt>
+                        <dd>ハッピーピーチプラス</dd>
+                    </dl>
+                    <dl>
+                        <dt>変更</dt>
+                        <dd>不可</dd>
+                    </dl>
+                </div>
+                <div class="passengerArea clearfix">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>搭乗者</th>
+                          <td>
+                            <div class="passengerGroup">
+                                <div class="passengerDetail">
+                                    <div class="clearfix">
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　タロウ</span> 様 (代表者)</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                    </div>
+									<div class="option clearfix">
+										<dl class="clearfix">
+											<dt>受託手荷物</dt>
+											<dd>15KG</dd>
+										</dl>
+									</div>									
+                                </div>
+                                <div class="passengerDetail">
+                                    <div class="clearfix">
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ハナコ</span> 様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>年齢</dt>
+                                          <dd>31才</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>女性</dd>
+                                      </dl>
+                                    </div>
+									<div class="option clearfix">
+										<dl class="clearfix">
+											<dt>受託手荷物</dt>
+											<dd>15KG</dd>
+										</dl>
+									</div>									
+                                </div>
+                                <div class="passengerDetail">
+                                    <div class="clearfix">
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　シュウイチ</span> 様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+
+                                    </div>
+									<div class="option clearfix">
+										<dl class="clearfix">
+											<dt>受託手荷物</dt>
+											<dd>15KG</dd>
+										</dl>
+									</div>									
+                                </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div><!-- /flightInfoArea -->
+            <div class="flightInfoArea">
+                <div class="flightInfoBox">
+                    <div class="dateAera clearfix">
+                        <div class="dateCont"><span class="routeNum">路線1</span></div>
+                        <div class="num">搭乗者人数：3人</div>
+                    </div>
+                    <div class="route clearfix">
+                        <dl class="boad">
+                            <dt>ご搭乗日</dt>
+                            <dd>2017/10/21 <span class="day_sat">(土)</span></dd>
+                        </dl>
+                        <dl class="fligtName">
+                            <dt>便名</dt>
+                            <dd>JAL9210</dd>
+                        </dl>
+                        <dl class="section">
+                            <dt>出発→到着</dt>
+                            <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="flightInfoBox">
+                    <div class="dateAera clearfix">
+                        <div class="dateCont"><span class="routeNum">路線2</span></div>
+                        <div class="num">搭乗者人数：3人</div>
+                    </div>
+                    <div class="route clearfix">
+                        <dl class="boad">
+                            <dt>ご搭乗日</dt>
+                            <dd>2017/10/22 <span class="day_sun">(日)</span></dd>
+                        </dl>
+                        <dl class="fligtName">
+                            <dt>便名</dt>
+                            <dd>JAL9210</dd>
+                        </dl>
+                        <dl class="section">
+                            <dt>出発→到着</dt>
+                            <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="option clearfix">
+                    <dl class="clearfix">
+                        <dt>座席クラス</dt>
+                        <dd>プレミアム</dd>
+                    </dl>
+                    <dl>
+                        <dt>運賃種別</dt>
+                        <dd>ハッピーピーチプラス</dd>
+                    </dl>
+                    <dl>
+                        <dt>変更</dt>
+                        <dd>不可</dd>
+                    </dl>
+                </div>
+                <div class="passengerArea clearfix">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>搭乗者</th>
+                          <td>
+                            <div class="passengerGroup">
+                                <div class="passengerDetail">
+                                    <div class="clearfix">
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　タロウ</span> 様（代表者）</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                    </div>
+									<div class="option clearfix">
+										<dl class="clearfix">
+											<dt>受託手荷物</dt>
+											<dd>15KG</dd>
+										</dl>
+									</div>									
+                                </div>
+                                <div class="passengerDetail">
+                                    <div class="clearfix">
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ハナコ</span> 様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>年齢</dt>
+                                          <dd>31才</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>女性</dd>
+                                      </dl>
+                                    </div>
+									<div class="option clearfix">
+										<dl class="clearfix">
+											<dt>受託手荷物</dt>
+											<dd>15KG</dd>
+										</dl>
+									</div>									
+                                </div>
+                                <div class="passengerDetail">
+                                    <div class="clearfix">
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　シュウイチ</span> 様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                    </div>
+									<div class="option clearfix">
+										<dl class="clearfix">
+											<dt>受託手荷物</dt>
+											<dd>15KG</dd>
+										</dl>
+									</div>									
+                                </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div><!-- /flightInfoArea -->
+        </div><!-- /.flightInfo -->
+           <div class="applicantInfo">
+            <h5 class="h5ttl"><span>申込者情報</span></h5>
+            <div class="applicantInfoArea">
+            		<table>
+                      <tbody>
+                        <tr>
+                          <th>申込者</th>
+                          <td>
+                            <div class="applicantGroup">
+                                <div class="applicantDetail">
+                                    <div class="clearfix">
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　シュウイチ</span> 様</dd>
+                                      </dl>
+                                      <dl class="email">
+                                          <dt>メールアドレス</dt>
+                                          <dd>sample@sakuratravel.jp <a href="#"><span>変更</span></a></dd>
+                                      </dl>
+                                      <dl class="tel">
+                                          <dt>電話番号</dt>
+                                          <dd>09012345678</dd>
+                                      </dl>
+                                    </div>
+                                </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+        </div><!-- /.applicantInfo -->
+           <div class="applicantInfo">
+            <h5 class="h5ttl"><span>申込者情報</span></h5>
+            <div class="applicantInfoArea">
+            		<table>
+                      <tbody>
+                        <tr>
+                          <th>申込者</th>
+                          <td>
+                            <div class="applicantGroup">
+                                <div class="applicantDetail">
+                                    <div class="clearfix">
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　シュウイチ</span> 様</dd>
+                                      </dl>
+                                      <dl class="email">
+                                          <dt>メールアドレス</dt>
+                                          <dd><input type="text"> <a href="#"><span>保存</span></a></dd>
+                                      </dl>
+                                      <dl class="tel">
+                                          <dt>電話番号</dt>
+                                          <dd>09012345678</dd>
+                                      </dl>
+                                    </div>
+                                </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+        </div><!-- /.applicantInfo -->	
+      </div><!-- /.entryDetail -->
+      <div class="eMailArea" id="eMail">
+        <div class="titHead">
+          <h3 class="title ico_tit">メール</h3>
+          <div class="btnArea"><a href="page17-a.html" class="inquiry">メールでのお問い合わせ</a></div>
+        </div>
+        <div class="eMailCont_wrap">
+          <div class="eMailCont">
+              <div class="emailgroup">
+                <div class="clearfix emailgroup_bdy">
+                  <div class="email_ttl mailnew"><a href="page17.html">メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。</a></div>
+                  <div class="date">2017/03/18 12:24</div>
+                </div>
+              </div>
+          </div>
+          <div class="eMailCont clearfix">
+              <div class="emailgroup">
+                  <div class="clearfix emailgroup_bdy">
+                    <div class="email_ttl mailopen"><a href="page17.html">メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。</a></div>
+                    <div class="date">2017/03/18 12:24</div>
+                  </div>
+              </div>
+          </div>
+          <div class="eMailCont clearfix">
+              <div class="emailgroup">
+                  <div class="clearfix emailgroup_bdy">
+                    <div class="email_ttl mailreply"><a href="page17.html">メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。メールタイトルが入ります。</a></div>
+                    <div class="date">2017/03/18 12:24</div>
+                  </div>
+              </div>
+          </div>
+          <div class="btnArea clearfix"><a href="#" class="entryView btn arr_bott">全てのメールを見る</a></div>
+          <div class="btnArea clearfix"><a href="#" class="entryView btn arr_top">全てのメールを見る</a></div>
+        </div>
+      </div><!-- /.eMailArea -->
+    </div>
+  </div>
+  </div>
+</div><!-- wrapper end -->
+		<!--　フッター //-->
+		<footer class="systemFooter">
+			<div class="footerWrap">
+				<a href="#pagetop" class="pagetop"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/btn_pagetop.png" alt="ページトップへ"></a>
+				<p class="copyright">Copyright&copy; <script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script> Sakura Travel. All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!--//　フッター --> 
+		
+		<!-- Yahoo Tag Manager -->
+		<noscript>
+			<iframe src="http://www.sakuratravel.jp//b.yjtag.jp/iframe?c=JnPsjbM" width="1" height="1" style="border:0;margin:0;padding:0;"></iframe>
+		</noscript>
+		<!-- End Yahoo Tag Manager -->
+	
+</body>
+</html>

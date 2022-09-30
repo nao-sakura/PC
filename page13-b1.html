@@ -1,0 +1,949 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="申込内容確認｜格安航空券の検索、飛行機チケット最安値比較サイト【さくらトラベル】24時間365日いつでもどこにいてもスマートフォンやアプリ、パソコンで航空券をカンタン予約お申込みOK！">
+		<meta name="keywords" content="申込内容確認,格安航空券,国内航空券,飛行機,予約,激安">
+		<title>申込内容確認｜格安航空券さくらトラベル</title>
+		<link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/reset.css" />
+		<link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/common.css" />	
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/addition.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="http://www.sakuratravel.jp/js/modernizr-2.0.6-development-only.js"></script>
+		<!-- IE向けの設定 -->
+		<!--[if IE]>
+<script src="http://www.sakuratravel.jp/js/html5.js"></script>
+<script src="http://www.sakuratravel.jp/js/css3-mediaqueries.js"></script>
+<![endif]-->
+		<script type="text/javascript" src="http://www.sakuratravel.jp/js/smoothScroll.js"></script>
+		<script type="text/javascript" src="http://www.sakuratravel.jp/js/smartRollover.js"></script>
+		<script type="text/javascript" src="js/dropdown_menu.js"></script>
+		<script type="text/javascript" src="js/cancel.js"></script>		
+		<!-- 流入サイト用スクリプト -->
+		<script language="JavaScript">
+			<!--
+var utm_source = get_para('utm_source') + "";
+var medium = get_para('utm_medium');
+var campaign = get_para('utm_campaign');
+if (utm_source == "line") {
+    $.ajax({
+        type: "POST",
+        async: false,
+        data: "utm_source=" + utm_source + "&utm_medium=" + medium + "&utm_campaign=" + campaign,
+        url: "https://www.sakuratravel.jp/search/ses_on.php",
+        success: function(data){
+			var ar_data = data.split("__");
+			if (ar_data[1] == 1) {
+				document.cookie = "fromsite=" + ar_data[0] + "; max-age=" + ar_data[5] + ";path=/;";
+				document.cookie = "fromsite2=" + ar_data[3] + "; max-age=" + ar_data[5] + ";path=/;";
+				document.cookie = ar_data[2] + "=" + ar_data[4] + "; max-age=" + ar_data[5] + ";path=/;";
+			}
+        },
+        error: function(data) {
+        }
+    });
+}
+
+function get_para(name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return '';
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+			// -->
+		</script>
+		<!-- //流入サイト用スクリプト -->
+		<!--　アラート　-->
+		<style type="text/css">
+			<!--
+			.errormsg {
+				color: red;
+				font-weight: bold;
+			}
+			-->
+		</style>
+		<!--//　アラート　-->
+		<!-- 入力用スクリプト -->
+		<script language="JavaScript">
+			<!--
+$(function(){
+//	$("body").keypress( function( event ) {
+	$("#mailaddress").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("mypage");
+		}
+	});
+	$("#password").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("mypage");
+		}
+	});
+
+	$("#contactnumber").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("kakunin");
+		}
+	});
+	$("#tel").keypress( function( event ) {
+		if( event.which === 13 ){
+			goNext("kakunin");
+		}
+	});
+});
+
+$(function(){
+  $('input[name="deltype"]').on('change', function(){
+    if($(this).val() == 1) {
+      $('.cancelEntry_btn').removeClass('disable');
+      $('.cancelEntry_btn').find('a').attr('href', 'page13-b2-a.html');
+    } else {
+      $('.cancelEntry_btn').removeClass('disable');
+      $('.cancelEntry_btn').find('a').attr('href', 'page13-b2-b.html');
+    }
+    
+  });
+});
+
+function checkInput(div, this_form) {
+	if (div == "mypage") {
+		if (this_form.m_email.value == '') {
+			alert('メールアドレス(ID)を入力して下さい。');
+			this_form.m_email.focus();
+			return false;
+		}
+		if (this_form.m_passwd.value == '') {
+			alert('パスワードを入力して下さい。');
+			this_form.m_passwd.focus();
+			return false;
+		}
+	} else if (div == "kakunin") {
+		if (this_form.kkakunin_toiawase.value == '') {
+			alert('お問合番号を入力して下さい。');
+			this_form.kkakunin_toiawase.focus();
+			return false;
+		}
+		if (this_form.kkakunin_tel.value == '') {
+			alert('電話番号を入力して下さい。');
+			this_form.kkakunin_tel.focus();
+			return false;
+		}
+	} else {
+		alert('不正な操作です。');
+		return false;
+	}
+	return true;
+}
+
+function goNext(div) {
+	var this_form = document.forms[0];
+	if (checkInput(div, this_form) == false) {
+		return false;
+	}
+	if (div == "mypage") {
+		this_form.m_login.value = 1;
+	} else {
+		this_form.k_login.value = 1;
+	}
+	this_form.submit();
+}			
+			// -->
+		</script>		
+		<!-- //入力用スクリプト -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-559JDV');</script>
+		<!-- End Google Tag Manager -->
+		<!-- A8 -->
+		<script src="//statics.a8.net/a8sales/a8sales.js"></script>
+		<!-- End A8 -->
+	</head>
+	
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-559JDV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+		<!--// ヘッダー //-->
+		<header id="pagetop" class="headerArea systemHeader">
+			<div class="slogan">
+				<p>全国どこでも24時間365日受付対応！航空会社を一括比較！</p>
+			</div>	
+			<div class="headerBlock clearfix">
+				<div class="logo clearfix">
+					<a href="/"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/logo.png" alt="さくらトラベル "></a>
+					<h1>国内すべての航空会社の格安航空券を比較・予約</h1>
+				</div>
+				<div class="rightArea clearfix">
+					<div class="link clearfix">
+						<ul>
+							<li><a href="https://www.sakuratravel.jp/contact.html" target="_blank">お問い合わせ</a></li>
+							<li><a href="https://www.sakuratravel.jp/attention/" target="_blank">サポートセンター利用規定</a></li>
+						</ul>
+					</div>
+					<!--link-->
+				</div>
+				<!--rightArea-->
+			</div>
+			<!--headerBlock-->
+		</header>
+		<!--//　ヘッダー -->
+	
+<!--// コンテンツ //-->
+<div class="wrapper ft_system">
+  <div class="contents greenColor">
+    <div class="myPage">
+    <div class="headline clearfix">
+        <h3>申込内容確認</h3>
+        <div class="menuBox">
+                <img src="./images/menuBox_green.png" alt="">
+                  <div class="dropMenu">
+                      <div class="dropMenuList clearfix">
+                          <div class="appList">
+                            <p>お申込</p>
+                            <ul>
+                              <li><a href="page11-a.html">申込詳細</a></li>
+                              <li><a href="page11-a.html#eMail">メール一覧</a></li>
+                            </ul>
+                            </div>
+                          <div class="userful">
+                            <p>領収書</p>
+                            <ul>
+                              <li><a href="page15-a1.html">領収書の発行</a></li>
+                            </ul>
+                            </div>
+                          <div class="userful">
+                            <p>さくらトラベル会員</p>
+                            <ul>
+                              <li><a href="page06.html" target="_blank">会員登録</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+    </div>
+    <div class="userName">
+        <p>こんにちは、<span>〇〇様</span><a href="page05.html">ログアウト</a></p>
+    </div>
+    <div class="contentInner mypage_table">
+      <div class="entryDetail">
+        <h3 class="title ico_tit">お申込の取消・払戻</h3>
+        <div class="flightInfo cancelConfirm">
+            <p class="number">お問合番号：さくら001-0001</p>
+            <div class="selectArea clearfix">
+              <p><input type="radio" value="1" name="deltype" id="deltype1">
+              <label for="deltype1" class="deltype1">全て取消・払戻</label></p>
+              <p><input type="radio" value="2" name="deltype" id="deltype2">
+              <label for="deltype2" class="deltype2">一部取消・払戻</label></p>
+            </div>
+            <div class="flightInfoArea">
+                <div class="flightCalculation">
+                  <div class="flightInfoBox">
+                      <div class="dateAera clearfix">
+                          <div class="dateCont"><span class="routeNum">路線1</span></div><div class="choiceFlight"><input type="checkbox" name="cancelcheck1" value="1" class="cancelcheck" id="cancelcheck1"><label for="cancelcheck1"></label>
+                          <p>◀︎すべての搭乗者様を取消・払戻希望の場合チェックを入れてください。</p></div>
+                        <div class="num">搭乗者人数：<span class="def_num"><span>3</span>人</span><span class="result_num"><span>3</span>人</span></div>
+                      </div>
+                      <div class="route clearfix">
+                          <dl class="boad">
+                              <dt>ご搭乗日</dt>
+                              <dd>2017/10/23 <span class="day_sat">(土)</span></dd>
+                          </dl>
+                          <dl class="fligtName">
+                              <dt>便名</dt>
+                              <dd>JAL9210</dd>
+                          </dl>
+                          <dl class="section">
+                              <dt>区間/出発時刻・到着時刻</dt>
+                              <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="option clearfix">
+                      <dl class="clearfix">
+                          <dt>座席クラス</dt>
+                          <dd>プレミアム</dd>
+                      </dl>
+                      <dl>
+                          <dt>運賃種別</dt>
+                          <dd>ハッピーピーチプラス</dd>
+                      </dl>
+                      <dl>
+                          <dt>変更</dt>
+                          <dd>不可</dd>
+                      </dl>
+                  </div>
+                  <div class="passengerArea clearfix">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>搭乗者</th>
+                            <td>
+                              <p class="caution">▼取消・払戻希望の方すべてにチェックを入れてください。</p>
+                              <div class="passengerGroup">
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck1" value="1" class="cancelcheck" id="cancelcheck1"><label for="cancelcheck1"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　タロウ </span>様 (代表者)</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd>未申込</dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck2" value="1" class="cancelcheck" id="cancelcheck2"><label for="cancelcheck2"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ハナ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd>未申込</dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck3" value="1" class="cancelcheck" id="cancelcheck3"><label for="cancelcheck3"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ジロウ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd>未申込</dd>
+                                      </dl>
+                                  </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+                <div class="flightCalculation">
+                  <div class="flightInfoBox">
+                      <div class="dateAera clearfix">
+                          <div class="dateCont"><span class="routeNum">路線2</span></div>
+                        <div class="num">搭乗者人数：<span class="def_num"><span>6</span>人</span><span class="result_num"><span>3</span>人</span></div>
+                      </div>
+                      <div class="route clearfix">
+                          <dl class="boad">
+                              <dt>ご搭乗日</dt>
+                              <dd>2017/10/23 <span class="day_sun">(日)</span></dd>
+                          </dl>
+                          <dl class="fligtName">
+                              <dt>便名</dt>
+                              <dd>JAL9210</dd>
+                          </dl>
+                          <dl class="section">
+                              <dt>区間/出発時刻・到着時刻</dt>
+                              <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="option clearfix">
+                      <dl class="clearfix">
+                          <dt>座席クラス</dt>
+                          <dd>プレミアム</dd>
+                      </dl>
+                      <dl>
+                          <dt>運賃種別</dt>
+                          <dd>ハッピーピーチプラス</dd>
+                      </dl>
+                      <dl>
+                          <dt>変更</dt>
+                          <dd>不可</dd>
+                      </dl>
+                  </div>
+                  <div class="passengerArea clearfix">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>搭乗者</th>
+                            <td>
+                              <p class="caution">▼取消・払戻希望の方すべてにチェックを入れてください。</p>
+                              <div class="passengerGroup">
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck7" value="1" class="cancelcheck" id="cancelcheck7"><label for="cancelcheck7"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　タロウ </span>様 (代表者)</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd>未申込</dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck8" value="1" class="cancelcheck" id="cancelcheck8"><label for="cancelcheck8"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ハナ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd>未申込</dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck9" value="1" class="cancelcheck" id="cancelcheck9"><label for="cancelcheck9"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ジロウ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd>未申込</dd>
+                                      </dl>
+                                  </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+              </div>				
+            </div><!-- /flightInfoArea -->            
+            <div class="flightInfoArea">
+                <div class="flightCalculation">
+                  <div class="flightInfoBox">
+                      <div class="dateAera clearfix">
+                          <div class="dateCont"><span class="routeNum">路線2</span></div>
+                        <div class="num">搭乗者人数：<span class="def_num"><span>6</span>人</span><span class="result_num"><span>3</span>人</span></div>
+                      </div>
+                      <div class="route clearfix">
+                          <dl class="boad">
+                              <dt>ご搭乗日</dt>
+                              <dd>2017/10/23 <span class="day_sun">(日)</span></dd>
+                          </dl>
+                          <dl class="fligtName">
+                              <dt>便名</dt>
+                              <dd>JAL9210</dd>
+                          </dl>
+                          <dl class="section">
+                              <dt>区間/出発時刻・到着時刻</dt>
+                              <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="option clearfix">
+                      <dl class="clearfix">
+                          <dt>座席クラス</dt>
+                          <dd>プレミアム</dd>
+                      </dl>
+                      <dl>
+                          <dt>運賃種別</dt>
+                          <dd>ハッピーピーチプラス</dd>
+                      </dl>
+                      <dl>
+                          <dt>変更</dt>
+                          <dd>不可</dd>
+                      </dl>
+                  </div>
+                  <div class="passengerArea clearfix">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>搭乗者</th>
+                            <td>
+                              <p class="caution">▼取消・払戻希望の方すべてにチェックを入れてください。</p>
+                              <div class="passengerGroup">
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck7" value="1" class="cancelcheck" id="cancelcheck7"><label for="cancelcheck7"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　タロウ </span>様 (代表者)</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_notpayment">未入金</span></dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck8" value="1" class="cancelcheck" id="cancelcheck8"><label for="cancelcheck8"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ハナ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_notpayment">未入金</span></dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix partlyCancel_wrap partlyCancel">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck9" value="1" class="cancelcheck" id="cancelcheck9"><label for="cancelcheck9"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ジロウ </span>様 <span class="status_cancel">※取消済</span></dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_canceled">取消済</span></dd>
+                                      </dl>
+                                  </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+              </div>				
+                <div class="flightCalculation">
+                <div class="partlyCancel_wrap partlyCancel">
+                  <div class="flightInfoBox">
+                      <div class="dateAera clearfix">
+                          <div class="dateCont"><span class="routeNum">路線2</span><span class="status_cancel">※取消済</span></div>
+                        <div class="num">搭乗者人数：<span class="def_num"><span>3</span>人</span><span class="result_num"><span>3</span>人</span></div>
+                      </div>
+                      <div class="route clearfix">
+                          <dl class="boad">
+                              <dt>ご搭乗日</dt>
+                              <dd>2017/10/23 <span class="day_sat">(土)</span></dd>
+                          </dl>
+                          <dl class="fligtName">
+                              <dt>便名</dt>
+                              <dd>JAL9210</dd>
+                          </dl>
+                          <dl class="section">
+                              <dt>区間/出発時刻・到着時刻</dt>
+                              <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="option clearfix">
+                      <dl class="clearfix">
+                          <dt>座席クラス</dt>
+                          <dd>プレミアム</dd>
+                      </dl>
+                      <dl>
+                          <dt>運賃種別</dt>
+                          <dd>ハッピーピーチプラス</dd>
+                      </dl>
+                      <dl>
+                          <dt>変更</dt>
+                          <dd>不可</dd>
+                      </dl>
+                  </div>
+                  <div class="passengerArea clearfix">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>搭乗者</th>
+                            <td>
+                              <p class="caution">▼取消・払戻希望の方すべてにチェックを入れてください。</p>
+                              <div class="passengerGroup">
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck1" value="1" class="cancelcheck" id="cancelcheck1"><label for="cancelcheck1"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　タロウ </span>様 (代表者)</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_canceled">取消済</span></dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck2" value="1" class="cancelcheck" id="cancelcheck2"><label for="cancelcheck2"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ハナ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_canceled">取消済</span></dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck3" value="1" class="cancelcheck" id="cancelcheck3"><label for="cancelcheck3"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ジロウ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_canceled">取消済</span></dd>
+                                      </dl>
+                                  </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+				</div>
+                </div>
+            </div><!-- /flightInfoArea -->
+            <div class="flightInfoArea">
+                <div class="flightCalculation">
+                  <div class="flightInfoBox">
+                      <div class="dateAera clearfix">
+                          <div class="dateCont"><span class="routeNum">路線1</span></div>
+                        <div class="num">搭乗者人数：<span class="def_num"><span>5</span>人</span><span class="result_num"><span>3</span>人</span></div>
+                      </div>
+                      <div class="route clearfix">
+                          <dl class="boad">
+                              <dt>ご搭乗日</dt>
+                              <dd>2017/10/23 (水)</dd>
+                          </dl>
+                          <dl class="fligtName">
+                              <dt>便名</dt>
+                              <dd>JAL9210<span class="cancel">欠航</span></dd>
+                          </dl>
+                          <dl class="section">
+                              <dt>区間/出発時刻・到着時刻</dt>
+                              <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="passengerArea clearfix">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>搭乗者</th>
+                            <td>
+                              <p class="caution_refund">▼払戻希望の方すべてにチェックを入れてください。</p>
+                              <div class="passengerGroup">
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck4" value="1" class="cancelcheck" id="cancelcheck4"><label for="cancelcheck4"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　タロウ </span>様 (代表者)</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_published">加入済</span></dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck5" value="1" class="cancelcheck" id="cancelcheck5"><label for="cancelcheck5"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ハナ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_published">加入済</span></dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck6" value="1" class="cancelcheck" id="cancelcheck6"><label for="cancelcheck6"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ジロウ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_published">加入済</span></dd>
+                                      </dl>
+                                  </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+                <div class="flightCalculation">
+                  <div class="flightInfoBox">
+                      <div class="dateAera clearfix">
+                          <div class="dateCont"><span class="routeNum">路線2</span></div>
+                        <div class="num">搭乗者人数：<span class="def_num"><span>6</span>人</span><span class="result_num"><span>3</span>人</span></div>
+                      </div>
+                      <div class="route clearfix">
+                          <dl class="boad">
+                              <dt>ご搭乗日</dt>
+                              <dd>2017/10/23 <span class="day_sun">(日)</span></dd>
+                          </dl>
+                          <dl class="fligtName">
+                              <dt>便名</dt>
+                              <dd>JAL9210</dd>
+                          </dl>
+                          <dl class="section">
+                              <dt>区間/出発時刻・到着時刻</dt>
+                              <dd class="time">東京/羽田 10:00 → 名古屋/中部 13:00</dd>
+                          </dl>
+                      </div>
+                  </div>
+                  <div class="option clearfix">
+                      <dl class="clearfix">
+                          <dt>座席クラス</dt>
+                          <dd>プレミアム</dd>
+                      </dl>
+                      <dl>
+                          <dt>運賃種別</dt>
+                          <dd>ハッピーピーチプラス</dd>
+                      </dl>
+                      <dl>
+                          <dt>変更</dt>
+                          <dd>不可</dd>
+                      </dl>
+                  </div>
+                  <div class="passengerArea clearfix">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>搭乗者</th>
+                            <td>
+                              <p class="caution">▼取消・払戻希望の方すべてにチェックを入れてください。</p>
+                              <div class="passengerGroup">
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck7" value="1" class="cancelcheck" id="cancelcheck7"><label for="cancelcheck7"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　タロウ </span>様 (代表者)</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_published">加入済</span></dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck8" value="1" class="cancelcheck" id="cancelcheck8"><label for="cancelcheck8"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ハナ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_published">加入済</span></dd>
+                                      </dl>
+                                  </div>
+                                  <div class="passengerDetail clearfix">
+                                      <div class="choice"><input type="checkbox" name="cancelcheck9" value="1" class="cancelcheck" id="cancelcheck9"><label for="cancelcheck9"></label></div>
+                                      <div class="bordicon"><span></span></div>
+                                      <dl class="name">
+                                          <dt>氏名</dt>
+                                          <dd><span>ヤマダ　ジロウ </span>様</dd>
+                                      </dl>
+                                      <dl class="birth">
+                                          <dt>生年月日</dt>
+                                          <dd>1966年12月３日（51才）</dd>
+                                      </dl>
+                                      <dl class="sex">
+                                          <dt>性別</dt>
+                                          <dd>男性</dd>
+                                      </dl>
+                                      <dl class="hoken">
+                                          <dt>旅行保険</dt>
+                                          <dd><span class="txt_published">加入済</span></dd>
+                                      </dl>
+                                  </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+              </div>
+            </div><!-- /flightInfoArea -->
+            <div class="attemtionArea">
+              <h5>取消についての注意事項</h5>
+              <div class="area_bdy">
+				  <ul>
+					  <li>
+						  ※<span class="txt_red">申請完了時点では【予約はそのまま】です！</span><br>
+						  申請後に別途ご案内するキャンセル料金等をご了承いただいた上でお取消手続きを進めさせていただきます。<br>
+						  キャンセル料金をご確認後、お取消になるご搭乗日・便名・ご搭乗者名の記載された<span class="txt_red underline">ご返信をもってお取消を確定とさせていただきます。</span>
+					  </li>
+					  <li>
+						  ※キャンセル・変更対応時間（10:00～18:00/年中無休）以外のお取消のご連絡につきましては、基本的に翌対応時間での取り扱いとなります。<br>
+						  早朝便や深夜便など翌キャンセル・変更対応時間では出発時刻を過ぎてしまうような緊急時は、先に航空会社予約センターへ取消の連絡を入れていただき、取消番号が発行された場合は必ずお控えいただき、ご出発予定日より7日以内に弊社へご連絡願います。<br>
+						  便出発前のお取消申請は、<span class="txt_red">出発予定時刻の2時間前まで</span>にお願いします。
+					  </li>
+					  <li>
+						  ※払戻期間は、ご出発予定日の7日以内までとなります。乗り遅れなど出発後のキャンセルにつきましても、7日以内までに必ずご連絡ください。（7日以上経過してのご連絡は、払戻が出来なくなる場合がございます。あらかじめご了承ください。）
+					  </li>
+				  </ul>
+				</div>
+            </div>
+            <div class="btnArea clearfix">
+                <div class="cancelBack_btn"><a href="javascript:history.back()">取消・払戻をやめて戻る</a></div>
+                <div class="cancelEntry_btn disable"><a href="page13-b2-a.html">次へ（取消・払戻内容を確認）</a></div>
+            </div>
+			<p class="btnAttention"><span class="txt_red">前の画面に戻る</span>際は、<span class="txt_red">「取消・払戻をやめて戻る」</span>ボタンを押してください。<br>
+				ブラウザーの戻るボタンを使うと画面が正しく表示されず<span class="underline">不具合を起こす可能性があります。</span></p>			
+        </div><!-- /.flightInfo -->
+      </div><!-- /.entryDetail -->
+    </div>
+  </div>
+  </div>
+</div><!-- wrapper end -->
+		
+		<!--　フッター //-->
+		<footer class="systemFooter">
+			<div class="footerWrap">
+				<a href="#pagetop" class="pagetop"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/btn_pagetop.png" alt="ページトップへ"></a>
+				<p class="copyright">Copyright&copy; <script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script> Sakura Travel. All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!--//　フッター --> 
+		
+		<!-- Yahoo Tag Manager -->
+		<noscript>
+			<iframe src="http://www.sakuratravel.jp//b.yjtag.jp/iframe?c=JnPsjbM" width="1" height="1" style="border:0;margin:0;padding:0;"></iframe>
+		</noscript>
+		<!-- End Yahoo Tag Manager -->
+	
+</body>
+</html>

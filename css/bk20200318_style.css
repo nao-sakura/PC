@@ -1,0 +1,3598 @@
+@charset "utf-8";
+a{
+    color: #3275c6;
+	cursor: pointer;
+	cursor: hand;
+	text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.wrapper{
+  background: #ffffff;
+  color:#333333;
+  font-size:14px;
+}
+
+/* step */
+#step {
+  margin: 30px auto;
+  padding: 8px 0px;
+  width: 1000px;	
+  height: 40px;
+}
+#step.step1{
+  background: url(../images/step1.jpg) no-repeat;
+}
+#step.step2{
+  background: url(../images/step2.jpg) no-repeat;
+}
+#step.step3{
+  background: url(../images/step3.jpg) no-repeat;
+}
+#step.step4{
+  background: url(../images/step4.jpg) no-repeat;
+}
+#step.step5{
+  background: url(../images/step5.jpg) no-repeat;
+}
+#step.step6{
+  background: url(../images/step6.jpg) no-repeat;
+}
+#step ul:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+#step ul li{
+  color: #646464;
+  font-size: 14px;
+  width: 20%;
+  text-align: center;
+  float: left;
+}
+#step.step1 ul li:nth-of-type(-n+1){
+  color: #fff;
+}
+#step.step2 ul li:nth-of-type(-n+2){
+  color: #fff;
+}
+#step.step3 ul li:nth-of-type(-n+3){
+  color: #fff;
+}
+#step.step4 ul li:nth-of-type(-n+4){
+  color: #fff;
+}
+#step.step5 ul li:nth-of-type(-n+5){
+  color: #fff;
+}
+#step.step6 ul li{
+  color: #fff;
+}
+
+/* page03 */
+
+#campleteWrap{
+  width: 600px;
+  margin: 40px auto 120px;
+}
+
+.campleteArea{
+  font-size:30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#campleteWrap .contactNum{
+    margin: 40px 0 10px 0;
+  padding: 20px 0;
+  border: 5px solid #fd68a0;
+}
+/*green*/
+.greenColor #campleteWrap .contactNum{border: 5px solid #57b689;}
+
+#campleteWrap .contactNum span{
+  color: #f41313;
+}
+
+#campleteWrap .pri_btn{
+  text-align: right;
+  cursor: pointer;
+}
+#campleteWrap .pri_btn:hover{
+  opacity: 0.8;
+}
+#campleteWrap .comment{
+  text-align: center;
+  color: #f41313;
+  font-size:18px;
+  margin: 20px 0;
+}
+
+#campleteWrap .attention{
+  padding: 20px 20px 20px 100px;
+  line-height: 1.6em;
+  background: url(../images/attention.png) no-repeat 20px 20px #f0f0f0;
+}
+
+#campleteWrap .attention a{
+  text-decoration: underline;
+}
+
+#campleteWrap .reserve_btn{
+    background: #faad34;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #ae701f;
+    text-align: center;
+    margin: 30px auto;
+}
+
+#campleteWrap .reserve_btn a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 18px 30px 16px;
+    font-size:24px;
+    font-weight: bold;
+    position: relative;
+}
+#campleteWrap .reserve_btn:hover{
+  opacity: 0.8;
+}
+#campleteWrap .reserve_btn a:after {
+    background: url(../images/arrow.png) 0 0 no-repeat;
+    background-size: 12px 19px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 19px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.totop{
+  text-align: center;
+}
+
+.totop a{
+  text-decoration: underline;
+  font-size:18px;
+  position: relative;
+}
+
+.totop a:before {
+    background: url(../images/house_icon.png) 0 0 no-repeat;
+    background-size: 23px 21px;
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 21px;
+    position: absolute;
+    left: -27px;
+    top: 50%;
+    margin-top: -11px;
+}
+
+/* page01 */
+.aff_trivago {
+	margin: 40px 0 0;
+	text-align: center;
+}
+
+.optionArea{
+  width: 610px;
+  margin: 0 auto;
+  padding: 20px 45px;
+}
+
+.optionArea h3{
+  font-size:24px;
+  font-weight: bold;
+  color: #328ecf;
+  text-align: center;
+}
+
+.optionArea h4{
+  font-size:18px;
+  font-weight: bold;
+}
+
+.optionContents img.option01{
+margin: 40px 20px 30px 0;
+  float: left;
+}
+.optionContents img.option02{
+margin: 0 20px 0 0;
+  float: left;
+}
+
+.optiontxt{
+  padding: 0 10px;
+}
+
+.optiontxt p {
+	font-size: 110%;
+}
+
+.btnAreas{
+  margin: 20px 0;
+}
+
+.guide_btn{
+    text-align: center;
+    background: #68acdc;
+    width: 245px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #3675a2;
+    float: left;
+  margin-right:5px;
+}
+
+.hoken_btn{
+    text-align: center;
+    background: #faad34;
+    width: 245px;
+    margin-right:5px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #ae701f;
+    float: left;
+}
+.closebtn {
+    text-align: center;
+    background: #93999d;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #72777b;
+    float: right;
+    cursor: pointer;
+    padding-right:10px;
+}
+
+.guide_btn a, .hoken_btn a ,.closebtn span{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 18px 30px 16px;
+    font-size:18px;
+    font-weight: bold;
+    position: relative;
+}
+.guide_btn:hover, .hoken_btn:hover ,.closebtn:hover{
+  opacity: 0.8;
+}
+
+
+.guide_btn a:after, .hoken_btn a:after {
+    background: url(../images/arrow.png) 0 0 no-repeat;
+    background-size: 12px 19px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 19px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -10px;
+}
+.closebtn span:after {
+    background: url(../images/batsu_w.png) 0 0 no-repeat;
+    background-size: 12px 12px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -6px;
+}
+/* popupjs css */
+.back-layer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.2);
+}
+
+.readArea{
+    width: 700px;
+    border-radius: 6px;
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    z-index: 100;
+}
+
+
+/* page06 */
+.inputBox{
+    width: 1000px;
+    margin: 50px auto 120px;
+}
+
+.loginForm, .resvConfrom{
+    width: 49%;
+}
+
+.loginForm{
+    background: #ffebf3;
+    float: left;
+}
+
+.resvConfrom{
+    background: #f1f1f1;
+    float: right;
+}
+
+.loginForm .formArea .textArea, .resvConfrom .formArea .textArea{
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.loginForm .formArea, .resvConfrom .formArea{
+    padding: 50px 0;
+}
+
+.loginForm h3, .resvConfrom h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.loginForm h3 span, .resvConfrom h3 span{
+    font-size:18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.loginForm h3 span:before, .resvConfrom h3 span:before {
+
+    background-size: 29px 32px;
+    content: "";
+    display: inline-block;
+    width: 29px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    margin-top: -21px;
+}
+
+.loginForm h3 span:before{
+    background: url(../images/lockico_p.png) 0 0 no-repeat;
+}
+
+.resvConfrom h3 span:before{
+    background: url(../images/lockico_g.png) 0 0 no-repeat;
+}
+
+.formWrap{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.formWrap p{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.formWrap p a{
+    text-decoration: underline;
+}
+
+.formWrap p.notice{
+	font-size: 90%;
+	color: #f41313;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+.loginForm .form-group .text, .resvConfrom .form-group .text{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #CCC;
+    border-right: none;
+    float: left;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+
+.loginForm .form-group .text{
+    background: #fd68a0;
+}
+
+.resvConfrom .form-group .text{
+    background: #57b689;
+}
+
+.form-group .inputArea{
+    float: left;
+    width: 273px;
+}
+
+.form-group .inputArea input{
+    padding: 5px 8px;
+    border-left: none;
+	border: 1px solid #CCC;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.formWrap .login_btn{
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+}
+
+.loginForm .login_btn input, .resvConfrom .login_btn input{
+    cursor: pointer;
+    width: 400px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size:18px;
+    padding: 10px 8px;
+}
+
+.loginForm .login_btn input{
+    background: #faad34;
+    box-shadow: 0px 3px 0px #ae701f;
+    border: 0;
+}
+.loginForm .login_btn input:hover{
+    opacity:0.75;
+}
+
+.resvConfrom .login_btn input{
+    background: #6275c6;
+    box-shadow: 0px 3px 0px #3d4d93;
+    border: 0;
+}
+.resvConfrom .login_btn input:hover{
+    opacity:0.75;
+}
+
+
+.formWrap .login_btn span:after {
+    background: url(../images/arrow.png) 0 0 no-repeat;
+    background-size: 12px 19px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 19px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.inputBox p.info {
+	padding-top: 1em;
+	clear: both;
+	text-align: center;
+}
+
+/* page14 */
+
+.myPage{
+    width: 1000px;
+    margin: 40px auto 120px;
+    position: relative;
+}
+
+.myPage .headline{
+    background: #fd68a0;
+    margin-bottom: 8px;
+}
+
+.myPage .headline h3{
+    padding: 5px 25px;
+    background: #fd68a0;
+    color: #ffffff;
+    font-size:24px;
+    font-weight: bold;
+    float: left;
+}
+
+/*green*/
+.greenColor .myPage .headline{background: #57b689;}
+.greenColor .myPage .headline h3{background: #57b689;}
+
+.myPage .headline .menuBox{
+    widows: 53px;
+    height: 53px;
+    float: right;
+    position: relative;
+}
+
+.myPage .headline .menuBox img{
+    cursor: pointer;
+}
+/*green*/
+.greenColor .myPage .headline,
+.greenColor .myPage .headline h3{
+    background: #57b689;
+}
+
+
+.myPage .dropMenu{
+    background: #e94985;
+    position: absolute;
+    z-index: 105;
+    top: 53px;
+    right: 0;
+    display: none;
+}
+.myPage .dropMenu{
+    width: 830px;
+}
+.greenColor .myPage .dropMenu .dropMenuList{
+	margin-bottom: 30px;
+}
+.myPage .dropMenu .dropMenuList>div{
+    float: left;
+    width: 250px;
+    font-size:14px;
+    margin-left: 20px;
+}
+
+.myPage .dropMenu .dropMenuList>div p{
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+    padding: 20px 0 15px 15px;
+}
+.myPage .dropMenu .dropMenuList>div p.mypageTop{
+    padding: 0;
+}
+
+.myPage .dropMenu .dropMenuList>div li{
+    border-bottom: 1px dotted #ffffff;
+}
+
+.myPage .dropMenu .dropMenuList>div p a{
+	color: #fff;
+	width: 100%;
+	display: inline-block;
+    padding: 20px 0 15px 15px;
+	position: relative;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.myPage .dropMenu .dropMenuList>div li a{
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    padding: 15px 0 15px 30px;
+    background: url(../images/kadoico.png) no-repeat 15px center;
+    position: relative;
+	box-sizing: border-box;
+}
+.myPage .dropMenu .dropMenuList>div li .icon_unread {
+    display: inline-block;  
+    position: relative; 
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    background: #ffe300;
+    border-radius: 50%;
+}
+
+.myPage .dropMenu .dropMenuList>div p a:after,
+.myPage .dropMenu .dropMenuList>div li a:after{
+    content: "";
+    background: url(../images/arrow.png) no-repeat;
+    width: 8px;
+    height: 13px;
+    display: inline-block;
+    background-size: 8px 13px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.pinkColor .myPage .dropMenu .dropMenuList>div p a:hover,
+.pinkColor .myPage .dropMenu .dropMenuList>div li a:hover{
+    background-color: #fd68a0;
+}
+
+.greenColor .myPage .dropMenu .dropMenuList>div p a:hover,
+.greenColor .myPage .dropMenu .dropMenuList>div li a:hover{
+	background-color: #57b689;
+}
+
+.myPage .dropMenu .logout{
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+
+.myPage .dropMenu .logout a{
+    text-decoration: underline;
+    color: #fff;
+}
+/*green*/
+.greenColor .myPage .dropMenu{
+    background: #48a076;
+}
+.greenColor .myPage .dropMenu .dropMenuList>div li a:hover{
+    background-color: #57b689;
+}
+
+.myPage .userName{
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.myPage .userName span{
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.myPage .userName a{
+    text-decoration: underline;
+}
+
+.h4wrap{
+    height: 42px;
+    margin: 10px 0 15px;
+}
+
+.h4_ttl h4{
+    font-size:18px;
+    font-weight: bold;
+    padding: 3px 0 3px 18px;
+    float: left;
+    position: relative;
+}
+
+.h4_ttl h4:before{
+    background: #fd68a0;
+    border-radius: 6px;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+/*green*/
+.greenColor .h4_ttl h4:before{background: #57b689;}
+
+.myPage .h4_ttl .unread {
+    display: inline-block;
+    float: right;
+    background: #ffe300;
+    margin: 6.5px 0 0 10px;    
+    padding: 2px 10px;
+    color: #000;
+    border-radius: 20px;
+    transition: 0.2s;
+    font-size: 13px;
+    font-weight: bold;
+}
+.myPage .h4_ttl .unread:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+.myPage .h4_ttl .listNum{
+    font-size:14px;
+    font-weight: bold;
+    float: right;
+    line-height: 42px;
+}
+
+.mailTable dl{
+    border-bottom: #b8bec3 dotted 1px;
+    padding: 10px 0 15px;
+    width: 100%;
+}
+
+.mailTable dl.ttl{
+    border: none;
+}
+
+.mailTable dl.ttl dt, .mailTable dl.ttl dd{
+    background: #f1f1f1;
+    text-align: center;
+    padding: 3px 0;
+}
+
+.mailTable dt{
+    margin-right: 2px;
+    display: block;
+    float: left;
+    width: 240px;
+    padding-left: 10px;
+}
+
+.mailTable dt img{
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.mailTable dd{
+    display: block;
+    float: left;
+    width: 745px;
+    padding-left: 3px;
+}
+
+.mailTable dd a{
+    font-size:14px;
+    text-decoration: underline;
+}
+.mailTable dd a:hover{
+    text-decoration: none;
+}
+
+/* page15 */
+
+.toList,.mailnav .next, .mailnav .prev{
+    color: #3275c6;
+}
+
+.toList a,.mailnav .next a, .mailnav .prev a, .mailnav .backtolist a, .mailnav .toFlightInfo a{
+    text-decoration: underline;
+    font-size:14px;
+}
+.toList a:hover, .mailnav .next a:hover, .mailnav .prev a:hover, .mailnav .backtolist a:hover, .mailnav .toFlightInfo a:hover {
+    text-decoration: none;
+}
+
+.toList a{
+    padding-left: 15px;
+    background: url(../images/arrow_blue_left.png) no-repeat 0 center;
+}
+.mailnav .prev a{
+    padding-left: 15px;
+    background: url(../images/arrow_blue_left.png) no-repeat 0 center;
+}
+.mailnav .next a{
+    padding-right: 15px;
+    position: relative;
+}
+.mailnav .next a:after{
+    background:url(../images/arrow_blue_right.png) 0 0 no-repeat;
+    background-size:6px 10px;
+    content:"";
+    display:inline-block;
+    width:6px;
+    height:10px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -5px;
+}
+.mailText{
+    background: #fbe7ef;
+    padding: 10px;
+}
+/*green*/
+.greenColor .mailText{background: #e5f4ed;}
+
+.mailText .ttl{
+    font-size:18px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.mailText .date{
+    margin: 30px 0 10px 0;
+    color: #6b6b6b;
+    text-align: right;
+}
+
+.mailText .textArea{
+    font-size:18px;
+    background: #ffffff;
+    padding: 15px;
+    line-height: 1.6em;
+}
+
+.reply_btn {
+    background: #68acdc;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #3675a2;
+    text-align: right;
+    float: right;
+    margin: 15px 10px 20px 0;
+}
+
+.reply_btn span{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 11px 35px 8px 0;
+    font-size:14px;
+    font-weight: bold;
+    position: relative;
+}
+
+.reply_btn span:hover{
+    opacity: 0.75;
+}
+
+.reply_btn span:before {
+    background:url(../images/replyico.png) 0 0 no-repeat;
+    background-size:17px 16px;
+    content:"";
+    display:inline-block;
+    width:17px;
+    height:16px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.mailnav{
+	position: relative;
+    margin-top: 20px;
+}
+
+.mailnav .prev{
+    float: left;
+}
+
+.mailnav .next{
+    float: right;
+}
+
+.mailnav .backtolist,
+.mailnav .toFlightInfo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	width: 5em;
+}
+
+/* page17-1 */
+
+.receiptArea .attention{
+    font-size:14px;
+    padding: 20px;
+    background: #fdfde5;
+    margin-bottom: 40px;
+}
+
+.receiptArea .attention>h5{
+    font-size:18px;
+}
+
+.h5ttl{
+    padding: 2px 0 2px 15px;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+.h5ttl span{
+    font-size:18px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.h5ttl span:before{
+    background: #585858;
+    border-radius: 6px;
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+/* 領収証発行旧仕様（現在進行中） */
+/*.receiptArea .receiptCont{
+	border: 1px solid #F1F1F1;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.receiptArea .receiptCont dl{
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+    font-size:14px;
+}
+
+.receiptArea .receiptCont dd{
+    padding: 5px 0;
+}
+
+.receiptArea .receiptCont dt{
+    background: #f1f1f1;
+    margin: 2px;
+}*/
+/* //領収証発行旧仕様（現在進行中） */
+
+/* 領収証発行新仕様（保留中） */
+.receiptArea .receiptCont{
+    margin-bottom: 40px;
+    width: 100%;
+}
+.receiptArea .receiptCont .tableWrap {
+    border: 2px solid #f1f1f1;
+}
+.receiptArea .receiptCont .receiptTable {
+    width: 100%;
+    border: 2px solid #fff;
+}
+.receiptArea .receiptCont .receiptTable .col1 { width: 8%; }
+.receiptArea .receiptCont .receiptTable .col2 { width: 40%; }
+.receiptArea .receiptCont .receiptTable .col3 { width: 30%; }
+.receiptArea .receiptCont .receiptTable .col4 { width: 10%; }
+.receiptArea .receiptCont .receiptTable .col5 { width: 12%; }
+.receiptArea .receiptCont .receiptTable th {
+    background: #f1f1f1;
+    border-right: 2px solid #fff;
+    padding: 5px;
+    font-weight: bold;
+}
+.receiptArea .receiptCont .receiptTable th:last-child{
+    border-right: none;
+}
+.receiptArea .receiptCont .receiptTable tbody tr + tr {
+    border-top: 2px solid #f1f1f1;
+}
+.receiptArea .receiptCont .receiptTable td {
+    padding: 10px 5px;
+    text-align: center;
+}
+.receiptArea .receiptCont .receiptTable .customRadio label{
+  display: block;
+  position: relative;
+  width:100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+}
+.receiptArea .receiptCont .receiptTable .customRadio label:before{
+  content: '';
+  width: 18px; /* ボタンの横幅 */
+  height: 18px; /* ボタンの縦幅 */
+  position: absolute;
+  top:  0;
+  left: 50%;
+  margin-left: -9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #6e6e6e;
+}
+.receiptArea .receiptCont .receiptTable .customRadio input[type="radio"] {
+  display: none;
+}
+.receiptArea .receiptCont .receiptTable .customRadio input[type="radio"]:checked + label:after {
+  content: '';
+  width: 10px; /* マークの横幅 */
+  height: 10px; /* マークの縦幅 */
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -4px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.receiptArea .receiptCont {
+    display: inline-block;
+    margin-top: 5px;
+}
+.receiptArea .receiptCont .receiptTable .customCheck {
+    text-align: left;
+}
+.receiptArea .receiptCont .receiptTable .customCheck .checkList li + li {
+    margin-top: 10px;
+}
+.receiptArea .receiptCont .receiptTable .customCheck input[type="checkbox"] {
+    display: none;
+}
+.receiptArea .receiptCont .receiptTable .customCheck label{
+  padding-left: 23px;
+  position:relative;
+}
+.receiptArea .receiptCont .receiptTable .customCheck label:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+.receiptArea .receiptCont .receiptTable .customCheck input[type="checkbox"]:checked + label:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  transform: rotate(40deg);
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+}
+.receiptArea .receiptCont .receiptTable .customCheck input[type="checkbox"]:disabled + label:before{
+    background: #d6d6d6;
+}
+
+.receiptArea .receiptCont .btn_toggle {
+    margin-top: 20px;
+    text-align: right;
+}
+.receiptArea .receiptCont .receiptTable.confirm .col1 { width: 40%; }
+.receiptArea .receiptCont .receiptTable.confirm .col2 { width: 30%; }
+.receiptArea .receiptCont .receiptTable.confirm .col3 { width: 14%; }
+.receiptArea .receiptCont .receiptTable.confirm .col4 { width: 16%; }
+
+.receiptArea .receiptInfo{
+
+}
+.receiptArea .receiptInfo .formgroup {
+	background: url(../images/bg_15-a.png) repeat-y left top;
+    font-size:14px;
+    border-bottom: 1px solid #b8bec3;
+    border-left: 1px solid #b8bec3;
+    border-right: 1px solid #b8bec3;
+}
+
+.receiptArea .receiptInfo .formgroup:first-child {
+    border-top: 1px solid #b8bec3;
+
+}
+
+.receiptArea .receiptInfo .formgroup .textArea{
+    float: left;
+    width: 15%;
+    padding-left: 10px;
+}
+
+.receiptArea .receiptInfo .formgroup .textArea .text{
+    float: left;
+    line-height: 60px;
+}
+
+.receiptArea .receiptInfo .formgroup .textArea p{
+    float: right;
+    line-height: 60px;
+    padding-right: 10px;
+}
+
+.receiptArea .receiptInfo .formgroup .textArea span{
+    background: #f41313;
+    color: #ffffff;
+    padding: 0 12px;
+    font-size:14px;
+}
+
+.receiptArea .receiptInfo .formgroup .inputArea{
+    margin: 9px 10px;
+    float: left;
+    width: 80%;
+	font-size: 18px;
+}
+
+.receiptArea .receiptInfo .formgroup .inputArea input{
+    width: 98%;
+    padding: 10px;
+    line-height: 1.1em;
+}
+.receiptArea .receiptInfo .formgroup .inputArea input.amount{
+    width: 90%;
+}
+
+.receiptArea .receiptInfo .formgroup .inputArea input.w40{
+    width: 30%;
+}
+
+.receiptArea .receiptInfo .formgroup input,
+.receiptArea .receiptInfo .formgroup .inputArea p{
+	margin: 8px 10px;
+    font-size:18px;
+}
+
+.receiptArea .receiptInfo .formgroup .inputArea p.adapt {
+	margin-bottom: 10px;
+}
+
+.receiptArea .receiptInfo .formgroup .inputArea textarea {
+	margin: 0 8px 10px;
+	padding: 10px;
+	width: 98%;
+	height: 7em;
+	font-size: 18px;
+    line-height: 1.1em;
+}
+.receiptInfo .btnAreas{
+    width: 65%;
+    margin: 35px auto 0;
+}
+
+.receiptInfo .btnAreas .preview_btn {
+    background: #68acdc;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 #3675a2;
+    text-align: center;
+    float: left;
+}
+
+.receiptInfo .btnAreas .preview_btn span{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    font-size:18px;
+    font-weight: bold;
+    position: relative;
+}
+.receiptInfo .btnAreas .preview_btn span:hover{
+    opacity: 0.75;
+}
+
+/* page17-2 */
+
+.receiptArea .receiptCont_re{
+    border: 1px solid #f1f1f1;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.receiptArea .receiptCont_re dl{
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-size:14px;
+}
+
+.receiptArea .receiptCont_re dd{
+    padding: 10px 0;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.receiptArea .receiptCont_re dt{
+    background: #f1f1f1;
+    margin: 2px;
+}
+
+.receiptArea .receiptCont_re dd:last-child {
+	border-bottom: none;
+}
+
+/* page18 */
+
+.insuArea .aviation{
+    width: 49.9%;
+    float: left;
+}
+
+.insuArea .basic{
+    width: 49.9%;
+    float: right;
+}
+
+.insuArea .basicList, .insuArea .aviationList {
+    height: 303px;
+}
+
+.insuArea .basic h5{
+    background: #bf5f6a;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    font-size:18px;
+    margin-bottom: 3px;
+}
+
+.insuArea .aviation h5{
+    background: #567dbe;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    font-size:18px;
+    margin-bottom: 3px;
+}
+
+.insuArea .basic .boxleft{
+    width: 49.7%;
+    float: left;
+}
+
+.insuArea .basic .boxrignt{
+    width: 49.7%;
+    float: right;
+}
+
+.insuArea .basic .boxgroup>div{
+    background: #f6f6f6;
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 140px;
+}
+
+.insuArea .basic .boxgroup>div h6{
+    line-height: 1.3em;
+}
+
+.insuArea .basic .boxgroup>div p{
+    line-height: 1.3em;
+    margin-top: 8px;
+}
+
+.insuArea .basic .boxgroup>div h6 span{
+    font-weight: bold;
+    color: #bf5f6a;
+    font-size:14px;
+}
+
+.insuArea .basic .boxgroup>div h6 span.s_font{
+    font-size:14px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.insuArea .basic .basicList>div>div img{
+    float: right;
+    margin-left: 5px;
+}
+
+.aviation .aviationList{
+    padding: 10px;
+    background: #f6f6f6;
+}
+
+.aviation .aviationList h6{
+    font-weight: bold;
+    color: #567dbe;
+    font-size:14px;
+}
+
+.aviation .aviationList p{
+    margin: 20px 0 15px 0;
+}
+
+.aviation .aviationList .boximg{
+    display: inline-block;
+    margin: auto;
+}
+.aviation .aviationList>div img{
+    display: inline-block;
+    margin: 0 auto;
+    float: left;
+}
+
+.boximg{
+    padding-left:89px;
+    padding-top:10px;
+}
+
+.boximg2{
+    margin-top: 10px;
+}
+
+.hokenFeeWrap{
+    background: #fdfde5;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 3px;
+}
+
+.hokenFeeWrap .hokenFee{
+    font-size:24px;
+    color: #e03636;
+    font-weight: bold;
+}
+
+.hokenFeeWrap .detail_btn{
+    width: 400px;
+    margin: 0 auto;
+    background: #68acdc;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #3675a2;
+    margin-top: 5px;
+}
+.hokenFeeWrap p{
+    font-size:14px;
+}
+.hokenFeeWrap .detail_btn a{
+    color: #ffffff;
+    display: block;
+    font-size:14px;
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+}
+.hokenFeeWrap .detail_btn a:hover{
+    text-decoration: none;
+}
+.hokenFeeWrap .detail_btn a:after{
+    background:url(../images/arrow.png) 0 0 no-repeat;
+    background-size:7px 11px;
+    content:"";
+    display:inline-block;
+    width:7px;
+    height:11px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -5px;
+    position: absolute;
+}
+.insuAreaContainer table{
+    width: 100%;
+    border: solid 1px #888888;
+    border-collapse: collapse;
+    text-align: center;
+}
+.insuAreaContainer table td{
+    border: solid 1px #888888;
+    padding: 10px 0;
+}
+.insuAreaContainer table td.bgblue{
+    background: #c3d6f5;
+}
+.insuAreaContainer table td.bgskyblue{
+    background: #e3edfc;
+}
+.insuAreaContainer table td.bgyellow{
+    background: #f7f7a9;
+}
+.insuAreaContainer .tableCom{
+    font-size:14px;
+    margin: 10px 0;
+}
+.insuAreaContainer .tableCom ul {
+	margin-left: 1em;
+}
+.insuAreaContainer .tableCom ul li{
+	text-indent: -1em;
+}
+.insuAreaContainer .tableCom p.license_num{
+    text-align: right;
+    margin-top: 10px;
+}
+.insuAreaContainer .tableCom p.ttl{
+	font-weight: bold;
+}
+.insuAreaContainer .tableCom p.txt{
+	margin-left: 1em;
+}
+.insuAreaContainer .pdfArea iframe{
+  width:100%;
+  height:400px;
+  border:1px solid #b8bec3;
+}
+.insuAreaContainer .agreement{margin:20px auto 40px;border:3px solid #b8bec3;padding:20px;}
+.insuAreaContainer .agreement_bdy{text-align:center;}
+.insuAreaContainer .agreement_bdy label{
+  font-size: 22px;
+  font-weight: bold;
+  color:#5572d3;
+  position: relative;
+  line-height: 28px;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+.insuAreaContainer .agreement_bdy label:hover{
+  opacity: 0.75;
+}
+.insuAreaContainer .agreement_bdy label:before {
+  content: '';
+  width: 25px; /* ボックスの横幅 */
+  height: 25px; /* ボックスの縦幅 */
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  background-color:#fff;
+  box-shadow: inset 1px 1px 1px 0px #ccc;
+  border: 1px solid #929292;
+}
+.insuAreaContainer .agreement_bdy input[type=checkbox] {
+  display: none;
+}
+.insuAreaContainer .agreement_bdy input[type=checkbox]:checked + label:before {
+  content: '';
+  background: #ffffff url("../images/check_ico.png");
+  width: 25px; /* ボックスの横幅 */
+  height: 25px; /* ボックスの縦幅 */
+}
+.insuAreaContainer .paymentSelect table{
+    width: 100%;
+    border: solid 1px #888888;
+    border-collapse: collapse;
+    text-align: left;
+}
+.insuAreaContainer .paymentSelect th{
+    vertical-align: top;
+    background: #f1f1f1;
+    width: 20%;
+}
+.insuAreaContainer .paymentSelect span{
+    background: #f41313;
+    color: #ffffff;
+    padding: 0 8px;
+    margin-left: 8px;
+}
+.insuAreaContainer .paymentSelect td,
+.insuAreaContainer .paymentSelect th{
+    padding: 10px;
+    border: solid 1px #888888;
+}
+.insuAreaContainer .paymentSelect .inputGroup{
+    margin-bottom: 30px;
+}
+.insuAreaContainer .paymentSelect .inputGroup:last-child{
+    margin-bottom: 0px;
+}
+.insuAreaContainer .paymentSelect .inputGroup label {
+  padding-left: 28px;
+  line-height: 20px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.insuAreaContainer .paymentSelect .inputGroup label:before{
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid #6e6e6e;
+  border-radius: 50%;
+}
+.insuAreaContainer .paymentSelect .inputGroup input[type="radio"] {
+  display: none;
+}
+.insuAreaContainer .paymentSelect .inputGroup input[type="radio"]:checked + label:after {
+  content: '';
+  width: 10px;/* マークの横幅 */
+  height: 10px;/* マークの縦幅 */
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.insuAreaContainer .paymentSelect .inputGroup select{
+    width: 250px;
+    padding: 5px 0;
+}
+.insuAreaContainer .entry_confirmBtn{
+    background: #faad34;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 0 #ae701f;
+    margin-top: 40px;
+}
+.insuAreaContainer .entry_confirmBtn:hover{
+  opacity: 0.8;
+}
+.insuAreaContainer .entry_confirmBtn a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 0;
+    font-size:24px;
+    font-weight: bold;
+    position: relative;
+}
+.insuAreaContainer .entry_confirmBtn a:after {
+    background:url(../images/arrow.png) 0 0 no-repeat;
+    background-size:12px 19px;
+    content:"";
+    display:inline-block;
+    width:12px;
+    height:19px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+/* page11 */
+
+.paymentGuide .bankName{
+    font-weight: bold;
+    font-size:14px;
+    margin-bottom: 5px;
+}
+.paymentGuide .bankName span{
+    color: #f41313;
+    font-weight: bold;
+}
+
+.paymentGuide .paymentBox{
+    margin: 10px 0 20px;
+    border: 1px solid #b6b6b6;
+    padding: 20px;
+}
+
+.paymentGuide .paymentBox .logoArea{
+    width: 30%;
+    text-align: center;
+    float: left;
+    font-size:14px;
+}
+
+.paymentGuide .paymentBox .logoArea img{
+	border: 1px solid #d6d6d6;
+}
+
+.paymentGuide .paymentBox .bankInfo{
+    float: left;
+    width: 70%;
+    font-size:18px;
+}
+.paymentGuide .paymentBox .bankInfo dl{
+    width: 100%;
+}
+.paymentGuide .paymentBox .bankInfo dt,
+.paymentGuide .paymentBox .bankInfo dd{
+    float: left;
+}
+.paymentGuide .paymentBox .bankInfo dt{
+    width: 20%;
+}
+.paymentGuide .paymentBox .bankInfo dl{
+    width: 80%;
+}
+
+
+
+/* tabeldesing CSS */
+
+.bg01    {background:#fdfde5;}
+.bgRed    {background:#f41313;color:#ffffff;}
+.bgOrg    {background:#ff7e00;color:#ffffff;}
+.bgYlw    {background:#faad34;color:#ffffff;}
+.fBold    {font-weight:bold;}
+.fNormal    {font-weight:normal;}
+.txtR    {text-align:right;}
+.dottedTop {border-top: 1px dotted #aaaaaa;}
+.dottedTop:first-child  {border:none;}
+.dottedBott  {border-bottom:1px dotted #aaaaaa;}
+.dottedBott:last-child  {border:none;}
+.solidLeft  {border-left:1px solid #e3c0ce}
+.colRed    {color:#f41313;}
+.colOrg    {color:#ff7e00;}
+.colYlw    {color:#faad34;}
+.col6c    {color:#6c6c6c;}
+.f14    {font-size:14px;}
+.f15    {font-size:15px;}
+.f16    {font-size:14px;}
+.f18    {font-size:18px;}
+.f20    {font-size:20px;}
+.fSmall {font-size: 90%;}
+.underline {text-decoration: underline;}
+.w50    {width:50%;}
+.w10    {width:10%;}
+.w15    {width:15%;}
+.pl10    {padding-left:10px;}
+.pl20    {padding-left:20px;}
+.ml15    {margin-left:15px;}
+.mt15    {margin-top:15px;}
+.mt15    {margin-top:15px;}
+.lhUp {line-height: 1.1;}
+
+
+.disTable{
+display: table;
+table-layout: fixed;
+width: 100%;
+}
+.disCell,
+.disTable li{
+display: table-cell;
+vertical-align: middle;
+}
+.mypage_table .disTable li{
+	line-height: 3;
+}
+
+
+
+.title{
+font-weight:bold;
+font-size:18px;
+color:#333333;
+line-height: 100%;
+padding: 12px 20px 12px;
+margin-bottom: 15px;
+}
+
+
+
+/*-------------------------------- 色分け部分（ピンク色） --*/
+
+.pinkColor .mypage_top .tableBox table:after{
+background-color: #fd68a0;
+}
+.pinkColor .contentInner .tableBox table tfoot{
+background: #fbe7ef;
+}
+
+.pinkColor .ico_not{
+margin-bottom: 0;
+padding-left:45px;
+background: url(../images/icon/ico_notice01.png) no-repeat left 6px;
+}
+.pinkColor .ico_tit{
+background: url(../images/icon/ico_title01.png) no-repeat left center;
+}
+
+
+
+/*-------------------------------- 色分け部分（緑色） --*/
+
+.greenColor .mypage_top .tableBox table:after{
+background-color: #57b689;
+}
+.greenColor .contentInner .tableBox table tfoot{
+background: #daede4;
+}
+.greenColor .ico_not{
+margin-bottom: 0;
+padding-left:45px;
+background: url(../images/icon/ico_notice02.png) no-repeat left 6px;
+}
+.greenColor .ico_tit{
+background: url(../images/icon/ico_title02.png) no-repeat left center;
+}
+/*green*/
+.greenColor .mailText{background: #e5f4ed;}
+
+
+
+/*-------------------------------- BTN部分 --*/
+.btnArea a.btn{
+display:inline-block;
+font-size:14px;
+line-height:100%;
+padding:10px 20px 9px 10px;
+color:#ffffff !important;
+text-align:center;
+font-weight: bold;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+text-decoration: none;
+background-image: url(../images/icon/ico_arr_right01.png);
+background-position: 94% center;
+background-repeat: no-repeat;
+background-size: 10px auto;
+}
+.btnArea .arr_bott {
+	background-image: url(../images/icon/ico_arr_bott03.png) !important;
+}
+.btnArea .arr_top {
+	background-image: url(../images/icon/ico_arr_top03.png) !important;
+}
+.btnArea a:hover{
+text-decoration: none;
+filter:alpha(opacity=75);
+-moz-opacity: 0.75;
+opacity: 0.75;
+}
+
+
+
+.titHead{
+position: relative;
+}
+.titHead .numberArea,
+.titHead .btnArea{
+position: absolute;
+right: 0;
+top: 7px;
+}
+.entryArea .numberArea .number{
+font-size:14px;
+margin-top: 5px;
+display: block;
+}
+
+.entryArea .numberArea .number{
+font-size:14px;
+margin-top: 5px;
+}
+.btnArea a.entryView{
+	float: right;
+width:145px;
+padding:8px 20px 8px 10px;
+background-color:#68acdc;
+box-shadow: 0 2px 0 #3675a2;
+}
+.btnArea a.receiptBtn,
+.btnArea a.paymentBtn{
+width:135px;
+font-size:14px;
+background-color:#faad34;
+background-size: 8px auto;
+}
+.btnArea a.flightDelayBtn {
+	width:135px;
+	font-size:14px;
+	background-color:#faad34;
+	background-size: 8px auto;
+	box-shadow: 0 2px 0 #ae701f;
+}
+.btnArea a.flightCancelBtn {
+	width:135px;
+	font-size:14px;
+	background-color:#ff7e00;
+	background-size: 8px auto;
+	box-shadow: 0 2px 0 #9f4f00;
+}
+.btnArea a.tripHokenBtn{
+width:135px;
+font-size:14px;
+background-color:#1ec2a9;
+background-size: 8px auto;
+box-shadow: 0 2px 0 #117465;
+}
+.btnArea a.paymentBtn{
+width:135px;
+font-size:14px;
+background-color:#f41313;
+background-size: 8px auto;
+box-shadow: 0 2px 0 #860909;
+}
+.btnArea a.applyBtn{
+width:135px;
+font-size:14px;
+background-color:#1ec2a9;
+background-size: 8px auto;
+box-shadow: 0 2px 0 #117465;
+}
+.btnArea a.confirmBtn{
+width:115px;
+font-size:14px;
+padding:8px 20px 7px 10px;
+background-color:#68acdc;
+background-size: 8px auto;
+box-shadow: 0 2px 0 #3675a2;
+}
+.btnArea a.hokenEntryBtn{
+width:115px;
+font-size:12px;
+padding:8px 20px 7px 10px;
+background-color:#1ec2a9;
+background-size: 8px auto;
+box-shadow: 0 2px 0 #117465;
+}
+.btnArea a.cancelBtn{
+width:115px;
+font-size:14px;
+padding:8px 10px 7px 20px;
+color:#666666 !important;
+background-color:#e7e7e7;
+background-image: url(../images/icon/ico_cancel.png);
+background-position: 6% center;
+background-repeat: no-repeat;
+background-size: 10px auto;
+box-shadow: 0 2px 0 #999999;
+}
+.contentInner .entryArea .tableBox a.confirmBtn,
+.contentInner .entryArea .tableBox a.paymentBtn,
+.contentInner .entryArea .tableBox a.receiptBtn{
+background-size: 7px auto !important;
+}
+.eMailArea{margin-top:40px;}
+.eMailArea .eMailCont_wrap{
+    border: 1px solid #b8bec3;
+    padding: 20px 10px;
+}
+.eMailArea .eMailCont{
+    margin-bottom: 10px;
+  border-bottom:1px dotted #b8bec3;
+  padding-bottom:10px;
+}
+.eMailArea .eMailCont:last-child{
+  border-bottom-width:0px;
+  padding-bottom:0;
+}
+.eMailArea .eMailCont .emailgroup{
+    margin-bottom: 20px;
+}
+.eMailArea .eMailCont .emailgroup .emailgroup_bdy{
+  border-bottom:1px dotted #b8bec3;
+  padding-bottom:10px;
+}
+.eMailArea .eMailCont .emailgroup .emailgroup_bdy:last-child{
+  border-width: 0px;
+  padding-bottom:0;
+}
+.eMailArea .eMailCont .emailgroup .emailgroup {
+  padding-left:30px;
+  margin-top:20px;
+  background:url(../images/mail_rep.png) no-repeat 5px 5px;
+}
+.eMailArea .eMailCont .emailgroup:last-child{
+    margin-bottom: 0;
+}
+.eMailArea .eMailCont .reply01{
+    padding-left: 30px;
+}
+.eMailArea .eMailCont .reply02{
+    padding-left: 60px;
+}
+.eMailArea .eMailCont .email_ttl{
+    float: left;
+    width: 708px;
+    padding-left: 40px;
+    min-height:26px;
+}
+.eMailArea .eMailCont .email_ttl a{
+    text-decoration: underline;
+}
+.eMailArea .eMailCont .mailnew{
+    background: url(../images/mail_new.png) no-repeat;
+}
+.eMailArea .eMailCont .mailopen{
+    background: url(../images/mail_op.png) no-repeat;
+}
+.eMailArea .eMailCont .mailreply{
+    background: url(../images/mail_rep.png) no-repeat;
+}
+.eMailArea .eMailCont .date{
+    float: right;
+}
+.currentRsvBtn{
+    background: #d4d4d4;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #949494;
+}
+.currentRsvBtn:hover{
+  opacity: 0.8;
+}
+.currentRsvBtn a{
+    font-size:14px;
+    display: block;
+    color: #5a5a5a;
+    font-weight: bold;
+    padding: 9px 0;
+    background: url(../images/arrow_gray.png) no-repeat 15px center;
+	text-decoration: none;
+}
+
+/*-------------------------------- 流れ部分 --*/
+.flowArea {
+    text-align:center;
+    margin:10px 0 20px;
+}
+
+.flowArea {
+margin:15px -3% 30px;
+position: relative;
+padding: 0;
+width:106%;
+}
+.flowArea ul {
+position: relative;
+margin: 0 auto;
+display: table;
+table-layout: fixed;
+width: 100%;
+}
+.flowArea ul::before {
+content: "";
+height: 4px;
+position: absolute;
+top: 38px;
+margin: 0;
+border-radius: 2px;
+z-index:0;
+}
+.flowArea li.step1::before,
+.flowArea li.step2::before,
+.flowArea li.step3::before,
+.flowArea li.step4::before {
+content: "";
+height: 4px;
+position: absolute;
+top: 38px;
+margin: 0;
+border-radius: 2px;
+z-index:-1;
+}
+
+.flowArea ul::before {
+width: 80%;
+left: 10%;
+}
+.flowArea li.step1::before {
+width: 400%;
+left: 50%;
+}
+.flowArea li.step2::before {
+width: 300%;
+left: 50%;
+}
+.flowArea li.step3::before {
+width: 200%;
+left: 50%;
+}
+.flowArea li.step4::before {
+width: 100%;
+left: 50%;
+}
+.flowArea ul li {
+width: 20%;
+display: table-cell;
+vertical-align: middle;
+position: relative;
+text-align: center;
+white-space: nowrap;
+font-size: 14px;
+font-weight: bold;
+z-index:100;
+letter-spacing: -0.01em;
+}
+.flowArea li .flow_number{
+line-height: 20px;
+width: 20px;
+height: 20px;
+margin-top:5px;
+top: 0;
+left: 18px;
+display: inline-block;
+text-align: center;
+vertical-align: middle;
+border-radius: 50%;
+text-indent:-9999px;
+}
+
+
+
+/*------ ピンク色 --*/
+.pinkColor .flowArea ul::before {
+background: #fd68a0;
+}
+.pinkColor .flowArea li.step1::before,
+.pinkColor .flowArea li.step2::before, 
+.pinkColor .flowArea li.step3::before,
+.pinkColor .flowArea li.step4::before {
+background: #CCC;
+}
+.pinkColor .flowArea li.active {
+color: #fd68a0;
+}
+.pinkColor .flowArea li.passive {
+color: #CCC;
+}
+.pinkColor .flowArea li.active .flow_number {
+background: #fd68a0;
+color: #fd68a0;
+}
+.pinkColor .flowArea li.passive .flow_number {
+background: #CCC;
+color: #CCC;
+}
+.pinkColor .flowArea li.flowDone{
+background: url(../images/icon/ico_arr_bott01.png) no-repeat center 22px;
+}
+	
+/*------ グリーン色 --*/
+.greenColor .flowArea ul::before {
+background: #57b689;
+}
+.greenColor .flowArea li.step1::before,
+.greenColor .flowArea li.step2::before, 
+.greenColor .flowArea li.step3::before,
+.greenColor .flowArea li.step4::before {
+background: #CCC;
+}
+.greenColor .flowArea li.active {
+color: #57b689;
+}
+.greenColor .flowArea li.passive {
+color: #CCC;
+}
+.greenColor .flowArea li.active .flow_number {
+background: #57b689;
+color: #57b689;
+}
+.greenColor .flowArea li.passive .flow_number {
+background: #CCC;
+color: #CCC;
+}
+.greenColor .flowArea li.flowDone{
+background: url(../images/icon/ico_arr_bott02.png) no-repeat center 22px;
+}
+
+
+
+
+/*------ ブルー色 --*/
+.blueColor .flowArea ul::before {
+background: #57b689;
+}
+.blueColor .flowArea li.step1::before,
+.blueColor .flowArea li.step2::before, 
+.blueColor .flowArea li.step3::before,
+.blueColor .flowArea li.step4::before {
+background: #CCC;
+}
+.blueColor .flowArea li.active {
+color: #57b689;
+}
+.blueColor .flowArea li.passive {
+color: #CCC;
+}
+.blueColor .flowArea li.active .flow_number {
+background: #57b689;
+color: #57b689;
+}
+.blueColor .flowArea li.passive .flow_number {
+background: #CCC;
+color: #CCC;
+}
+.blueColor .flowArea li.flowDone{
+background: url(../images/icon/ico_arr_bott02.png) no-repeat center 22px;
+}
+	
+
+/*-------------------------------- メインコンテンツ部分 --*/
+.contentInner{
+width:1000px;
+/*margin:0 auto;*/
+}
+.contentInner .imporNotice{
+padding:10px;
+margin-bottom:35px;
+}
+.contentInner .imporNotice .tableBox{
+padding:0 10px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border:1px solid #b8bec3;
+background:#ffffff;
+}
+.contentInner .imporNotice ul li span{
+display: inline-block;
+line-height: 100%;
+}
+.contentInner .tableBox table td span.bgRed,
+.contentInner .imporNotice ul li span.bgRed,
+.contentInner .imporNotice ul li span.bgOrg,
+.contentInner .imporNotice ul li span.bgYlw{
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+padding: 3px 10px;
+margin-right: 8px;
+}
+.contentInner .imporNotice ul li span.col6c{
+margin-right: 8px;
+}
+.contentInner .imporNotice ul{
+padding:10px 0;
+}
+.contentInner .imporNotice ul li:first-child{
+width:27%;
+}
+
+
+
+.contentInner .tableBox a{
+text-decoration: none;
+}
+.contentInner .entryArea .tableBox{
+position: relative;
+margin-bottom:20px;
+border: 2px solid #b8bec3;
+}
+.contentInner .entryArea .tableBox a{
+color: #333333;
+text-decoration: none;
+display: block;
+}
+.mypage_top .tableBox table:after{
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+height: 100%;
+width: 20px;
+background-image: url(../images/icon/ico_arr_right01.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 7px auto;
+}
+.contentInner .tableBox a:hover,
+.contentInner .flightInfo a:hover{
+text-decoration: none;
+filter:alpha(opacity=75);
+-moz-opacity: 0.75;
+opacity: 0.75;
+}
+.contentInner .tableBox table{
+position: relative;
+width: 100%;
+table-layout: fixed;
+}
+.contentInner .tableBox table td{
+font-size:14px;
+padding:8px 10px;
+border:none;
+}
+.contentInner .entyTable table tbody td{
+font-size:20px;
+}
+.contentInner .tableBox table td span.bgRed{
+display: inline-block;
+line-height: 100%;
+margin:0;
+}
+.contentInner .tableBox table thead td{
+padding-bottom:0;
+padding-top:10px;
+}
+.contentInner .tableBox table thead td span{
+display:inline-block;
+line-height:100%;
+padding:5px 10px;
+background:#f1f1f1;
+}
+.contentInner .tableBox table tfoot td{
+padding:0;
+}
+.contentInner .tableBox table tfoot td ul li{
+padding:10px;
+}
+.contentInner .tableBox table tfoot span.fBold.f16{
+margin-right:0;
+}
+.contentInner .tableBox table tfoot span.fBold{
+margin-right:10px;
+}
+.contentInner .tableBox table tfoot td .solidLeft{
+width:20%;
+}
+.contentInner .tableBox table tr td:nth-child(1){
+width:14%;
+}
+.contentInner .tableBox table tr td:nth-child(2){
+width:12%;
+}
+.contentInner .tableBox table tr td:nth-child(3){
+width:28%;
+}
+.contentInner .tableBox table tr td:last-child{
+width:19%;
+}
+/* 20181001追加 */
+.contentInner .entryDetail .cancelstyle .afterPay2 tr td:last-child{
+width:20%;
+}
+/* //20181001追加 */
+.contentInner .tableBox .entrytable tr td:nth-child(1){
+width:auto;
+}
+.contentInner .tableBox .entrytable tr td:nth-child(2){
+width:auto;
+}
+.contentInner .tableBox .entrytable tr td:nth-child(3){
+width:42%;
+}
+.contentInner .tableBox .entrytable tr td:last-child{
+width:18%;
+}
+/* 20181001追加 */
+.contentInner .tableBox .paytable tr td:nth-child(2),
+.contentInner .tableBox .paytable tr td:nth-child(4){
+width:25%;
+}
+
+.contentInner .tableBox .paytable tr td:nth-child(1),
+.contentInner .tableBox .paytable tr td:nth-child(3){
+width:15%;
+}
+/* //20181001追加 */
+.contentInner .tableBox .txt_notpayment,
+.contentInner .tableBox .txt_payment,
+.contentInner .tableBox .txt_canceled,
+.contentInner .tableBox .txt_refund {
+display: inline-block;
+line-height: 100%;
+font-size:14px;
+padding: 3px 10px;
+margin: 0;
+color: #ffffff;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+}
+.contentInner .tableBox .txt_notpayment{
+background: #f41313;
+vertical-align: middle;
+}
+.contentInner .tableBox .txt_payment{
+background: #3061cf;
+vertical-align: middle;
+}
+.contentInner .tableBox .txt_canceled{
+background: #909090;
+vertical-align: middle;
+}
+.contentInner .tableBox .txt_refund{
+background: #68acdc;
+vertical-align: middle;
+}
+
+
+
+.contentInner .entryArea .tableBox table .dottedBott{
+border:none;
+}
+.contentInner .entryArea .tableBox table .dottedBott td:first-child{
+position: relative;
+}
+.contentInner .entryArea .tableBox table .dottedBott td:first-child:after{
+content: "";
+width: 825px;
+height: 1px;
+border-bottom: 1px dotted #aaaaaa;
+position: absolute;
+left: 10px;
+bottom: 0;
+}
+.mypage_table .tableBox table tr td ul li:last-child{
+ width: 145px; 
+}
+.mypage_table .tableBox table tr td ul li.refund {
+	width: 200px;
+}
+
+.mypage_table .tableBox table tr td ul li .paymentBtn {
+width: 115px;
+font-size:14px;
+padding: 8px 20px 7px 10px;
+background-size: 8px auto;
+box-shadow: 0 2px 0 #860909;
+}
+
+.mypage_table .tableBox table tr td ul li .receiptBtn {
+width: 115px;
+font-size:14px;
+padding: 8px 20px 7px 10px;
+background-size: 8px auto;
+box-shadow: 0 2px 0 #ae701f;	
+}
+
+.billAmount{
+font-size:20px;
+vertical-align: middle;
+margin-right: 10px;
+}
+.entry_list .tableBox table tfoot ul.disTable li span{
+margin:0 0 0 15px !important;
+}
+
+
+.pagination{
+margin-top:35px;
+}
+.pagination div{
+margin: 0 auto;
+}
+.pagination ul{
+display: block;
+width: 100%;
+text-align: center;
+}
+.pagination ul li{
+display: inline-block;
+}
+.pagination ul li a,
+.pagination ul li span{
+display:block;
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align:center;
+font-size:14px;
+border:2px solid #3275c6;
+text-decoration: none;
+margin:0 2px;
+}
+.pagination ul li a:hover{
+color:#ffffff;
+background:#3275c6;
+}
+.pagination ul li .current{
+color:#ffffff;
+background:#3275c6;
+}
+.pagination ul li span.dots{
+border:none !important;
+margin:0 auto!important;
+font-weight: bold;
+color:#3275c6;
+}
+.pagination ul li .before,
+.pagination ul li .next{
+text-indent:-9999px;
+}
+.pagination ul li .before{
+background: url(../images/icon/ico_arr_left_off.png) no-repeat center;
+background-size: 8px auto;
+}
+.pagination ul li .before:hover{
+background: #3275c6 url(../images/icon/ico_arr_left_on.png) no-repeat center !important;
+background-size: 8px auto;
+}
+.pagination ul li .next{
+background: url(../images/icon/ico_arr_right_off.png) no-repeat center;
+background-size: 8px auto;
+}
+.pagination ul li .next:hover{
+background: #3275c6 url(../images/icon/ico_arr_right_on.png) no-repeat center !important;
+background-size: 8px auto;
+}
+
+
+.tableBtn{
+table-layout: fixed;
+display: table;
+position: absolute;
+right: 10px;
+top: 0px;
+height: 95px;
+}
+.tableBtn ul{
+display: table-cell;
+vertical-align: middle;
+}
+.tableBtn ul li{
+padding:5px 0;
+}
+
+
+
+.contentInner .entryArea .canceled,
+.contentInner .entryArea .canceled div,
+.contentInner .entryArea .canceled ul li{
+color:#909090 !important;
+}
+.contentInner .entryArea .canceled table tfoot{
+background:#d6d6d6 !important;
+}
+.contentInner .entryArea .canceled .btnArea a.confirmBtn{
+	/*background:#6c6c6c !important;*/
+	box-shadow: 0 2px 0 #454545;
+	background: #6c6c6c url(../images/icon/ico_arr_right01.png) no-repeat 94% center;
+	background-size: 10px auto;
+}
+
+.entryDetail .tableBox{
+padding:15px 10px;
+}
+.entryDetail .tableBox .bgOrg,
+.entryDetail .tableBox .bgYlw,
+.entryDetail .tableBox .bgRed,
+.entryDetail .tableBox .bgFrst{
+display: inline-block;
+line-height: 100%;
+font-size:14px;
+padding: 3px 10px;
+margin: 0;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+}
+.entryDetail .tableBox ul.disTable span{
+    margin-right: 8px;
+}
+.entryDetail .feeBox{
+    padding: 0;
+    margin: 40px 0 50px;
+}
+.entryDetail .feeBox .entrydate{
+    font-size:14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.entryDetail .feeBox .entrydate span{
+    display: inline-block;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 20px;
+    color: #fff;
+    margin-right: 15px;
+}
+.pinkColor .entryDetail .feeBox .entrydate span{
+	background: #fd68a0;
+}
+.greenColor .entryDetail .feeBox .entrydate span{
+	background: #57b689;
+}
+
+.entryDetail .cancelColor .entrydate span {
+	background: #909090 !important;
+}
+.entryDetail .cancelColor .cellBG {
+	background-color: #d6d6d6 !important;
+}
+
+.entryDetail .cancelColor td .refundDone,
+.entryDetail .cancelstyle td .refundDone{
+	margin-left: 1em;
+	color: #C00;
+}
+
+/*green*/
+.greenColor .entryDetail .feeBox .entrydate span{background: #57b689;}
+
+.contentInner .entryDetail .feeBox td{
+    font-size:14px;
+}
+.entryDetail table{
+    border: 1px solid #b8bec3;
+}
+.entryDetail table .tCenter{
+    text-align: center;
+}
+.entryDetail table .limit{
+    width: 15%;
+    background: #f41313;
+    color: #fff;
+}
+.entryDetail .bgpink{
+    background: #fbe7ef;
+}
+/*green*/
+
+
+.contentInner .entryDetail .boderT{
+    border-top: 1px solid #b8bec3;
+}
+.contentInner .entryDetail .boderL{
+    border-left: 1px solid #b8bec3;
+}
+.contentInner .entryDetail .boderR{
+    border-right: 1px solid #b8bec3;
+}
+.entryDetail .tripHokenBtn{
+    width: 150px;
+    margin: 0 auto 6px;
+}
+.entryDetail .tripHokenBtn a{
+    color: #ffffff;
+    font-weight: bold;
+    background: #1ec2a9;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #117465;
+    position: relative;
+    font-size: 12px;
+}
+.entryDetail .tripHokenBtn a:after{
+    background:url(../images/arrow.png) 0 0 no-repeat;
+    background-size:8px 13px;
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:13px;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    margin-top: -7px;
+}
+.entryDetail .public_btn,
+.entryDetail .paymentBtn{
+    width: 150px;
+    margin: 0 auto 6px;
+}
+.entryDetail .public_btn a,
+.entryDetail .paymentBtn a{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 3px;
+    position: relative;
+}
+.entryDetail .public_btn a{
+    color: #ffffff;
+    background: #faad34;
+    box-shadow: 0 2px 0 #ae701f;
+}
+.entryDetail .paymentBtn a{
+    color: #ffffff;
+    background: #f41313;
+    box-shadow: 0 2px 0 #860909;
+}
+.entryDetail .public_btn a:after,
+.entryDetail .paymentBtn a:after{
+    background:url(../images/arrow.png) 0 0 no-repeat;
+    background-size:8px 13px;
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:13px;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    margin-top: -7px;
+}
+.entryDetail .bgblueBtn a{
+    background: #68acdc;
+    box-shadow: 0 2px 0 #3675a2;
+    position: relative;
+}
+.entryDetail .cancel_btn{
+    width: 150px;
+    margin: 0 auto 6px;
+}
+.entryDetail .cancel_btn a{
+    color: #6c6c6c;
+    font-weight: bold;
+    font-size:14px;
+    background:#e7e7e7 url(../images/batsu.png) no-repeat 10px center;
+    display: block;
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #999999;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_btn a{
+    color: #ffffff;
+    font-size:14px;
+    font-weight: bold;
+    background: #faad34;
+    display: block;
+    text-align: center;
+    padding: 5px 15px 5px 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #ae701f;
+    position: relative;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_btn a:after{
+    background:url(../images/arrow.png) 0 0 no-repeat;
+    background-size:8px 13px;
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:13px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_btn{
+    width: 220px;
+    text-align: center;
+    margin-right: 8px;
+    float:left;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_btn a{
+    background: #68acdc;
+    box-shadow: 0 2px 0 #3675a2;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_mail{
+  float:right;
+  width:600px;
+  font-size:14px;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_mail .icon_mail:before{
+  content:'';
+  display: inline-block;
+  background:url(../images/mail_new.png);
+	background-size: 20px 18px;
+  width:20px;
+  height:18px;
+  position: relative;
+  top:3px;
+  left:-2px;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_mail input[type="text"]{
+  width:280px;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_mail input[type="button"]{
+    color: #ffffff;
+    font-weight: bold;
+    background: #faad34;
+    display: inline-block;
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #ae701f;
+    position: relative;
+    border-width:0;
+    width:80px;
+    cursor: pointer;
+    font-size:14px;
+    font-weight: bold;
+}
+.entryDetail .passengerArea .barcodeArea .barcode_mail input[type="button"]:hover{
+  opacity: 0.8;
+}
+.entryDetail .flightInfoArea{
+        margin-bottom: 20px;
+}
+.entryDetail .flightInfoArea .flightInfoBox{
+    border-top: 1px solid #b8bec3;
+    border-left: 1px solid #b8bec3;
+    border-right:  1px solid #b8bec3;
+}
+.entryDetail .flightInfoBox .dateAera{
+    background: #fbe7ef;
+    font-size:14px;
+    padding: 10px;
+}
+
+/* color */
+.greenColor .entryDetail .flightInfoBox .dateAera{background: #e5f4ed;}
+.pinkColor .entryDetail .flightInfoBox .dateAera{background: #fbe7ef;}
+
+.entryDetail .flightInfoBox .dateAera .dateCont{
+    float: left;
+}
+.entryDetail .flightInfoBox .dateAera .dateCont .routeNum{
+    background: #fd68a0;
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/*green*/
+.greenColor .entryDetail .flightInfoBox .dateAera .dateCont .routeNum{background: #57b689;}
+
+.entryDetail .flightInfoBox .dateAera .dateCont .boad{
+    background: url(../images/calender.png) no-repeat 0 center;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+/*green*/
+.greenColor .entryDetail .flightInfoBox .dateAera .dateCont .boad{
+    background: url(../images/calender_green.png) no-repeat 0 center;
+}
+
+.entryDetail .flightInfoBox .dateAera .dateCont .date{
+    margin-left: 10px;
+    font-size:18px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+.entryDetail .flightInfoBox .dateAera .num{
+    float: right;
+}
+.entryDetail .flightInfoBox .route{
+    padding: 10px;
+}
+.entryDetail .flightInfoBox .route dl{
+  float: left;
+}
+.entryDetail .flightInfoBox .route dl.boad{
+  width: 200px;
+}
+.entryDetail .flightInfoBox .route dl.fligtName{
+  width: 200px;
+}
+.entryDetail .flightInfoBox .route dl.fligtName span{
+	font-size: 70%;
+}
+.entryDetail .flightInfoBox .route dl.section{
+  width: 550px;
+}
+.entryDetail .flightInfoBox .route dt{
+    background: #f1f1f1;
+    padding: 0 30px;
+    display: inline-block;;
+}
+.entryDetail .flightInfoBox .route dd{
+    font-size:20px;
+	margin: 15px 0 10px;
+	line-height: 1;
+}
+
+.entryDetail .reservenum{
+    border-bottom: none !important;
+    background: #68ACDC;
+}
+.entryDetail .option{
+    border-top: 1px solid #b8bec3;
+    border-left: 1px solid #b8bec3;
+    border-right: 1px solid #b8bec3;
+}
+.entryDetail .option dl,
+.entryDetail .reservenum dl{
+    float: left;
+    width: 30%;
+    padding: 5px 0 5px 10px;
+}
+.entryDetail .option dt{
+    float: left;
+    background: #f1f1f1;
+    padding: 0 10px;
+    margin-right: 5px;
+}
+
+.entryDetail .reservenum dt{
+    background: #FFF;
+	font-weight: bold;
+	color: #3675A2;
+}
+.entryDetail .reservenum dd{
+  font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+  line-height: 1.3em;
+}
+/* 確認番号が搭乗者ごと(JALの場合)// */
+.entryDetail .passengerArea .passengerDetail .confirmNum {
+	border: none;
+	background-color: #68ACDC;
+}
+.entryDetail .passengerArea .passengerDetail .confirmNum dl {
+	padding: 5px 0 5px 10px !important;
+}
+.entryDetail .passengerArea .passengerDetail .confirmNum dt{
+    background: #FFF !important;
+	font-weight: bold;
+	color: #3675A2;
+}
+.entryDetail .passengerArea .passengerDetail .confirmNum dd{
+  font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+  line-height: 1.3em;
+}
+/* //確認番号が搭乗者ごと(JALの場合)*/
+.entryDetail .barcodeArea{
+    border:none;
+    border-bottom: none;
+    padding: 5px 0;
+}
+
+/* SKY航空引換証 */
+.entryDetail .barcodeArea .skyBarcode_btn{
+    width: 200px;
+    text-align: center;
+    margin-right: 8px;
+    float:right;
+}
+.entryDetail .barcodeArea .skyBarcode_btn a{
+    position: relative;	
+    display: block;	
+    background: #145a8b;
+    border-radius: 3px;	
+    box-shadow: 0 2px 0 #012e4f;	
+    padding: 5px 15px 5px 0;	
+    font-size:14px;
+    font-weight: bold;
+    color: #ffffff;	
+    text-align: center;
+    text-decoration:none;
+    line-height:1.6;	
+}
+.entryDetail .barcodeArea .skyBarcode_btn a:after{
+    background:url(../images/arrow.png) 0 0 no-repeat;
+    background-size:8px 13px;
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:13px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px;
+}
+/* //SKY航空引換証 */
+
+.entryDetail .passengerArea{}
+.entryDetail .passengerArea + .flightInfoBox{
+  position: relative;
+  top:-1px;
+}
+.entryDetail .passengerArea .passenger_ttl{
+    background: #fbe7ef;
+    width: 10%;
+    float: left;
+    min-height: 235px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*green*/
+.greenColor .entryDetail .passengerArea .passenger_ttl{background: #e5f4ed;}
+
+.entryDetail .passengerArea table,
+.entryDetail .applicant table{
+    width: 100%;
+}
+.entryDetail .passengerArea table th,
+.entryDetail .applicant table th{
+    width: 10%;
+    background: #fbe7ef;
+}
+/*green*/
+.greenColor .entryDetail .passengerArea table th,
+.greenColor .entryDetail .applicant table th {
+	background: #e5f4ed;
+}
+
+
+.entryDetail .passengerArea table td,
+.entryDetail .applicant table td {
+    width: 90%;
+}
+.entryDetail .passengerArea .passengerGroup,
+.entryDetail .applicant .applicantGroup{
+    float: left;
+    padding: 1.5%;
+    width: 96%;
+}
+.entryDetail .passengerArea .caution{
+  background:#f41313;
+  color:#fff;
+  padding:5px;
+}
+
+.entryDetail .passengerArea .caution_refund{
+  background:#ff7e00;
+  color:#fff;
+  padding:5px;
+}
+
+
+.entryDetail .passengerArea .passengerDetail,
+.entryDetail .applicant .applicantDetail{
+    border-bottom: 1px dotted #a0a0a0;
+}
+
+/* partlyCancel */
+.entryDetail .partlyCancel_wrap{
+	border: 3px dotted #f41313;
+}
+.entryDetail .passengerArea .partlyCancel_wrap{
+    border: 3px dotted #f41313;
+	padding: 5px;
+}
+.entryDetail .partlyCancel_wrap .status_cancel {
+	font-weight: bold;
+	color: #f41313;
+}
+
+.entryDetail .partlyCancel{
+	border: none;
+}
+.entryDetail .passengerArea .partlyCancel {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px dotted #a0a0a0;
+	padding: none;
+}
+.entryDetail .partlyCancel .flightInfoBox .dateAera,
+.entryDetail .partlyCancel .passengerArea table th{
+	background-color: #d6d6d6;
+}
+.entryDetail .partlyCancel_wrap .dateAera .dateCont .routeNum{
+	margin-right: 10px;
+}
+.entryDetail .partlyCancel .flightInfoBox .dateAera .dateCont .routeNum{
+	background-color: #909090;
+	margin-right: 10px;
+}
+.entryDetail .partlyCancel .dateAera .dateCont .status_cancel {
+	color: #f41313;
+}
+.entryDetail .partlyCancel * {
+	color: #909090;
+}
+
+.entryDetail .partlyCancel .status_cancel {
+	color: #f41313;
+}
+
+
+/* partlyRefund */
+
+.entryDetail .partlyRefund_wrap{
+	border: 3px dotted #ff7e00;
+}
+
+.entryDetail .passengerArea .partlyRefund_wrap{
+    border: 3px dotted #ff7e00;
+	padding: 5px;
+}
+
+.entryDetail .partlyRefund_wrap .status_cancel {
+	font-weight: bold;
+	color: #ff7e00;
+}
+
+.entryDetail .passengerArea .passengerDetail dl,
+.entryDetail .applicant .applicantDetail dl{
+    font-size:14px;
+    float: left;
+    width: 100%;
+    padding: 5px 0 5px 0;
+}
+.entryDetail .passengerArea .passengerDetail .name,
+.entryDetail .applicant .applicantDetail .name{
+    width: 38%;
+}
+.entryDetail .passengerArea .passengerDetail .name span,
+.entryDetail .applicant .applicantDetail .name span{
+    font-weight: bold;
+}
+.entryDetail .passengerArea .passengerDetail .birth,
+.entryDetail .applicant .applicantDetail .email{
+    width: 30%;
+}
+.entryDetail .applicant .applicantDetail .email dd a span {
+	display: inline-block;
+	line-height: 100%;
+	border-radius:3px;
+	background-color:#ff5115;
+	padding:3px 7px;
+	font-size:12px;
+	color:#FFF;
+}
+.entryDetail .applicant .applicantDetail .email dd a:hover span {
+	background-color:#cc4421;
+}
+.entryDetail .passengerArea .passengerDetail .sex,
+.entryDetail .applicant .applicantDetail .tel{
+    width: 10%;
+}
+.entryDetail .passengerArea .passengerDetail .hoken{
+    width: 18%;
+}
+/* 20181001追加 */
+.entryDetail .passengerArea .passengerDetail .option{
+    border-top: 1px solid #b8bec3;
+	border-left: none;
+	border-right: none;
+}
+.entryDetail .passengerArea .passengerDetail .option dl {
+    float: left;
+    width: 30%;
+    padding: 5px 0;
+}
+.entryDetail .passengerArea .passengerDetail .option dt {
+    float: left;
+    background: #f1f1f1;
+    padding: 0 10px;
+    margin-right: 5px;
+}
+/* //20181001追加 */
+.contentInner .pulicList .tableBox table .dottedBott td:first-child::after{
+    width: 975px;
+}
+
+.mypage_table .tableBox table tr td ul li.issueed,
+.mypage_table .tableBox table tr td ul li.unissue{
+    width: 100px;
+    text-align: center;
+}
+.mypage_table .tableBox table tr td ul li.issueed span{
+    background: #24c024;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 10px;
+}
+.mypage_table .tableBox table tr td ul li.unissue span{
+    background: #f41313;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 10px;
+}
+.pulicList .sort,
+.entryArea .sort{
+    margin-bottom: 20px;
+}
+.pulicList .sort a,
+.entryArea .sort a{
+    text-decoration: underline;
+}
+.pulicList .sort a.board_date,
+.entryArea .sort a.board_date{
+    margin-right: 20px;
+}
+.contentInner .entryDetail .cancelBox{
+    text-align: center;
+    background: #fad3d3;
+}
+/* cancelColor */
+.contentInner .entryDetail .cancelBox p{
+    color: #f41313;
+    font-weight: bold;
+}
+.contentInner .entryDetail .cancelColor *{
+  color:#909090
+}
+/* 20181001追加 */
+.contentInner .entryDetail .cancelColor .bgblueBtn a {
+	color: #FFF;
+}
+/* //20181001追加 */
+.contentInner .entryDetail .cancelColor .h5ttl span{
+ color:#585858;
+}
+.contentInner .entryDetail .cancelColor .dateAera{
+    background: #d6d6d6;
+}
+.contentInner .entryDetail .cancelColor .reservenum{
+    background: #fff;
+}
+.contentInner .entryDetail .cancelColor .dateAera .routeNum,
+.greenColor .contentInner .entryDetail .cancelColor .dateAera .routeNum{
+    background: #909090;
+}
+.contentInner .entryDetail .cancelColor .passengerArea th,
+.contentInner .entryDetail .cancelColor .applicant th{
+    background: #d6d6d6;
+}
+.contentInner .entryDetail .cancelColor .dateCont .boad,
+.greenColor .contentInner .entryDetail .cancelColor .dateCont .boad{
+    background: url(../images/calender_gray.png) no-repeat 0 center;
+}
+/* 20181001追加
+.contentInner .entryDetail .settledstyle table tr td:nth-child(3),
+.contentInner .entryDetail .settledstyle table tr td:nth-child(1){
+    width: 12%;
+}
+//20181001追加 */
+.contentInner .entryDetail .cancelstyle table tr td:nth-child(3),
+.contentInner .entryDetail .cancelstyle table tr td:nth-child(1){
+    /*width: 20%;*/
+	width: 15%;
+}
+.contentInner .entryDetail .cancelstyle table tr td:nth-child(2),
+.contentInner .entryDetail .cancelstyle table tr td:nth-child(4){
+    width: 35%;
+}
+/* 20181001追加 */
+.contentInner .entryDetail .cancelstyle .afterPay2 tr td:nth-child(3),
+.contentInner .entryDetail .cancelstyle .afterPay2 tr td:nth-child(1) {
+width: 15%;
+}
+.contentInner .entryDetail .cancelstyle .afterPay2 tr td:nth-child(2),
+.contentInner .entryDetail .cancelstyle .afterPay2 tr td:nth-child(4) {
+width: 25%;
+}
+/* //20181001追加 */
+.contentInner .entryDetail .cancelstyle table td{
+    padding: 10px;
+}
+
+/* page13 */
+.entryDetail .cancelConfirm .number{
+    text-align: right;
+}
+
+.entryDetail .cancelConfirm .confirmCom{
+    margin: 10px 0
+}
+.entryDetail .cancelConfirm .confirmCom_refund{
+	float: right;
+	margin: -2.7em 0 10px;
+	line-height: 2;
+}
+.entryDetail .cancelConfirm .confirmCom a,
+.entryDetail .cancelConfirm .confirmCom_refund a {
+	text-decoration: underline;
+}
+
+.entryDetail .cancelConfirm .flightCnacelArea{
+    border: 4px solid #f41313;
+    margin-bottom: -4px;
+}
+
+.entryDetail .cancelConfirm .passengerDetail .name {
+    width: 32%;
+}
+.entryDetail .cancelConfirm .passengerDetail .birth {
+    width: 25%;
+}
+.entryDetail .cancelConfirm .passengerDetail .sex {
+    width: 9%;
+}
+.entryDetail .cancelConfirm .passengerDetail .hoken {
+    width: 14%;
+}
+.entryDetail .cancelConfirm .choice {
+    float: left;
+    width:4%;
+    margin-top: 25px;
+}
+
+.entryDetail .cancelConfirm .choice input[type=checkbox] {
+  display: none;
+}
+.entryDetail .cancelConfirm .choice input[type=checkbox]:checked + label:before {
+  content: '';
+  background: #ffffff url("../images/check_ico.png");
+  width: 25px; /* ボックスの横幅 */
+  height: 25px; /* ボックスの縦幅 */
+}
+.entryDetail .cancelConfirm .choice label:before {
+  content: '';
+  width: 25px; /* ボックスの横幅 */
+  height: 25px; /* ボックスの縦幅 */
+  display: inline-block;
+  position: relative;
+  left: 0;
+  background-color:#fff;
+  box-shadow: inset 1px 1px 1px 0px #ccc;
+  border: 1px solid #929292;
+}
+
+.entryDetail .cancelConfirm .bordicon,
+.entryDetail .cancelConfirm .noBord,
+.entryDetail .cancelConfirm .yesBord,
+.entryDetail .cancelConfirm .refund,
+.entryDetail .cancelConfirm .noRefund{
+    float: left;
+    width:14%;
+    margin-top: 20px;
+}
+.entryDetail .cancelConfirm .noBord span{
+    background: #f41313;
+    color: #ffffff;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    display: block;
+}
+.entryDetail .cancelConfirm .yesBord span{
+    background: #12a45e;
+    color: #ffffff;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    display: block;
+}
+.entryDetail .cancelConfirm .refund span{
+    background: #ff7e00;
+    color: #ffffff;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    display: block;
+}
+.entryDetail .cancelConfirm .noRefund span{
+    background: #009edb;
+    color: #ffffff;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    display: block;
+}
+.entryDetail .cancelConfirm .blank{
+    float: left;
+    width:14%;
+    margin-top: 20px;
+}
+.entryDetail .cancelConfirm .decisionArea {
+    background: #fdfde5;
+    margin-top: 50px;	
+    padding: 20px;
+}
+.entryDetail .cancelConfirm .decisionArea form{
+    margin-bottom: 10px;
+}
+
+/* チェックボックス */
+.entryDetail .cancelConfirm .decisionArea label {
+  padding-left: 38px; /* ラベルの位置 */
+  line-height: 25px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size:18px;
+  color: #f41313;
+}
+.entryDetail .cancelConfirm .decisionArea label:hover{
+  opacity: 0.75;
+}
+.entryDetail .cancelConfirm .decisionArea label:before {
+  content: '';
+  width: 25px; /* ボックスの横幅 */
+  height: 25px; /* ボックスの縦幅 */
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  background-color:#fff;
+  box-shadow: inset 1px 1px 1px 0px #ccc;
+  border: 1px solid #929292;
+}
+.entryDetail .cancelConfirm .decisionArea input[type=checkbox] {
+  display: none;
+}
+.entryDetail .cancelConfirm .decisionArea input[type=checkbox]:checked + label:before {
+  content: '';
+  background: #ffffff url("../images/check_ico.png");
+  width: 25px; /* ボックスの横幅 */
+  height: 25px; /* ボックスの縦幅 */
+}
+.entryDetail .cancelConfirm .btnArea{
+  width: 71%;
+  margin: 30px auto 20px;
+}
+
+.entryDetail .cancelConfirm .btnArea .cancelBack_btn{
+    background: #f1f1f1;
+    width: 295px;
+    border-radius: 6px;
+    box-shadow: 0 3px 0 #d4d4d4;
+    text-align: center;
+    float: left;
+}
+.entryDetail .cancelConfirm .btnArea .cancelEntry_btn{
+    background: #faad34;
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 3px 0 #ae701f;
+    text-align: center;
+    float: right;
+}
+
+.entryDetail .cancelConfirm .btnArea .cancelBack_btn a{
+    color: #5b5c5c;
+    text-decoration: none;
+    display: block;
+    padding: 18px 30px;
+    font-size:18px;
+    font-weight: bold;
+    position: relative;
+}
+.entryDetail .cancelConfirm .btnArea .cancelEntry_btn a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 18px 30px;
+    font-size:18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.entryDetail .cancelConfirm .btnArea .cancelBack_btn a:after {
+    background:url(./images/migi.png) 0 0 no-repeat;
+    background-size:30px 30px;
+    content:"";
+    display:inline-block;
+    width:30px;
+    height:30px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -15px;
+}
+.entryDetail .cancelConfirm .btnArea .cancelEntry_btn.disable{
+    background: #dcdcdc;
+    box-shadow: 0 3px 0 #969696;
+}
+.entryDetail .cancelConfirm .btnArea .cancelEntry_btn.disable a{
+    color: #9a9a9a;
+    pointer-events: none;
+}
+
+/*page19*/
+.contentInner .table01b tr td:nth-of-type(1),
+.contentInner .table01b tr td:nth-of-type(3){width:18%!important;}
+.contentInner .table01b tr td:nth-of-type(2),
+.contentInner .table01b tr td:nth-of-type(4){width:35%!important;}
+.contentInner .paidCont_wrap{font-size:14px;}
+.contentInner .paidCont{display: table;width:100%;border:1px solid #b8bec3;border-bottom-width: 0;}
+.contentInner .paidCont dt{display: table-cell;width:230px;background:#fcf9cf;padding:5px 13px;}
+.contentInner .paidCont dd{display: table-cell;text-align: center;padding:5px 13px;}
+.contentInner .sumally_bd {border-top: 2px solid #f41313}
+.contentInner .sumally dt{font-weight: bold;color:#fff;background:#f41313;}
+.contentInner .sumally dd{font-weight: bold;color:#f41313;}
+.contentInner .sumally{border-bottom-width: 1px;}
+.contentInner .entry_confirmBtn{
+    background: #faad34;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 0 #ae701f;
+    margin-top: 40px;
+}
+.contentInner .entry_confirmBtn:hover{
+  opacity: 0.8;
+}
+.contentInner .entry_confirmBtn a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 0;
+    font-size:24px;
+    font-weight: bold;
+    position: relative;
+}
+.contentInner .entry_confirmBtn a:after {
+    background:url(../images/arrow.png) 0 0 no-repeat;
+    background-size:12px 19px;
+    content:"";
+    display:inline-block;
+    width:12px;
+    height:19px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+/*disable*/
+.contentInner .entry_confirmBtn.disable{
+    background: #dcdcdc;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 0 #969696;
+    margin-top: 40px;
+}
+.contentInner .entry_confirmBtn.disable a {
+    color: #9a9a9a;
+    pointer-events: none;
+}
+
+/*page20*/
+.memberArea{margin-top:45px;}
+.memberArea .member_wrap{font-size:14px;margin:10px 0 20px;}
+.memberArea .member_wrap + h5{margin-top:40px;}
+.memberArea .memberCont{display: table;width:100%;border:1px solid #b8bec3;border-bottom-width: 0;}
+.memberArea .memberCont dt{display: table-cell;width:388px;padding:25px 13px;vertical-align: middle;position: relative;font-weight:bold;color:#585858;}
+.memberArea .memberCont dt .must{display: inline-block;color:#fff;background:#f41313;font-size:14px;padding:2px 10px;line-height: 100%;position: absolute;top:50%;right:15px;margin-top:-10px;}
+.memberArea .memberCont INPUT[type="text"],
+.memberArea .memberCont INPUT[type="password"]{width:446px;box-sizing: border-box;font-size:14px;}
+.memberArea .memberCont INPUT[type="text"].half{width:230px}
+.memberArea .memberCont SELECT{width:90px;padding:5px 0;font-size:14px;}
+.memberArea .memberCont SELECT.yyyy{width:130px;}
+.memberArea .memberCont .lastname{margin-right:40px;}
+.memberArea .memberCont .attention{font-size:14px;color:#e70e0f;font-weight: normal;text-align: left;margin:0;padding:0;}
+.memberArea .sexradio label{
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+  cursor: pointer;
+  line-height: 20px;
+}
+.memberArea .sexradio label:before{
+  content: '';
+  width: 18px;  /* ボタンの横幅 */
+  height: 18px;  /* ボタンの縦幅 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #6e6e6e;
+  border-radius: 50%;
+}
+.memberArea .sexradio input[type="radio"] {
+  display: none;
+}
+.memberArea .sexradio input[type="radio"]:checked + label:after {
+content: '';
+width: 10px;  /* マークの横幅 */
+height: 10px;  /* マークの縦幅 */
+position: absolute;
+top: 5px;
+left: 5px;
+background-color: #000;
+border-radius: 50%;
+}
+.memberArea .profile .memberCont dt{display: table-cell;width:268px;}
+.memberArea .memberCont dd{display: table-cell;padding:10px 20px;vertical-align: middle;}
+.memberArea .member_wrap .memberCont:last-child{border-bottom-width: 1px;}
+.leave{/*margin-top:40px;text-align: center;font-size:18px;*/}
+.leave a{text-decoration: underline;}
+
+.pinkColor .memberArea .memberCont dt{background-color:#fbe7ef;}
+.greenColor .memberArea .memberCont dt{background-color:#daede4;}
+
+/*page19*/
+.leavePage .leave_msg{padding:40px 20px;font-size:18px;}
+.leavePage .btnAreas{
+    width: 710px;
+    margin: 35px auto 0;
+}
+
+.leavePage .btnAreas .cancel_btn {
+    background: #f1f1f1;
+    width: 295px;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 #d4d4d4;
+    text-align: center;
+    float: left;
+}
+.leavePage .btnAreas .cancel_btn a{color:#5b5c5c;}
+.leavePage .btnAreas .cancel_btn a,
+.leavePage .btnAreas .leave_btn a{
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    font-size:18px;
+    font-weight: bold;
+    position: relative;
+}
+.leavePage .btnAreas .cancel_btn:hover,
+.leavePage .btnAreas .leave_btn:hover{
+    opacity: 0.75;
+}
+
+.leavePage .btnAreas .leave_btn a{color:#fff;}
+.leavePage .btnAreas .leave_btn {
+    background: #faad34;
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 #ae701f;
+    text-align: center;
+    float: right;
+    color: #fff;
+}
+
+.leavePage .btnAreas .leave_btn a:after {
+    background: url(../images/arrow.png) 0 0 no-repeat;
+    background-size: 12px 19px;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 19px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+/*page13*/
+.attemtionArea{border:1px solid #f41313;margin-top:40px;margin-bottom:40px;}
+.attemtionArea H5{color:#fff;text-align:center;font-size:18px;background:#f41313;font-weight: bold;}
+.attemtionArea .area_bdy{padding:20px;}
+.attemtionArea .area_bdy ul {
+	margin-left: 1em;
+}
+.attemtionArea .area_bdy ul li {
+	margin-bottom: 1em;
+	text-indent: -1em;
+}
+.attemtionArea .area_bdy ul li .txt_red {
+	font-weight: bold;
+	color: #F00;
+}
+.attemtionArea .area_bdy ul li .underline {
+	text-decoration: underline;
+}
+.attemtionArea H5:before{    background: url(../images/frm_attention.png) 0 0 no-repeat;
+    background-size: 32px 28px;
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 28px;
+    position: relative;
+    right: 5px;
+    top:4px;
+}
+.btnAttention {
+	text-align: center;
+}
+.btnAttention .underline {
+	text-decoration: underline;
+}
+.selectArea{margin-bottom:20px;}
+.selectArea input{position: absolute;left:30%;top:20%;}
+.selectArea P{
+  display: block;
+  width:50%;
+  float:left;
+  position: relative;
+}
+.selectArea label{
+  display: block;
+  width:100%;
+  box-sizing: border-box;
+  background:#ccc;
+  cursor: pointer;
+  margin-bottom:20px;
+  padding:10px;
+  text-align: center;
+  font-size:18px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0) linear-gradient(#fff, #d7d7d7) repeat scroll 0 0;
+}
+.selectArea label:before{
+  content: '';
+  width: 18px; /* ボタンの横幅 */
+  height: 18px; /* ボタンの縦幅 */
+  position: absolute;
+  top:  16px;
+  left: 159px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #6e6e6e;
+}
+.selectArea input[type="radio"] {
+  display: none;
+}
+.selectArea input[type="radio"]:checked + label:after {
+  content: '';
+  width: 10px; /* マークの横幅 */
+  height: 10px; /* マークの縦幅 */
+  position: absolute;
+  top: 21px;
+  left: 164px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.selectArea label.deltype1{
+  border:1px solid #acacac;
+  border-right: 0;
+  border-radius:6px 0 0 6px;
+}
+.selectArea label.deltype2{
+  border:1px solid #acacac;
+  border-radius:0 6px 6px 0;
+}
+.selectArea input:checked + label {
+    background: rgba(0, 0, 0, 0) linear-gradient(#f6f2c7, #ffffff) repeat scroll 0 0;
+}
+.result_num{font-weight: bold;color:#f41313;}
+.result_num:before{content:' → ';color:#585858;}
+/* clearfix */
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* common */
+.txt_b{font-weight: bold;}
+.day_sat{color:#4250b9;}
+.day_sun{color:#f41313;}
+
+.canceled .day_sat, .canceled .day_sun{color:#909090;}

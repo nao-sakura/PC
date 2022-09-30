@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="国内旅行傷害保険｜格安航空券の検索、飛行機チケット最安値比較サイト【さくらトラベル】24時間365日いつでもどこにいてもスマートフォンやアプリ、パソコンで航空券をカンタン予約お申込みOK！">
+    <meta name="keywords" content="国内旅行傷害保険,格安航空券,国内航空券,飛行機,予約,激安">
+    <title>国内旅行傷害保険｜格安航空券さくらトラベル</title>
+    <link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/reset.css" />
+    <link rel="stylesheet" media="all" href="https://www.sakuratravel.jp/css/common.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/addition.css" />
+    <link rel="stylesheet" href="css/insurance.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://www.sakuratravel.jp/js/modernizr-2.0.6-development-only.js"></script>
+    <!-- IE向けの設定 -->
+    <!--[if IE]>
+<script src="http://www.sakuratravel.jp/js/html5.js"></script>
+<script src="http://www.sakuratravel.jp/js/css3-mediaqueries.js"></script>
+<![endif]-->
+    <script type="text/javascript" src="http://www.sakuratravel.jp/js/smoothScroll.js"></script>
+    <script type="text/javascript" src="http://www.sakuratravel.jp/js/smartRollover.js"></script>
+    <script type="text/javascript" src="js/dropdown_menu.js"></script>
+    <!-- 流入サイト用スクリプト -->
+    <script language="JavaScript">
+      <!--
+var utm_source = get_para('utm_source') + "";
+var medium = get_para('utm_medium');
+var campaign = get_para('utm_campaign');
+if (utm_source == "line") {
+    $.ajax({
+        type: "POST",
+        async: false,
+        data: "utm_source=" + utm_source + "&utm_medium=" + medium + "&utm_campaign=" + campaign,
+        url: "https://www.sakuratravel.jp/search/ses_on.php",
+        success: function(data){
+      var ar_data = data.split("__");
+      if (ar_data[1] == 1) {
+        document.cookie = "fromsite=" + ar_data[0] + "; max-age=" + ar_data[5] + ";path=/;";
+        document.cookie = "fromsite2=" + ar_data[3] + "; max-age=" + ar_data[5] + ";path=/;";
+        document.cookie = ar_data[2] + "=" + ar_data[4] + "; max-age=" + ar_data[5] + ";path=/;";
+      }
+        },
+        error: function(data) {
+        }
+    });
+}
+
+function get_para(name) {
+    var url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return '';
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+      // -->
+    </script>
+    <!-- //流入サイト用スクリプト -->
+    <!--　アラート　-->
+    <style type="text/css">
+      .errormsg {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+    <!--//　アラート　-->
+    <!-- 入力用スクリプト -->
+    <script language="JavaScript">
+      <!--
+$(function(){
+//  $("body").keypress( function( event ) {
+  $("#mailaddress").keypress( function( event ) {
+    if( event.which === 13 ){
+      goNext("mypage");
+    }
+  });
+  $("#password").keypress( function( event ) {
+    if( event.which === 13 ){
+      goNext("mypage");
+    }
+  });
+
+  $("#contactnumber").keypress( function( event ) {
+    if( event.which === 13 ){
+      goNext("kakunin");
+    }
+  });
+  $("#tel").keypress( function( event ) {
+    if( event.which === 13 ){
+      goNext("kakunin");
+    }
+  });
+});
+
+function checkInput(div, this_form) {
+  if (div == "mypage") {
+    if (this_form.m_email.value == '') {
+      alert('メールアドレス(ID)を入力して下さい。');
+      this_form.m_email.focus();
+      return false;
+    }
+    if (this_form.m_passwd.value == '') {
+      alert('パスワードを入力して下さい。');
+      this_form.m_passwd.focus();
+      return false;
+    }
+  } else if (div == "kakunin") {
+    if (this_form.kkakunin_toiawase.value == '') {
+      alert('お問合番号を入力して下さい。');
+      this_form.kkakunin_toiawase.focus();
+      return false;
+    }
+    if (this_form.kkakunin_tel.value == '') {
+      alert('電話番号を入力して下さい。');
+      this_form.kkakunin_tel.focus();
+      return false;
+    }
+  } else {
+    alert('不正な操作です。');
+    return false;
+  }
+  return true;
+}
+
+function goNext(div) {
+  var this_form = document.forms[0];
+  if (checkInput(div, this_form) == false) {
+    return false;
+  }
+  if (div == "mypage") {
+    this_form.m_login.value = 1;
+  } else {
+    this_form.k_login.value = 1;
+  }
+  this_form.submit();
+}
+      // -->
+    </script>
+    <!-- //入力用スクリプト -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-559JDV');</script>
+    <!-- End Google Tag Manager -->
+    <!-- A8 -->
+    <script src="//statics.a8.net/a8sales/a8sales.js"></script>
+    <!-- End A8 -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-559JDV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--// ヘッダー //-->
+    <header id="pagetop" class="headerArea systemHeader">
+      <div class="slogan">
+        <p>全国どこでも24時間365日受付対応！航空会社を一括比較！</p>
+      </div>
+      <div class="headerBlock clearfix">
+        <div class="logo clearfix">
+          <a href="/"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/logo.png" alt="さくらトラベル "></a>
+          <h1>国内すべての航空会社の格安航空券を比較・予約</h1>
+        </div>
+        <div class="rightArea clearfix">
+          <div class="link clearfix">
+            <ul>
+              <li><a href="https://www.sakuratravel.jp/contact.html" target="_blank">お問い合わせ</a></li>
+              <li><a href="https://www.sakuratravel.jp/attention/" target="_blank">サポートセンター利用規定</a></li>
+            </ul>
+          </div>
+          <!--link-->
+        </div>
+        <!--rightArea-->
+      </div>
+      <!--headerBlock-->
+    </header>
+    <!--//　ヘッダー -->
+
+<!--// コンテンツ //-->
+<div class="wrapper ft_system">
+    <div class="contents grayColor">
+        <div class="myPage insuAreaContainer">
+            <div class="headline clearfix">
+                <h3>さくらトラベル国内旅行傷害保険（航空機欠航・遅延時の宿泊費補償付き）プランのご案内</h3>
+            </div>
+            <div class="h4wrap clearfix t-m40">
+              <p>さくらトラベルでは航空機の欠航・遅延時の宿泊費をはじめとする、旅先での各種トラブルに対応した国内旅行傷害保険の加入をおすすめしています。</p>
+            </div>
+
+            <div class="headline_4">
+              <h4>ケガによる入院、通院や手荷物の盗難はもちろん、<br>
+                航空機の欠航・遅延により、搭乗予定日の同日中に代替便が利用できなかった場合、宿泊1回につき1万円を補償！</h4>
+            </div>
+
+            <div class="insuArea clearfix b-m30">
+              <h5 class="basis_guarantee">補償事例</h5>
+                <div class="aviation">
+                    <div class="aviationList clearfix">
+                        <h6>航空機欠航・遅延時の宿泊費補償</h6>
+                        <p>航空機が台風等で欠航した際に、宿泊費を補償。<br>
+                        <span>※欠航・遅延に伴う宿泊1回につき1万円をお支払いします。</span></p>
+                        <div class="boximg">
+                        <img src="./images/snow.jpg" alt="航空機欠航・遅延補償">
+                        <img src="./images/storm.jpg" alt="航空機欠航・遅延補償">
+                        </div>
+                    </div>
+                </div>
+                <div class="basic">
+                    <div class="basicList clearfix">
+                        <div class="boxgroup boxleft clearfix">
+                            <div class="damage">
+                                <h6><span>損害</span>（死亡保険金、後遺障害保険金、入院保険金、手術保険金、通院保険金）</h6>
+                                <div class="clearfix">
+                                    <img src="./images/damage.jpg" alt="損害">
+                                    <p>旅行先で交通事故に遭った。</p>
+                                    <p>スポーツをして骨折した。</p>
+                                </div>
+                            </div>
+                            <div class="carry">
+                                <h6><span>携行品</span>（自己負担¥3,000）<br><span class="s_font">※置き忘れ、紛失は対象外です。</span></h6>
+                                <div class="boximg2 clearfix">
+                                    <img src="./images/carry.jpg" alt="損害">
+                                    <p>旅行中にハンドバッグを盗まれた。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxgroup boxrignt clearfix">
+                            <div class="respon">
+                                <h6><span>賠償責任</span></h6>
+                                <div class="boximg2 clearfix">
+                                    <img src="./images/respon.jpg" alt="損害">
+                                    <p>展示物を誤って破損してしまった。</p>
+                                </div>
+                            </div>
+                            <div class="support">
+                                <h6><span>教援者費用</span></h6>
+                                <div class="boximg2 clearfix">
+                                    <img src="./images/support.jpg" alt="損害">
+                                    <p>14日以上入院で親族が現地に。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accident_insurance_fee">
+                  <p class="accident_insurance_fee_text">保険料<span>（一人当たり）</span>：1,000円</p>
+                  <p class="insurance_start">（保険開始日：2019年01月09日～保険終了日：2019年01月10日）</p>
+                  <p class="left">前泊・後泊・深夜発着便や片道航空券をご購入の場合は、保険期間を 「住居（または宿泊先）を出発してから住居（または宿泊先）へ帰着するまで」 に変更してください。</p>
+                </div>
+            </div><!-- /.insuArea -->
+
+            <h5 class="h5ttl">国内旅行傷害保険の補償および保険金額について<span class="terms">（詳細は<a href="https://chubb.meclib.jp/TAE5357/book/data/TAE5357.pdf">約款</a>をご覧ください）</span></h5>
+            <div class="compensation"><!-- compensation_start -->
+              <p class="compensation_img"><img src="https://www.chubbtravelinsurance.jp/aceStatic/ACETravel/ATIJP/files/DTA_Plan_1000d.png" alt="国内旅行傷害保険の補償および保険金額について"></p>
+<!--
+            <table class="compensation_contents">
+              <tr>
+                <th rowspan="2">補償項目</th>
+                <th colspan="5">保険金額</th>
+              </tr>
+
+              <tr>
+                <th>1泊2日まで</th>
+                <th>3泊4日まで</th>
+                <th>6泊7日まで</th>
+                <th>13泊14日まで</th>
+                <th>1ヶ月まで</th>
+              </tr>
+
+              <tr>
+                <th>死亡・後遺障害</th>
+                <td>499万円</td>
+                <td>634万円</td>
+                <td>349万円</td>
+                <td>334万円</td>
+                <td>233万円</td>
+              </tr>
+
+              <tr>
+                <th>入院（日額）</th>
+                <td>7,000円</td>
+                <td>5,000円</td>
+                <td>5,000円</td>
+                <td>4,000円</td>
+                <td>3,000円</td>
+              </tr>
+
+              <tr>
+                <th>通院（日額）</th>
+                <td>3,500円</td>
+                <td>3,000円</td>
+                <td>2,500円</td>
+                <td>2,000円</td>
+                <td>1,500円</td>
+              </tr>
+
+              <tr>
+                <th>賠償責任</th>
+                <td>5,000円</td>
+                <td>5,000円</td>
+                <td>2,000円</td>
+                <td>2,000円</td>
+                <td>2,000円</td>
+              </tr>
+
+              <tr>
+                <th>救援者費用</th>
+                <td>30万円</td>
+                <td>30万円</td>
+                <td>30万円</td>
+                <td>30万円</td>
+                <td>30万円</td>
+              </tr>
+
+              <tr>
+                <th>携行品損害<br>（免責金額3千円）</th>
+                <td>20万円</td>
+                <td>10万円</td>
+                <td>10万円</td>
+                <td>5万円</td>
+                <td>補償なし</td>
+              </tr>
+
+              <tr>
+                <th>航空機欠航・遅延時の宿泊費補償</th>
+                <td>1万円</td>
+                <td>1万円</td>
+                <td>1万円</td>
+                <td>1万円</td>
+                <td>1万円</td>
+              </tr>
+
+              <tr>
+                <th>保険料</th>
+                <td colspan="5">1,000円（お一人様）</td>
+              </tr>
+            </table>
+            <p class="note">死亡保険金受取人は法定相続人とします。<br>
+              90歳以上の方はご加入いただけません。 <br>
+              被保険者またはその家族が同種の補償・特約等をご契約されている場合は、補償の重複が生じることがあります。補償内容の差異や保険金額を改めてご確認ください。<br>
+              保険申込できる方は当旅行の申込者または参加者に限ります。保険金請求時には、保険会社より確認をさせていただくことがあります。<br>
+              旅行日数が変更になった場合は、変更後の期間に該当する保険金額にて補償させていただきます。ただし表に記載された日数が補償の上限となります。<br>
+              代表者（保険申込人）は補償内容を同行者にご通知ください。</p>
+              <p class="text_right">引受保険会社：Chubb損害保険株式会社<br>
+                L1611146</p>
+              -->
+            </div><!-- compensation_end -->
+           <div class="h-m30">
+            <h5 class="h5ttl"><span>保険の加入が可能な場合</span></h5>
+            <div class="tableCom">
+                <ul>
+                <li>・1回のお申込に対して、片道（1路線）のみをお申込みの場合</li>
+                <li>・1回のお申込に対して、往復·乗り継ぎ（2路線）をお申込の場合</li>
+                <li>・往復·乗り継ぎ（2路線）の期間が月をまたぐ際に、路線2の出発日が前月の保険始期日の1日前までの場合<br />
+                例）路線1：05/15　路線2：～06/14　⇒　加入可能</li>
+                <li>・路線1の出発日が1日の際に、路線2の出発日が当月末日までの場合<br />
+                例）路線1：05/01　路線2：～05/31　⇒　加入可能</li>
+                <li>・搭乗者の年齢が0歳～89歳までの場合</li>
+                </ul>
+            </div>
+            </div>
+           <div class="b-m30">
+            <h5 class="h5ttl"><span>保険の申込方法</span></h5>
+            <div class="tableCom">
+                <p class="ttl b-m5">◎航空券と保険を一緒にお申込みいただく場合</p>
+                <p class="txt b-m15">航空券のお申込み完了画面にて「オプションのご案内」という表示がされますので、「まず案内を読む」または「加入を希望する」から進んでいただき、注意事項、重要事項説明書を必ずご確認下さい。<br />
+                ご確認いただき保険のお申込みを希望される場合は、「□旅行保険加入にあたり、重要事項説明書を読み内容に同意します」にチェックを入れていただき申込内容の確認へお進み下さい。<br />
+                お申込内容にお間違えがないか確認をいただき「上記の内容で申込む」をクリックいただく事でお申込み完了となります。</p>
+                <p class="ttl b-m5">◎保険のみをお申込みいただく場合</p>
+                <p class="txt">既にさくらトラベルで航空券をお申込み（ご購入）済みの場合は、弊社マイページ·予約内容確認ページよりログインいただき、保険のみ加入いただく事が可能です。<br />
+                申込詳細の「旅行保険を申し込む」もしくはメニューの「旅行保険のご案内」よりお進み下さい。</p>
+            </div>
+      </div>
+           <div class="b-m50">
+            <h5 class="h5ttl"><span>決済方法</span></h5>
+            <div class="tableCom">
+                <p>航空券お申込の際の決済方法と同様に、銀行振込·ゆうちょ振替、クレジットカード決済、コンビニ決済がご利用いただけます。
+                <br />
+                詳しくはこちらのページをご参考ください。<a href="https://www.sakuratravel.jp/payment.html">＞＞お支払いについて</a></p>
+            </div>
+            </div>
+            <div class="btnArea">
+            <div class="btn01">
+            <div class="entry_confirmBtn02"><a href="#">保険情報入力へ進む</a></div>
+            <div class="currentCancelBtn"><a href="">加入をやめて閉じる　×</a></div>
+            </div>
+            </div>
+        </div><!-- /.myPage -->
+    </div>
+</div><!-- wrapper end -->
+
+    <!--　フッター //-->
+    <footer class="systemFooter">
+      <div class="footerWrap">
+        <a href="#pagetop" class="pagetop"><img src="https://www.sakuratravel.jp/search/mypage_file/images/common/btn_pagetop.png" alt="ページトップへ"></a>
+        <p class="copyright">Copyright&copy; <script type="text/javascript">myDate = new Date();myYear = myDate.getFullYear();document.write(myYear);</script> Sakura Travel. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!--//　フッター -->
+
+    <!-- Yahoo Tag Manager -->
+    <noscript>
+      <iframe src="http://www.sakuratravel.jp//b.yjtag.jp/iframe?c=JnPsjbM" width="1" height="1" style="border:0;margin:0;padding:0;"></iframe>
+    </noscript>
+    <!-- End Yahoo Tag Manager -->
+
+</body>
+</html>
